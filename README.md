@@ -1,26 +1,14 @@
-# Where the Answer Takes Shape — code, data and figures (v2: six models)
-
-> **GitHub version.** This repository omits the activations in `data/acts/` (1.7 GB, see `data/acts/README.md`). Everything else, including all other inputs and outputs, is the same as the full release.
+# Where the Answer Takes Shape
 
 
 Code and data for the paper, now covering **six instruction-tuned models (59 model–task pairs)**:
-Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct, Mistral-7B-Instruct-v0.3, Gemma-2-9B-it (the original four), and
-**Qwen2.5-14B-Instruct** and **Phi-4 (14B)** (added in v2). What changed since the first release is listed in `CHANGES.md`.
+Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct, Mistral-7B-Instruct-v0.3, Gemma-2-9B-it (the original four),
+Qwen2.5-14B-Instruct and Phi-4 (14B). 
 
 Requires Python 3, numpy, pandas, scipy, scikit-learn, matplotlib, torch, transformers, huggingface_hub
 (tested with Python 3.12, torch 2.8.0, transformers 5.18.0).
 
 ## Quick start
-
-```bash
-bash reproduce.sh          # CPU only, ~3 min: every statistic, table and figure of the paper from data/
-```
-
-`reproduce.sh` recomputes the event classification, Table 1, the number ledger of the main text and all 17 tables, each twice:
-for the original four models (`orig4`, automatically checked row by row against the published tables in `paper/templates/orig/`) and for
-all six models (`all6`, the tables of the v2 paper). Outputs: `paper/out/`.
-The activations in `data/acts/` (1.7 GB) are needed only for the overview figures of the v2 models (`sec1_overview/fig1.py`) and for re-running the theory and noise checks; without them `reproduce.sh` skips those figures and everything else runs.
-
 To run the GPU experiments for a model (all tasks, all interventions; restartable):
 
 ```bash
@@ -31,26 +19,6 @@ python experiments/run_model.py "0 1 2 3" qwen:Qwen2.5-14B-Instruct:Qwen/Qwen2.5
 
 Every script reads and writes under one data folder, defined in `paths.py`: by default `data/` in this package, or the folder in the
 environment variable `SHAPE_DATA` (useful for a scratch run that must not touch the released data). No script uses absolute paths.
-
-## Layout
-
-| Folder | Paper | Contents |
-|---|---|---|
-| `sec0_teaser/` | Figure 1 (teaser) | Ten tasks as point clouds; early layers vs. around the peak (`fig0.py`) |
-| `sec1_overview/` | Figure 2 (overview) | (a) month rings; (b–e) landmark→city: shape change, handoff, onset, transfer (`fig1.py`; `FIG1A`/`FIG1M`/`FIG1T` choose model and task) |
-| `sec3_events/` | §3, Figure 3 | Decision tree + examples + one-/multi-step writing (`fig2.py`); rule-threshold sweep |
-| `sec4_handoff/` | §4, Figure 4 | Handoff curves and handoff-vs-peak scatter (`fig3.py`); recovery of handoff curves from the vector PDF (`parse_handoff_pdf.py`) |
-| `sec5_onset/` | §5, Figure 5 | Ten-task onset grid (`fig4_grid.py`) and alternatives |
-| `sec6_transfer/` | §6, Figure 6 | Ten-task transfer heatmaps (`fig5_grid.py`) and alternatives |
-| `sec7_theory/` | §7 / Appendix | Blurred-input model, energy crossover (`figS_theory.py`) |
-| `main_table/` | Table 1 | Distance of every boundary to the nearest peak, circular-shift null, per model (`table_main.py`; `MODELSET=orig4` for the original four) |
-| `appendix/figures/` | Appendix | Handoff, strength sweep, transfer and event signals for all pairs (one column per model); decision tree |
-| `appendix/tables/`, `appendix/tex/` | Appendix | Published per-pair tables (original four models) and the updated theory appendix |
-| `experiments/` | all | Experiment and analysis code that produced `data/`, sorted by section (see `experiments/README.md`); `run_model.py` runs all GPU experiments for a model |
-| `paper/` | all | `ledger.py` (every number of the main text, recomputed and printed next to the published value), `tables/gen_*.py` (the 17 tables), `appendix_numbers/` (numbers in the appendix prose), `templates/orig/` (published tables used as reproduction baseline), `out/` (generated) |
-| `data/` | — | All inputs and outputs (see below) |
-
-Figures for one model: set `FIGMODEL=<model>` (and `FIGM45=<model>` for `fig4_grid.py`/`fig5_grid.py`); outputs carry a suffix (`_qwen14b`, `_phi4`, …).
 
 ## Data
 
@@ -74,8 +42,3 @@ Figures for one model: set `FIGMODEL=<model>` (and `FIGM45=<model>` for `fig4_gr
 | `data/lowacc/`, `data/peak_type/`, `data/new_metrics/`, `data/weekday_add/`, `data/fill/` | see `experiments/README.md` | As in the first release |
 | `data/notes/` | — | Original run notes (Chinese) |
 
-**Not available (lost before the first release):** the original handoff-patching and full-vocabulary-lens scripts and their raw outputs for
-the original four models (v2 rewrites them, see `CHANGES.md`; the published curves are kept in `handoff_from_pdf_orig4.csv` and
-`events_v2/signals_v2_orig4.csv`), the input-side decomposition of App. F, the activations of the smaller models used in §7, and
-`depth_vs_shape.csv`. Scripts that still refer to these (`04_handoff/regroup.py`, `verify_patch.py`, `05_onset/lap_compare.py` default
-source) are kept for documentation and do not run without them.
