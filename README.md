@@ -1,5 +1,9 @@
 # Where the Answer Takes Shape
 
+**Shape-Change Peaks Mark Computational Boundaries in LLMs**
+
+📄 [Project page](https://bellafc.github.io/shape_peak/) · [Paper (PDF)](docs/paper.pdf)
+
 
 Code and data for the paper, now covering **six instruction-tuned models (59 model–task pairs)**:
 Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct, Mistral-7B-Instruct-v0.3, Gemma-2-9B-it (the original four),
