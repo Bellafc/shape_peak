@@ -7,8 +7,43 @@
 <meta name="description" content="Shape-change peaks mark computational boundaries in LLMs: a label-only signal that locates where the answer becomes controllable, across six instruction-tuned models and ten tasks.">
 <meta property="og:title" content="Where the Answer Takes Shape: Shape-Change Peaks Mark Computational Boundaries in LLMs">
 <meta property="og:description" content="A label-only geometric signal that locates the layer at which a language model's answer becomes controllable.">
-<meta property="og:image" content="figures/fig1_overview.png">
+<meta property="og:image" content="https://bellafc.github.io/shape_peak/figures/fig1_overview.png">
 <meta property="og:type" content="article">
+<meta property="og:url" content="https://bellafc.github.io/shape_peak/">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://bellafc.github.io/shape_peak/">
+<!-- Google Scholar / Highwire citation tags -->
+<meta name="citation_title" content="Where the Answer Takes Shape: Shape-Change Peaks Mark Computational Boundaries in LLMs">
+<meta name="citation_author" content="Chen, Zheng">
+<meta name="citation_author" content="An, Jiayu">
+<meta name="citation_author" content="Jiang, Futian">
+<meta name="citation_author" content="Jain, Nitin">
+<meta name="citation_author" content="Li, Bo">
+<meta name="citation_publication_date" content="2026/10">
+<meta name="citation_pdf_url" content="https://bellafc.github.io/shape_peak/paper.pdf">
+<meta name="citation_abstract_html_url" content="https://bellafc.github.io/shape_peak/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "headline": "Where the Answer Takes Shape: Shape-Change Peaks Mark Computational Boundaries in LLMs",
+  "name": "Where the Answer Takes Shape: Shape-Change Peaks Mark Computational Boundaries in LLMs",
+  "url": "https://bellafc.github.io/shape_peak/",
+  "datePublished": "2026-10",
+  "author": [
+    {"@type": "Person", "name": "Zheng Chen", "affiliation": "The Hong Kong University of Science and Technology"},
+    {"@type": "Person", "name": "Jiayu An", "affiliation": "The Hong Kong University of Science and Technology"},
+    {"@type": "Person", "name": "Futian Jiang", "affiliation": "The Hong Kong Polytechnic University"},
+    {"@type": "Person", "name": "Nitin Jain", "affiliation": "J.P. Morgan Chase"},
+    {"@type": "Person", "name": "Bo Li", "affiliation": "The Hong Kong University of Science and Technology"}
+  ],
+  "abstract": "Steering, patching and probing act on a chosen layer, yet the layer at which a model's answer becomes controllable is usually found by sweeping. Within a task, we group the residual stream by the correct answer and measure how the shape of the answer-class centroids changes between adjacent layers. Across six instruction-tuned models and ten arithmetic and retrieval tasks, these shapes change little at most layers and sharply at a few, which we call shape-change peaks. These peaks coincide with representational events such as the writing of the answer, and locate three causal boundaries: the handoff of control from the input token to the answer positions, the onset of steering, and the layer at which steering-vector transfer rises most.",
+  "keywords": ["interpretability", "activation steering", "activation patching", "representational geometry", "large language models"],
+  "image": "https://bellafc.github.io/shape_peak/figures/fig1_overview.png",
+  "encoding": {"@type": "MediaObject", "contentUrl": "https://bellafc.github.io/shape_peak/paper.pdf", "encodingFormat": "application/pdf"},
+  "codeRepository": "https://github.com/bellafc/shape_peak"
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
