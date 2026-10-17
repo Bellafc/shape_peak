@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where the Answer Takes Shape</title>
+<meta name="description" content="Shape-change peaks mark computational boundaries in LLMs: a label-only signal that locates where the answer becomes controllable, across six instruction-tuned models and ten tasks.">
+<meta property="og:title" content="Where the Answer Takes Shape: Shape-Change Peaks Mark Computational Boundaries in LLMs">
+<meta property="og:description" content="A label-only geometric signal that locates the layer at which a language model's answer becomes controllable.">
+<meta property="og:image" content="figures/fig1_overview.png">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.css">
+<style>
+:root{
+  --bg:#faf9f6; --bg-2:#f1efe9; --fg:#1a1915; --fg-2:#524f47; --fg-3:#8a8780;
+  --line:#e2dfd6; --accent:#d9581f; --accent-2:#2a5fb5; --link:#2a5fb5;
+  --card:#ffffff; --code:#f1efe9;
+  --w:#2a5fb5; --r:#d9581f; --c:#1a9e8a;
+  --hi:#cdebd6; --mid:#e8f5ec; --lo:#fbe1dc; --key:#e3eefb;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141311; --bg-2:#1d1c19; --fg:#ecebe6; --fg-2:#b9b6ad; --fg-3:#7e7b73;
+    --line:#2d2b27; --accent:#f08a5a; --accent-2:#7aa2e8; --link:#7aa2e8;
+    --card:#1b1a17; --code:#23221e;
+    --hi:#1f4a31; --mid:#1c3326; --lo:#4a2420; --key:#1e2f4a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141311; --bg-2:#1d1c19; --fg:#ecebe6; --fg-2:#b9b6ad; --fg-3:#7e7b73;
+  --line:#2d2b27; --accent:#f08a5a; --accent-2:#7aa2e8; --link:#7aa2e8;
+  --card:#1b1a17; --code:#23221e;
+  --hi:#1f4a31; --mid:#1c3326; --lo:#4a2420; --key:#1e2f4a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Source Serif 4",Georgia,"Times New Roman",serif;font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--link) 35%,transparent)}
+a:hover{border-bottom-color:var(--link)}
+.sans{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+
+nav.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav.top .in{max-width:1120px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:16px;font-family:Inter,system-ui,sans-serif;font-size:13.5px}
+nav.top .brand{font-weight:600;color:var(--fg);border:0;letter-spacing:.01em}
+nav.top .links{margin-left:auto;display:flex;gap:18px;flex-wrap:wrap}
+nav.top .links a{color:var(--fg-2);border:0}
+nav.top .links a:hover{color:var(--fg)}
+@media (max-width:640px){nav.top .links{display:none}}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.narrow{max-width:740px;margin:0 auto}
+
+header.hero{padding:72px 0 40px;border-bottom:1px solid var(--line)}
+.kicker{font-family:Inter,system-ui,sans-serif;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:18px}
+h1{font-size:clamp(34px,5vw,56px);line-height:1.08;font-weight:600;letter-spacing:-.015em;margin:0 0 14px}
+h1 .sub{display:block;font-size:.5em;font-weight:400;color:var(--fg-2);letter-spacing:0;line-height:1.3;margin-top:14px}
+.authors{font-size:19px;margin:26px 0 6px}
+.authors sup{font-size:.6em;color:var(--fg-3)}
+.affil{font-family:Inter,system-ui,sans-serif;font-size:14px;color:var(--fg-2);line-height:1.6}
+.affil sup{color:var(--fg-3)}
+.meta{font-family:Inter,system-ui,sans-serif;font-size:13.5px;color:var(--fg-3);margin-top:12px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.btn{font-family:Inter,system-ui,sans-serif;font-size:14px;font-weight:500;padding:10px 16px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);display:inline-flex;align-items:center;gap:8px}
+.btn:hover{border-color:var(--fg-3)}
+.btn.primary{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn svg{width:16px;height:16px}
+
+section{padding:56px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-size:clamp(26px,3.2vw,34px);font-weight:600;letter-spacing:-.01em;line-height:1.2;margin:0 0 20px}
+h3{font-size:21px;font-weight:600;margin:34px 0 10px}
+p{margin:0 0 18px}
+.lead{font-size:21px;line-height:1.55;color:var(--fg)}
+.num{font-family:Inter,system-ui,sans-serif;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--fg-3);font-weight:600;margin-bottom:10px}
+
+figure{margin:34px 0}
+figure img{width:100%;height:auto;display:block;border-radius:6px;background:#fff}
+figure.card img{border:1px solid var(--line);padding:10px}
+figcaption{font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.6;color:var(--fg-2);margin-top:12px}
+figcaption b{color:var(--fg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+@media (max-width:800px){.two{grid-template-columns:1fr}}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0}
+@media (max-width:860px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px 22px 18px}
+.card .big{font-family:Inter,system-ui,sans-serif;font-size:38px;font-weight:600;letter-spacing:-.02em;line-height:1;color:var(--accent-2)}
+.card .big small{font-size:16px;font-weight:500;color:var(--fg-3);margin-left:6px;letter-spacing:0}
+.card .t{font-family:Inter,system-ui,sans-serif;font-size:14.5px;font-weight:600;margin:12px 0 6px}
+.card .d{font-size:15.5px;color:var(--fg-2);line-height:1.5;margin:0}
+
+.callout{background:var(--bg-2);border-left:3px solid var(--accent);padding:18px 22px;border-radius:0 10px 10px 0;margin:26px 0;font-size:17px}
+.callout p:last-child{margin:0}
+
+.eq{margin:18px 0;overflow-x:auto;font-size:18px}
+
+table.res{width:100%;border-collapse:collapse;font-family:Inter,system-ui,sans-serif;font-size:13px;margin:22px 0}
+table.res th,table.res td{padding:8px 8px;border-bottom:1px solid var(--line);text-align:center;white-space:nowrap}
+table.res th{font-weight:600;color:var(--fg-2);background:var(--bg-2);font-size:12px}
+table.res td:nth-child(2),table.res th:nth-child(2){text-align:left;white-space:normal;min-width:180px}
+table.res td:first-child{color:var(--fg-3);font-size:12px}
+table.res .key{background:var(--key);font-weight:600}
+table.res .hi{background:var(--hi)}
+table.res .mid{background:var(--mid)}
+table.res .lo{background:var(--lo)}
+table.res .null{color:var(--fg-3)}
+table.res tr.lens td{color:var(--fg-3);font-style:italic}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -16px;padding:0 16px}
+.tnote{font-family:Inter,system-ui,sans-serif;font-size:13.5px;color:var(--fg-2);line-height:1.6}
+
+table.ev{border-collapse:collapse;font-family:Inter,system-ui,sans-serif;font-size:14px;margin:14px 0 6px}
+table.ev th,table.ev td{padding:7px 14px;border-bottom:1px solid var(--line);text-align:center}
+table.ev td:first-child,table.ev th:first-child{text-align:left}
+table.ev th{color:var(--fg-2);font-weight:600;font-size:12.5px}
+.tag{display:inline-block;font-family:Inter,system-ui,sans-serif;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;color:#fff;margin-right:6px}
+.tag.w{background:var(--w)}.tag.r{background:var(--r)}.tag.c{background:var(--c)}.tag.v{background:#b08a1e}.tag.n{background:var(--fg-3)}
+
+ol.guide{padding-left:22px}
+ol.guide li{margin-bottom:10px}
+
+pre{background:var(--code);border:1px solid var(--line);border-radius:10px;padding:18px 20px;overflow-x:auto;font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:13px;line-height:1.55;margin:16px 0}
+.copy{font-family:Inter,system-ui,sans-serif;font-size:12.5px;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg-2);cursor:pointer;float:right;margin-top:-4px}
+.copy:hover{color:var(--fg);border-color:var(--fg-3)}
+
+footer{padding:40px 0 60px;font-family:Inter,system-ui,sans-serif;font-size:13.5px;color:var(--fg-3)}
+footer a{color:var(--fg-2)}
+.toc{font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.9;columns:2;column-gap:32px;margin:0;padding:0;list-style:none}
+@media (max-width:600px){.toc{columns:1}}
+.toc a{color:var(--fg-2);border:0}
+.toc a:hover{color:var(--fg)}
+.toc span{color:var(--fg-3);display:inline-block;width:28px}
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="in">
+    <a class="brand" href="#top">Where the Answer Takes Shape</a>
+    <div class="links">
+      <a href="#abstract">Abstract</a>
+      <a href="#signal">The signal</a>
+      <a href="#events">Events</a>
+      <a href="#handoff">Handoff</a>
+      <a href="#onset">Onset</a>
+      <a href="#transfer">Transfer</a>
+      <a href="#theory">Why</a>
+      <a href="#results">Results</a>
+      <a href="#cite">Cite</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker">Research · Interpretability</div>
+    <h1>Where the Answer Takes Shape
+      <span class="sub">Shape-Change Peaks Mark Computational Boundaries in LLMs</span>
+    </h1>
+    <div class="authors">
+      Zheng Chen<sup>1</sup>, Jiayu An<sup>1</sup>, Futian Jiang<sup>2</sup>, Nitin Jain<sup>3</sup>, Bo Li<sup>1</sup>
+    </div>
+    <div class="affil">
+      <sup>1</sup>The Hong Kong University of Science and Technology &nbsp;·&nbsp;
+      <sup>2</sup>The Hong Kong Polytechnic University &nbsp;·&nbsp;
+      <sup>3</sup>J.P. Morgan Chase
+    </div>
+    <div class="meta">October 2026 &nbsp;·&nbsp; Correspondence: <a href="mailto:zchenin@connect.ust.hk">zchenin@connect.ust.hk</a></div>
+    <div class="btns">
+      <a class="btn primary" href="paper.pdf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Paper (PDF)
+      </a>
+      <a class="btn" href="https://github.com/bellafc/shape_peak">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        Code &amp; data
+      </a>
+      <a class="btn" href="#cite">BibTeX</a>
+    </div>
+  </div>
+</header>
+
+<section id="abstract">
+  <div class="wrap narrow">
+    <div class="num">Abstract</div>
+    <p class="lead">Steering, patching and probing act on a chosen layer, yet the layer at which a model's answer becomes controllable is usually found by sweeping. We introduce a signal that needs only answer labels and locates that layer without any intervention.</p>
+    <p>Within a task, we group the residual stream by the correct answer and measure how the <em>shape</em> of the answer-class centroids changes between adjacent layers. Across six instruction-tuned models (7–14B parameters) and ten arithmetic and retrieval tasks, these shapes change little at most layers and sharply at a few, which we call <strong>shape-change peaks</strong>.</p>
+    <p>These peaks coincide with representational events such as the writing of the answer, and locate three causal boundaries: the handoff of control from the input token to the answer positions, the onset of steering, and the layer at which steering-vector transfer rises most. For each of these boundaries, 71–83% of model–task pairs fall within one layer of a peak, against about 32% for circularly shifted peaks (<em>p</em> &lt; 0.001). For cyclic arithmetic, a simple model explains why: before the peak, answer-grouped geometry is a blurred image of the inputs.</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="big">6<small>models</small></div>
+        <div class="t">Qwen2.5-7B/14B, Llama-3.1-8B, Mistral-7B, Gemma-2-9B, Phi-4</div>
+        <p class="d">All instruction-tuned, 7–14B parameters, 59 model–task pairs.</p>
+      </div>
+      <div class="card">
+        <div class="big">71–83<small>%</small></div>
+        <div class="t">of boundaries within one layer of a peak</div>
+        <p class="d">Handoff, steering onset and transfer rise, versus about 32% for shifted peaks.</p>
+      </div>
+      <div class="card">
+        <div class="big">0<small>interventions</small></div>
+        <div class="t">needed to find the boundary</div>
+        <p class="d">The signal uses only answer labels: no probe, no unembedding, no patching or steering sweep.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <figure>
+      <img src="figures/fig1_overview.png" alt="Overview: shape change across layers and the three causal boundaries it predicts">
+      <figcaption><b>Shape-change peaks mark causal boundaries.</b> (a) Qwen2.5-7B, month arithmetic: answer-class centroids, one ring per layer; the configuration reorganizes at the peak (orange plane, L23). (b–e) Gemma-2-9B, landmark→city. (b) Adjacent-layer shape change; the three highest peaks are a readable reorganization (R), a write (W) and a concentration (C). (c) Patching (solid) and steering (dashed): control hands off from the input token to the answer positions at the peak. (d) Steering onset moves to earlier peaks as strength <em>α</em> grows. (e) Vectors built before the write peak fail at every layer (X: build layer, Y: apply layer). Vertical line: the peak (L25).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="signal">
+  <div class="wrap narrow">
+    <div class="num">01 · The signal</div>
+    <h2>Shape change between adjacent layers</h2>
+    <p>Most tools for reading and controlling language models act at a single layer: activation patching swaps hidden states at chosen layers, activation steering adds a direction to the residual stream, probes and lenses read representations one layer at a time. The layer is usually found by sweeping, which requires an expensive intervention at each layer, or predicted from how well the hidden state already reads out as the answer, which can miss an answer that is in the representation but not yet readable as an output token.</p>
+    <p>We take a geometric route. For each model and task, let <span class="m">\(h_\ell(x)\)</span> be the residual stream after layer <span class="m">\(\ell\)</span> at the last token of prompt <span class="m">\(x\)</span>. For each answer class <span class="m">\(c\)</span> we take the centroid <span class="m">\(\mu^c_\ell\)</span> over prompts whose correct answer is <span class="m">\(c\)</span>. Stacking the <span class="m">\(K\)</span> centroids gives a configuration <span class="m">\(C_\ell\)</span>; we centre it and scale it to unit Frobenius norm, giving <span class="m">\(\tilde C_\ell\)</span>. The <strong>shape change</strong> between adjacent layers is the Procrustes disparity</p>
+    <div class="eq">\[\Delta_\ell \;=\; \min_{R \in O(d),\, s>0} \big\| s\,\tilde C_{\ell-1} R - \tilde C_\ell \big\|_F^2 \;=\; 1 - \big\| \tilde C_{\ell-1}^{\top} \tilde C_\ell \big\|_*^2 ,\]</div>
+    <p>where <span class="m">\(\|\cdot\|_*\)</span> is the nuclear norm. Translation, rotation, reflection and scale are removed by construction, so <span class="m">\(\Delta_\ell\)</span> is what remains: the change in the shape of the answer configuration from one layer to the next. It requires only answer labels and at least three answer classes.</p>
+    <p>We take the three highest peaks of <span class="m">\(\Delta_\ell\)</span> in the late layers (from 25% of depth on) and call the largest the <em>highest peak</em>.</p>
+
+    <h3>Models and tasks</h3>
+    <p>Six instruction-tuned models: Qwen2.5-7B-Instruct, Llama-3.1-8B-Instruct, Mistral-7B-Instruct-v0.3, Gemma-2-9B-it, Qwen2.5-14B-Instruct and Phi-4 (14B). Ten tasks in two families. <em>Cyclic arithmetic</em> asks for a start item plus an offset over weekdays, months, clock hours and letters (“What day is three days after Monday?”). <em>Retrieval</em> maps a cue to an answer: landmark→city, country→continent, capital→continent, object→color, in-context color, and story→emotion. We analyze the 59 model–task pairs on which the model answers above chance.</p>
+  </div>
+  <div class="wrap">
+    <figure class="card">
+      <img src="figures/tasks_and_signal.png" alt="Ten tasks and the shape-change signal" style="max-width:720px;margin:0 auto">
+      <figcaption><b>Ten tasks and the shape-change signal.</b> Top: answer-position activations of Qwen2.5-7B at the last layer, colored by the correct answer. Bottom: month centroids at three adjacent layers. They barely change early on but reorganize at the shape-change peak (layer 23, <em>Δ</em> = 0.306).</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="events">
+  <div class="wrap narrow">
+    <div class="num">02 · What happens at a peak</div>
+    <h2>Peaks host representational events</h2>
+    <p>To interpret a peak, we track causal signals (patching and steering at the answer positions) and observational signals (a linear identity probe and the logit lens), and name each late layer by the first question answered yes, in a fixed order:</p>
+    <p>
+      <span class="tag c">C</span><strong>Concentration</strong>: subspace patching starts to change an answer that full patching already controlled.<br>
+      <span class="tag w">W</span><strong>Write</strong>: any other causal signal jumps.<br>
+      <span class="tag r">R</span><strong>Readable reorganization</strong>: the probe decodes the answer while the causal signals stay near zero.<br>
+      <span class="tag v">V</span><strong>Vocabulary alignment</strong>: only the logit lens rises.<br>
+      <span class="tag n">–</span><strong>No event</strong> otherwise.
+    </p>
+    <p>The highest peak is a write in 61% of pairs, nearly three times the rate at other late layers (22%), and carries no event in only 8%, against 46%. The largest rise of the probe, of patching and of steering falls within one layer of a peak in 85%, 81% and 83% of pairs; the largest rise of the logit lens does so in only 55%.</p>
+
+    <table class="ev">
+      <tr><th></th><th>W</th><th>R</th><th>C</th><th>V</th><th>–</th><th>n</th></tr>
+      <tr><td>Highest peak</td><td><b>.61</b></td><td>.20</td><td>.08</td><td>.02</td><td>.08</td><td>59</td></tr>
+      <tr><td>2nd / 3rd peaks</td><td>.35</td><td>.22</td><td>.09</td><td>.07</td><td>.27</td><td>118</td></tr>
+      <tr><td>Other late layers</td><td>.22</td><td>.15</td><td>.05</td><td>.10</td><td><b>.46</b></td><td>1324</td></tr>
+    </table>
+    <p class="tnote">Events at shape-change peaks and at the other late layers, over 59 model–task pairs.</p>
+
+    <h3>Some peaks mark the answer before it becomes causal</h3>
+    <p>A linear probe can decode the correct answer from a hidden state even when the model does not use it, whereas patching and steering register it only once it has a causal effect, and the logit lens only once it is aligned with the output vocabulary. Readable-reorganization peaks fall in this gap: 38 of the 177 top-3 peaks, in 28 of the 36 retrieval pairs, show a decodable correct answer (median probe accuracy 0.91) while patching and steering change at most 5% of prompts and the logit lens assigns a probability below 0.001. A causal effect follows a median of four layers later, and the logit lens six layers later.</p>
+
+    <h3>One-step and multi-step writing</h3>
+    <p>In Qwen, the answer reaches all answer positions at once: patching all of them and patching the last position alone take effect at the same layer. In Llama, Mistral and Gemma, and in half of the Phi-4 tasks, the answer is first written at earlier answer positions, including the chat-template tokens, and reaches the last position later (a median lag of 2.5 layers in Llama, 7 in Gemma). Steering vectors in these models need more layers after the highest peak to transfer well.</p>
+  </div>
+  <div class="wrap">
+    <figure class="card">
+      <img src="figures/fig2_events.png" alt="What happens at a peak">
+      <figcaption><b>What happens at a peak.</b> (a) Each late layer is named by the first question answered yes. (b, c) Qwen2.5-7B: adjacent-layer shape change, with the three highest peaks labeled by event type and layer. (d, e) One-step and multi-step writing: patching all answer positions (red) and only the last position (black, dashed). In Qwen the two take effect together at the highest peak; in Llama the last position lags by several layers.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="handoff">
+  <div class="wrap narrow">
+    <div class="num">03 · Boundary one</div>
+    <h2>Peaks mark the handoff of causal control</h2>
+    <p>Before the correct answer becomes causal at the answer positions, it is controlled by the input token that determines it (the start item, or the cue). The <strong>handoff layer</strong> is the layer at which patching the input token stops working.</p>
+    <p><strong>The handoff is abrupt.</strong> Control moves from the input token to the answer positions within one layer in 46 of 53 pairs: patching the input token falls from near ceiling to near zero as patching the answer positions rises. Steering places the handoff within one layer of patching in 43 of the 51 pairs where it defines one.</p>
+    <p><strong>The handoff lands on a peak.</strong> The handoff layer lies within one layer of one of the three highest peaks in 44 of 53 pairs, and exactly on one in 29, against 16.6 and 5.9 when the peaks are circularly shifted (<em>p</em> &lt; 0.001). The alignment holds in all six models and both task families. The event at the highest peak tells on which side the handoff falls: a write is the handoff itself, a readable reorganization precedes it, and a concentration follows it.</p>
+  </div>
+  <div class="wrap">
+    <figure class="card">
+      <img src="figures/fig3_handoff.png" alt="Causal control hands off at a shape-change peak">
+      <figcaption><b>Causal control hands off at a shape-change peak.</b> (a, b) Qwen2.5-7B: patching (solid) and steering (dashed) of the input token (violet) and the answer positions (red). Control moves from the input token to the answer positions at the highest peak (vertical line). (c) Handoff layer against the nearest of the three highest peaks for 53 model–task pairs, colored by event type; the gray band marks ±1 layer. Inset: the same count when peaks are circularly shifted.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="onset">
+  <div class="wrap narrow">
+    <div class="num">04 · Boundary two</div>
+    <h2>Steering onset lands on peaks</h2>
+    <p>From which layer does steering the answer positions work, and does a stronger push move that layer earlier? We steer with the centroid difference <span class="m">\(v_Y\)</span> between target and original answer classes at layer <span class="m">\(Y\)</span>, scaled by <span class="m">\(\alpha \in \{1,2,4,8\}\)</span>. The onset is the first layer at which at least half of the prompts switch to the target answer.</p>
+    <p><strong>A staircase of onsets.</strong> At <span class="m">\(\alpha = 1\)</span>, the onset lies no more than one layer before the highest peak in 56 of 59 pairs, and no more than one layer before the earliest of the three highest peaks in all 59. Stronger steering moves the onset earlier, along the peaks: at every <span class="m">\(\alpha\)</span>, 71–81% of onsets lie within one layer of a peak, against 32% for shifted peaks. Even at <span class="m">\(\alpha = 8\)</span>, at most 6 of 59 onsets fall more than one layer before the earliest peak. Steering the answer positions starts to work where causal control leaves the input token.</p>
+    <p><strong>Versus logit-lens accessibility.</strong> As point predictors, shape peaks and the first layer with logit-lens accuracy above 0.1 are comparable (mean absolute errors of about 2–2.5 layers). As lower bounds they differ: the onset precedes the highest peak by more than one layer in 3 of 59 pairs, but precedes the logit-lens predictor in 17 (<em>p</em> = 0.001). In 23 of 59 pairs, steering already works where the logit lens still reads nothing: the class structure is in place but not yet aligned with the output vocabulary, which the shape signal registers and the logit lens does not.</p>
+  </div>
+  <div class="wrap">
+    <figure class="card">
+      <img src="figures/fig4_onset_grid.png" alt="Steering onset lands on shape-change peaks, Qwen2.5-7B, all ten tasks">
+      <figcaption><b>Steering onset lands on shape-change peaks</b> (Qwen2.5-7B, all ten tasks). Steering success at the answer positions for <em>α</em> = 1 and 2; dots mark the onset (first layer with success ≥ 0.5). Orange lines mark the three highest peaks (solid: highest). At <em>α</em> = 2, all ten onsets lie within one layer of a peak.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="transfer">
+  <div class="wrap narrow">
+    <div class="num">05 · Boundary three</div>
+    <h2>Peaks bound where steering vectors can be built</h2>
+    <p>A centroid-difference vector is often built at one layer and reused at others. For every pair of layers <span class="m">\((X, Y)\)</span> we rescale <span class="m">\(v_X\)</span> to the norm of <span class="m">\(v_Y\)</span> and apply it at layer <span class="m">\(Y\)</span>. The transfer of <span class="m">\(X\)</span> is its mean success over the layers where steering with the layer's own vector works.</p>
+    <p><strong>Vectors built before the peak do not transfer.</strong> Vectors built in the five layers before the highest peak reach a mean transfer of 0.08 (median 0.01); vectors built at or after it reach 0.75, in all six models and both task families. The boundary is not where the answer appears: it is linearly decodable 7.6 layers before transfer rises, and pre-peak layers with reliable class structure still transfer at only 0.20.</p>
+    <p><strong>Transfer rises at peaks.</strong> Its largest one-layer increase falls exactly on one of the three highest peaks in 39 of 58 pairs, and within one layer in 48 (83%). These steps fall on write or concentration peaks, and only once on a readable reorganization. At a fixed layer distance, transfer decreases with the cumulative shape change between <span class="m">\(X\)</span> and <span class="m">\(Y\)</span> in 54 of 58 pairs (median Spearman <em>ρ</em> = −0.50).</p>
+    <div class="callout">
+      <p><strong>Practical rule.</strong> Build steering vectors after the highest peak; the last layer is the most robust choice (mean transfer 0.91). The peak is a conservative boundary: vectors built before it rarely transfer.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <figure class="card">
+      <img src="figures/fig5_transfer_grid.png" alt="Steering vectors transfer only when built at or after a shape-change peak">
+      <figcaption><b>Steering vectors transfer only when built at or after a shape-change peak</b> (Qwen2.5-7B, all ten tasks). Success of a vector built at one layer and applied at another. Orange lines mark the three highest peaks (solid: highest); below the dotted line, steering fails even with the layer's own vector. In all ten tasks, transfer rises most within one layer of a peak.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="theory">
+  <div class="wrap narrow">
+    <div class="num">06 · Why</div>
+    <h2>Before the peak, answer-grouped geometry is a blurred image of the inputs</h2>
+    <p>Take <span class="m">\(N\)</span> items, a start item <span class="m">\(s\)</span> and an offset <span class="m">\(k\)</span>, with answer <span class="m">\(D = s + k \bmod N\)</span>. Before the answer is computed, suppose the state at the answer position is additive in the inputs, <span class="m">\(h = \mu + a(s) + b(k) + \varepsilon\)</span>. Prompts that share the answer <span class="m">\(D\)</span> have different start items, so the centroid of class <span class="m">\(D\)</span> averages their start-item features:</p>
+    <div class="eq">\[c(D) \;=\; \frac{1}{|\mathcal{K}|} \sum_{k \in \mathcal{K}} a(D - k) \;=\; (a \ast p_{\mathcal{K}})(D),\]</div>
+    <p>the circular convolution of the start-item geometry with the offset distribution. Grouping by answer before the answer exists yields a <em>blurred image of the input</em>, and a centroid difference moves the representation of the inputs rather than of the answer. Once the answer is computed, an answer-organized component <span class="m">\(u(D)\)</span> enters; when it dominates, centroid differences point along the answer, and steering and transfer work. The switch changes the shape of the answer configuration, so the model predicts a peak where <span class="m">\(u(D)\)</span> takes over.</p>
+    <p><strong>Evidence.</strong> Fitting <span class="m">\(h = \mu + a(s) + b(k) + u(D) + \varepsilon\)</span> at every layer of the 23 cyclic-arithmetic pairs: in the five layers before the highest peak, the blurred input term carries a median of 98% of the centroid energy and <span class="m">\(u(D)\)</span> explains only 0.4% of variance beyond the inputs; after the peak, the answer term carries 83% and explains 21%. The layer where it takes over lies within one layer of a peak in 21 of 23 pairs.</p>
+  </div>
+  <div class="wrap">
+    <figure class="card">
+      <img src="figures/figS_theory.png" alt="The blurred-input model: crossover between input and answer terms falls at a shape peak">
+      <figcaption><b>The blurred-input model.</b> Share of the answer-centroid energy explained by the additive input features convolved with the offset distribution versus the answer-organized term, with the additive <em>R²</em> of the activations. The crossover falls at a shape-change peak.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="results">
+  <div class="wrap">
+    <div class="num">07 · Main results</div>
+    <h2 style="max-width:740px">Shape-change peaks locate the layer of every boundary we measure</h2>
+    <div class="tscroll">
+    <table class="res">
+      <thead>
+        <tr>
+          <th>§</th><th>Target layer (one per pair)</th><th>n</th><th>On a peak</th><th>Within ±1</th><th>Null</th><th>p</th><th>Mean dist.</th>
+          <th>Gemma</th><th>Llama</th><th>Mistral</th><th>Qwen-7B</th><th>Qwen-14B</th><th>Phi-4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>02</td><td>Largest rise of the probe</td><td>41</td><td>66%</td><td class="key">85%</td><td class="null">32%</td><td>&lt;0.001</td><td>0.76</td><td class="mid">86%</td><td class="hi">100%</td><td class="mid">83%</td><td class="mid">78%</td><td class="hi">100%</td><td class="mid">71%</td></tr>
+        <tr><td>02</td><td>Largest rise of patching</td><td>59</td><td>54%</td><td class="key">81%</td><td class="null">32%</td><td>&lt;0.001</td><td>0.90</td><td class="mid">70%</td><td class="mid">70%</td><td class="hi">100%</td><td class="hi">90%</td><td class="mid">70%</td><td class="hi">90%</td></tr>
+        <tr><td>02</td><td>Largest rise of steering</td><td>59</td><td>49%</td><td class="key">83%</td><td class="null">32%</td><td>&lt;0.001</td><td>0.90</td><td class="hi">90%</td><td class="mid">80%</td><td class="mid">89%</td><td class="hi">90%</td><td class="mid">70%</td><td class="mid">80%</td></tr>
+        <tr class="lens"><td></td><td>Largest rise of the logit lens (p(answer)), for contrast</td><td>58</td><td>33%</td><td>55%</td><td>31%</td><td>&lt;0.001</td><td>2.41</td><td>20%</td><td>60%</td><td>75%</td><td>70%</td><td>30%</td><td>80%</td></tr>
+        <tr><td>03</td><td>Handoff</td><td>53</td><td>55%</td><td class="key">83%</td><td class="null">31%</td><td>&lt;0.001</td><td>0.81</td><td class="lo">67%</td><td class="mid">89%</td><td class="mid">88%</td><td class="hi">100%</td><td class="mid">78%</td><td class="mid">78%</td></tr>
+        <tr><td>04</td><td>Steering onset, α = 1</td><td>59</td><td>39%</td><td class="key">81%</td><td class="null">32%</td><td>&lt;0.001</td><td>1.07</td><td class="mid">80%</td><td class="mid">70%</td><td class="hi">100%</td><td class="hi">90%</td><td class="mid">70%</td><td class="mid">80%</td></tr>
+        <tr><td>04</td><td>Steering onset, α = 8</td><td>59</td><td>36%</td><td class="key">71%</td><td class="null">31%</td><td>&lt;0.001</td><td>1.25</td><td class="lo">50%</td><td class="hi">90%</td><td class="mid">89%</td><td class="mid">80%</td><td class="lo">30%</td><td class="hi">90%</td></tr>
+        <tr><td>05</td><td>Largest rise of steering-vector transfer</td><td>58</td><td>67%</td><td class="key">83%</td><td class="null">32%</td><td>&lt;0.001</td><td>0.91</td><td class="mid">78%</td><td class="mid">80%</td><td class="hi">100%</td><td class="hi">100%</td><td class="mid">70%</td><td class="mid">70%</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="tnote" style="max-width:900px">For each model–task pair we take one target layer and compare it with the nearest of the three highest shape-change peaks. <em>On a peak</em> and <em>Within ±1</em>: fraction of pairs at distance 0 and at most 1. <em>Null</em>: fraction within ±1 when the peaks of each pair are circularly shifted within the late layers; <em>p</em>: share of 10,000 shifts that reach the observed fraction. <em>Mean dist.</em>: mean distance to the nearest peak, in layers. Per-model columns give the within-±1 fraction (dark green ≥ 90%, light green 70–89%, red &lt; 70%). Rises count only if they exceed 0.1 in one layer (0.15 for the probe), which leaves 41 pairs for the probe.</p>
+  </div>
+
+  <div class="wrap narrow">
+    <h3>Practical guidance</h3>
+    <ol class="guide">
+      <li>Compute adjacent-layer Procrustes shape change of the answer-class centroids. It needs only answer labels and a forward pass.</li>
+      <li>The earliest of the three highest peaks is a near lower bound on where steering can work: steer no earlier than it.</li>
+      <li>Build steering vectors after the highest peak. The last layer is the most robust choice (mean transfer 0.91).</li>
+      <li>Expect the handoff of causal control, the steering onset and the transfer boundary to all sit within a layer of a peak.</li>
+    </ol>
+
+    <h3>Limitations</h3>
+    <p>We study six instruction-tuned models of 7–14B parameters on ten closed-answer tasks; larger and base models and open-ended generation remain to be tested. A peak locates where the answer geometry reorganizes; telling which event occurs there requires an intervention. Shape-change peaks give boundaries and lower bounds; for a point estimate of where vectors start to transfer, the first layer with logit-lens accuracy above 0.1 is closer on average. The blurred-input model is derived and tested for cyclic arithmetic only.</p>
+  </div>
+</section>
+
+<section id="cite">
+  <div class="wrap narrow">
+    <div class="num">Citation</div>
+    <h2>Cite this work</h2>
+    <button class="copy" onclick="copyBib(this)">Copy BibTeX</button>
+    <pre id="bib">@article{chen2026shape,
+  title   = {Where the Answer Takes Shape: Shape-Change Peaks Mark Computational Boundaries in {LLMs}},
+  author  = {Chen, Zheng and An, Jiayu and Jiang, Futian and Jain, Nitin and Li, Bo},
+  year    = {2026},
+  url     = {https://github.com/bellafc/shape_peak}
+}</pre>
+    <h3>Code and data</h3>
+    <p>Experiment code and released data are at <a href="https://github.com/bellafc/shape_peak">github.com/bellafc/shape_peak</a>. Every script reads and writes under one data folder; the README lists which script produces which table and figure.</p>
+    <h3>Appendix contents</h3>
+    <ul class="toc">
+      <li><span>A</span><a href="paper.pdf">Related work</a></li>
+      <li><span>B</span><a href="paper.pdf">Data: tasks, cues, templates and accuracies</a></li>
+      <li><span>C</span><a href="paper.pdf">Shape change and peaks: definition, stability, thresholds</a></li>
+      <li><span>D</span><a href="paper.pdf">Interventions and event types</a></li>
+      <li><span>E</span><a href="paper.pdf">Events at shape-change peaks</a></li>
+      <li><span>F</span><a href="paper.pdf">Handoff of causal control</a></li>
+      <li><span>G</span><a href="paper.pdf">Strength sweep</a></li>
+      <li><span>H</span><a href="paper.pdf">Comparison with logit-lens accessibility</a></li>
+      <li><span>I</span><a href="paper.pdf">Cross-layer transfer</a></li>
+      <li><span>J</span><a href="paper.pdf">The blurred-input model</a></li>
+      <li><span>K</span><a href="paper.pdf">Results without low-accuracy pairs</a></li>
+      <li><span>L</span><a href="paper.pdf">Figures for the other models</a></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    © 2026 the authors · <a href="paper.pdf">PDF</a> · <a href="https://github.com/bellafc/shape_peak">GitHub</a>
+  </div>
+</footer>
+
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.11/contrib/auto-render.min.js"
+  onload="renderMathInElement(document.body,{delimiters:[{left:'\\[',right:'\\]',display:true},{left:'\\(',right:'\\)',display:false}],throwOnError:false});"></script>
+<script>
+function copyBib(btn){
+  var t=document.getElementById('bib').innerText;
+  try{navigator.clipboard.writeText(t).then(function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy BibTeX';},1500);});}catch(e){}
+}
+</script>
+</body>
+</html>
