@@ -1,0 +1,151 @@
+metric,task,peaks
+procrustes,weekday,16 18 24
+procrustes,month,18 16 12
+procrustes,hour,16 18 14
+procrustes,letter,18 16 13
+procrustes,city,14 16 18
+procrustes,continent,14 20 17
+procrustes,capital2hop,14 16 20
+procrustes,color,22 14 24
+procrustes,ctxcolor,12 14 16
+procrustes,emotion,13 18 20
+mag_scale,weekday,18 14 16
+mag_scale,month,18 14 28
+mag_scale,hour,16 18 14
+mag_scale,letter,18 13 16
+mag_scale,city,14 16 24
+mag_scale,continent,14 17
+mag_scale,capital2hop,14 16
+mag_scale,color,14 21
+mag_scale,ctxcolor,12 15 17
+mag_scale,emotion,13 25 31
+mag_norm,weekday,18 23 27
+mag_norm,month,31 27
+mag_norm,hour,31 18 15
+mag_norm,letter,31 16 23
+mag_norm,city,9 17
+mag_norm,continent,16 9
+mag_norm,capital2hop,16 9
+mag_norm,color,9
+mag_norm,ctxcolor,31
+mag_norm,emotion,9 17 31
+mag_sep,weekday,18 14 16
+mag_sep,month,18 14 28
+mag_sep,hour,16 14 18
+mag_sep,letter,18 13 16
+mag_sep,city,14 16 19
+mag_sep,continent,14 17 20
+mag_sep,capital2hop,14 16 10
+mag_sep,color,14 21 11
+mag_sep,ctxcolor,12 15 17
+mag_sep,emotion,13 9 18
+mag_classnorm,weekday,31 24 22
+mag_classnorm,month,31 28 22
+mag_classnorm,hour,31 23 28
+mag_classnorm,letter,31 23 26
+mag_classnorm,city,31 24 27
+mag_classnorm,continent,25 27 31
+mag_classnorm,capital2hop,25 19 30
+mag_classnorm,color,22 24 31
+mag_classnorm,ctxcolor,31 27 25
+mag_classnorm,emotion,31 22 20
+grid_c1_s1_a1,weekday,16 18 24
+grid_c1_s1_a1,month,18 16 12
+grid_c1_s1_a1,hour,16 18 14
+grid_c1_s1_a1,letter,18 16 13
+grid_c1_s1_a1,city,14 16 18
+grid_c1_s1_a1,continent,14 20 17
+grid_c1_s1_a1,capital2hop,14 16 20
+grid_c1_s1_a1,color,22 14 24
+grid_c1_s1_a1,ctxcolor,12 14 16
+grid_c1_s1_a1,emotion,13 18 20
+grid_c1_s1_a0,weekday,14 16 18
+grid_c1_s1_a0,month,14 18 12
+grid_c1_s1_a0,hour,14 16 8
+grid_c1_s1_a0,letter,18 13 8
+grid_c1_s1_a0,city,14 16 10
+grid_c1_s1_a0,continent,14 8
+grid_c1_s1_a0,capital2hop,14 16 8
+grid_c1_s1_a0,color,14
+grid_c1_s1_a0,ctxcolor,12 8 14
+grid_c1_s1_a0,emotion,13 8 10
+grid_c1_s0_a1,weekday,18 16 14
+grid_c1_s0_a1,month,18 14 28
+grid_c1_s0_a1,hour,16 18 14
+grid_c1_s0_a1,letter,18 13 16
+grid_c1_s0_a1,city,14 16 24
+grid_c1_s0_a1,continent,14 17 20
+grid_c1_s0_a1,capital2hop,14 16 20
+grid_c1_s0_a1,color,14 21 24
+grid_c1_s0_a1,ctxcolor,12 15 17
+grid_c1_s0_a1,emotion,13 18 25
+grid_c1_s0_a0,weekday,8 13 16
+grid_c1_s0_a0,month,8 14 12
+grid_c1_s0_a0,hour,14 12 8
+grid_c1_s0_a0,letter,8 12 14
+grid_c1_s0_a0,city,14
+grid_c1_s0_a0,continent,14
+grid_c1_s0_a0,capital2hop,13 8 16
+grid_c1_s0_a0,color,14
+grid_c1_s0_a0,ctxcolor,8 12 10
+grid_c1_s0_a0,emotion,13 8 10
+grid_c0_s1_a1,weekday,18 24 22
+grid_c0_s1_a1,month,18 28 31
+grid_c0_s1_a1,hour,28 18 16
+grid_c0_s1_a1,letter,18 21 31
+grid_c0_s1_a1,city,24 31 14
+grid_c0_s1_a1,continent,14 17 31
+grid_c0_s1_a1,capital2hop,16 20 14
+grid_c0_s1_a1,color,21 24 14
+grid_c0_s1_a1,ctxcolor,17 15 24
+grid_c0_s1_a1,emotion,14 25 20
+grid_c0_s1_a0,weekday,31 14 9
+grid_c0_s1_a0,month,31 11 9
+grid_c0_s1_a0,hour,31 14 11
+grid_c0_s1_a0,letter,31 14 9
+grid_c0_s1_a0,city,31 14 9
+grid_c0_s1_a0,continent,31 9 14
+grid_c0_s1_a0,capital2hop,31 14 9
+grid_c0_s1_a0,color,31 14 9
+grid_c0_s1_a0,ctxcolor,31 11 13
+grid_c0_s1_a0,emotion,31 9 12
+grid_c0_s0_a1,weekday,18 23 27
+grid_c0_s0_a1,month,31 18 27
+grid_c0_s0_a1,hour,31 18 28
+grid_c0_s0_a1,letter,31 18 16
+grid_c0_s0_a1,city,17 9 24
+grid_c0_s0_a1,continent,16 9 29
+grid_c0_s0_a1,capital2hop,16 9 29
+grid_c0_s0_a1,color,9 21 16
+grid_c0_s0_a1,ctxcolor,31 16 26
+grid_c0_s0_a1,emotion,9 17 31
+grid_c0_s0_a0,weekday,31 14 11
+grid_c0_s0_a0,month,31 11 14
+grid_c0_s0_a0,hour,31 11 14
+grid_c0_s0_a0,letter,31 11 14
+grid_c0_s0_a0,city,31 11 14
+grid_c0_s0_a0,continent,31 11 14
+grid_c0_s0_a0,capital2hop,31 11 14
+grid_c0_s0_a0,color,31 11 14
+grid_c0_s0_a0,ctxcolor,31 11 9
+grid_c0_s0_a0,emotion,31 11 14
+dir_centroid,weekday,14 16 18
+dir_centroid,month,14 18 12
+dir_centroid,hour,14 16 10
+dir_centroid,letter,18 14 16
+dir_centroid,city,14 16 10
+dir_centroid,continent,14 8
+dir_centroid,capital2hop,14 16 8
+dir_centroid,color,14
+dir_centroid,ctxcolor,12 8 14
+dir_centroid,emotion,13 8 10
+dir_pair,weekday,14 16 18
+dir_pair,month,14 18 12
+dir_pair,hour,14 16 8
+dir_pair,letter,18 14 16
+dir_pair,city,14 16 10
+dir_pair,continent,14 8
+dir_pair,capital2hop,14 16 8
+dir_pair,color,14
+dir_pair,ctxcolor,12 8 14
+dir_pair,emotion,13 8 10
