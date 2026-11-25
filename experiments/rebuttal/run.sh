@@ -2,6 +2,7 @@
 # Rebuttal experiment: alternative shape metrics, 10 tasks, half prompt set (SUB=1), for each model in MODELS.
 # MODELS entries are <family>:<name>:<HF repo>; Llama uses the ungated unsloth mirror of the official Llama-3.1-8B-Instruct weights.
 # Run from anywhere on a GPU machine:  bash experiments/rebuttal/run.sh
+# PILOT_ONLY=1 runs only the pilots; PRUNE_HF=1 first deletes other models from the HF cache (to free disk).
 # Restartable: tasks whose activations already exist are skipped. Results are copied to rebuttal_results/ at the repo root.
 set -euo pipefail
 cd "$(dirname "$0")/../.."
@@ -18,9 +19,17 @@ python -c "import torch, transformers; print('torch', torch.__version__, 'transf
 for spec in $MODELS; do
 IFS=: read -r FAM NAME MODEL <<< "$spec"
 echo "##### $NAME"
+if [ -n "${PRUNE_HF:-}" ]; then
+  keep="models--${MODEL//\//--}"
+  for d in "$HF_HOME"/hub/models--*; do
+    if [ -e "$d" ] && [ "$(basename "$d")" != "$keep" ]; then echo "prune $(basename "$d")"; rm -rf "$d"; fi
+  done
+  df -h "$HF_HOME" | tail -1
+fi
 MP=$(python -c "from huggingface_hub import snapshot_download as s; print(s('$MODEL', allow_patterns=['*.json','*.safetensors','tokenizer*','*.model','*.txt','*.jinja']))")
 echo "model at $MP"
 mkdir -p data/rebuttal/logs
+if [ -z "${PILOT_ONLY:-}" ]; then
 for t in $TASKS; do
   if [ -f "data/rebuttal/acts/${NAME}_${t}.pt" ]; then echo "skip $t (done)"; continue; fi
   echo "=== extract $t"
@@ -36,6 +45,7 @@ fi
 mkdir -p rebuttal_results/metrics
 [ -f "rebuttal_results/report_${NAME}.md" ] || cp data/rebuttal/report_${NAME}.md data/rebuttal/hits_${NAME}.csv data/rebuttal/peaks_${NAME}.csv data/rebuttal/curves_${NAME}.png data/rebuttal/robustness_${NAME}.md rebuttal_results/
 cp data/rebuttal/metrics/${NAME}_*.csv rebuttal_results/metrics/
+fi
 # pilots: multi-step arithmetic word problems and multiple-choice kinship reasoning
 for pil in arith kin; do
   echo "=== pilot $pil ($NAME)"

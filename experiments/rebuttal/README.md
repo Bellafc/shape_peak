@@ -27,7 +27,7 @@ boundary, circular-shift null with 10,000 draws). Output: `rebuttal_results/` (u
 
 ## Pilots beyond single-word lookups
 
-`pilot.py` (GPU) and `pilot_eval.py` (CPU), run by `run.sh` after the metric comparison, on Qwen2.5-7B and Llama-3.1-8B:
+`pilot.py` (GPU) and `pilot_eval.py` (CPU), run by `run.sh` after the metric comparison, on Qwen2.5-7B and Llama-3.1-8B, and Phi-4 (14B; `MODELS=phi:Phi-4-14B:microsoft/phi-4 PILOT_ONLY=1 PRUNE_HF=1 bash experiments/rebuttal/run.sh`):
 
 - `arith`: multi-step arithmetic word problems (1, 2 or 3 operations; answer 0–9), short (~60 tokens) or long (24 unrelated
   sentences interleaved, ~300 tokens).
