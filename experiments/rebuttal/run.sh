@@ -9,7 +9,7 @@ export HF_HOME=${HF_HOME:-/workspace/hf}
 MODEL=${MODEL:-Qwen/Qwen2.5-7B-Instruct}; NAME=${NAME:-Qwen2.5-7B-Instruct}; FAM=${FAM:-qwen}
 TASKS="weekday month hour letter city continent capital2hop color ctxcolor emotion"
 
-[ -d data ] || { echo "unzipping data.zip"; unzip -q data.zip -x '__MACOSX/*'; }
+[ -d data ] || { echo "unzipping data.zip"; python -c "import zipfile; z=zipfile.ZipFile('data.zip'); z.extractall('.', [m for m in z.namelist() if not m.startswith('__MACOSX')])"; }
 pip install -q "transformers>=4.56,<5" accelerate huggingface_hub scikit-learn pandas scipy matplotlib 2>&1 | grep -v -i warning || true
 python -c "import torch, transformers; print('torch', torch.__version__, 'transformers', transformers.__version__, 'cuda', torch.cuda.is_available())"
 
