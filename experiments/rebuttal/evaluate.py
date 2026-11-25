@@ -10,7 +10,9 @@ Reads DATA/rebuttal/metrics/<model>_<task>.csv and the boundary layers already i
 Peaks: the paper's rule (Appendix C): search from round(0.25 L), local maximum, >= 1.5 x median of the searched layers; top 3 by height.
 Null: the paper's circular shift; each task's three peaks keep their spacing and are shifted together within the late layers
 (one shift per task, shared by all boundary types of that task), 10,000 draws.
-Writes DATA/rebuttal/report_<model>.md, peaks_<model>.csv, hits_<model>.csv, curves_<model>.png and prints the report."""
+Robustness (robustness_<model>.md): top-3 local maxima without the height threshold; the single highest late layer only;
+contrast = median over tasks of (late-layer max / late-layer median).
+Writes DATA/rebuttal/report_<model>.md, robustness_<model>.md, peaks_<model>.csv, hits_<model>.csv, curves_<model>.png and prints the report."""
 import sys as _s, os as _o; _s.path.insert(0, _o.path.join(_o.path.dirname(_o.path.abspath(__file__)), "..", "..")); from paths import DATA
 import sys, os, numpy as np, pandas as pd
 M = sys.argv[1] if len(sys.argv) > 1 else "Qwen2.5-7B-Instruct"
@@ -23,9 +25,10 @@ GROUPS = [("Reference", ["procrustes"]),
 METRICS = [m for _, g in GROUPS for m in g]
 BTYPES = ["probe", "patch", "steer", "handoff", "onset1", "onset8", "transfer"]
 
-def peaks(x):
+def peaks(x, peakr=None):
+    peakr = PEAKR if peakr is None else peakr
     NL = len(x); lo = int(round(NL * EARLY)); med = np.nanmedian(x[lo:])
-    pk = [L for L in range(max(1, lo), NL) if np.isfinite(x[L]) and x[L] >= np.nanmax(x[max(1, L - 1):L + 2]) and x[L] >= PEAKR * med]
+    pk = [L for L in range(max(1, lo), NL) if np.isfinite(x[L]) and x[L] >= np.nanmax(x[max(1, L - 1):L + 2]) and x[L] >= peakr * med]
     return sorted(pk, key=lambda L: -x[L])[:3]
 
 def rise(v, thr):
@@ -114,6 +117,17 @@ if __name__ == "__main__":
     L += ["", "## Top-3 peaks per task (highest first)\n", "| metric | " + " | ".join(TASKS) + " |", "|---" * (len(TASKS) + 1) + "|"]
     L += [f"| {m} | " + " | ".join(",".join(map(str, PK[m][t])) or "–" for t in TASKS) + " |" for m in METRICS]
     open(f"{R}/report_{M}.md", "w").write("\n".join(L) + "\n"); print("\n".join(L))
+    # robustness to the peak rule
+    RB = ["# Robustness to the peak rule: " + M + "\n",
+          "top3_noThr: top-3 local maxima without the 1.5x-median threshold. argmax: the single highest late layer. contrast: median over tasks of late max / late median.\n",
+          "| metric | top3_noThr within ±1 | p | argmax within ±1 | argmax null | p | contrast |", "|---|---|---|---|---|---|---|"]
+    for m in METRICS:
+        a = score({t: peaks(D[t][m].values, 1.0) for t in TASKS}, NL, B, rng=rng)
+        lo_ = {t: int(round(NL[t] * EARLY)) for t in TASKS}
+        b = score({t: [int(np.nanargmax(D[t][m].values[lo_[t]:]) + lo_[t])] for t in TASKS}, NL, B, rng=rng)
+        con = np.median([np.nanmax(D[t][m].values[lo_[t]:]) / np.nanmedian(D[t][m].values[lo_[t]:]) for t in TASKS])
+        RB.append(f"| {m} | {a['within1']:.2f} | {a['p']:.4f} | {b['within1']:.2f} | {b['null_within1']:.2f} | {b['p']:.4f} | {con:.1f} |")
+    open(f"{R}/robustness_{M}.md", "w").write("\n".join(RB) + "\n"); print("\n".join(RB))
     # figure: curves scaled to their maximum over the late layers, boundaries as ticks
     import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
     SHOW = [("procrustes", "k", "-"), ("grid_c0_s0_a0", "tab:red", "-"), ("dir_pair", "tab:blue", "-"), ("mag_scale", "tab:green", "--"),
