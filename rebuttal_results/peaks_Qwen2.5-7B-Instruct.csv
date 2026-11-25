@@ -1,0 +1,151 @@
+metric,task,peaks
+procrustes,weekday,23 18 16
+procrustes,month,23 18 25
+procrustes,hour,23 19
+procrustes,letter,22 27 14
+procrustes,city,19 21 23
+procrustes,continent,22 11 18
+procrustes,capital2hop,16 19 22
+procrustes,color,24 21 13
+procrustes,ctxcolor,19 21 24
+procrustes,emotion,22 13 18
+mag_scale,weekday,23 19 16
+mag_scale,month,23 19 14
+mag_scale,hour,23 19
+mag_scale,letter,23 27 18
+mag_scale,city,21 19 23
+mag_scale,continent,23 18
+mag_scale,capital2hop,22 19 16
+mag_scale,color,23 21 19
+mag_scale,ctxcolor,17 22 19
+mag_scale,emotion,13 18 22
+mag_norm,weekday,25 14 9
+mag_norm,month,25 23 14
+mag_norm,hour,25 23 14
+mag_norm,letter,23 25 9
+mag_norm,city,26 23 9
+mag_norm,continent,23 14 26
+mag_norm,capital2hop,14 23 26
+mag_norm,color,14 23 26
+mag_norm,ctxcolor,14 24 21
+mag_norm,emotion,9 21 25
+mag_sep,weekday,23 16 18
+mag_sep,month,23 18 16
+mag_sep,hour,23 16 27
+mag_sep,letter,22 27 18
+mag_sep,city,19 21 27
+mag_sep,continent,18 22 27
+mag_sep,capital2hop,19 22 16
+mag_sep,color,18 21 23
+mag_sep,ctxcolor,17 27 22
+mag_sep,emotion,18 13 27
+mag_classnorm,weekday,27 24 21
+mag_classnorm,month,27 24 19
+mag_classnorm,hour,27 25 19
+mag_classnorm,letter,27 21
+mag_classnorm,city,27 25 19
+mag_classnorm,continent,27 25 19
+mag_classnorm,capital2hop,25 27 21
+mag_classnorm,color,27 24 21
+mag_classnorm,ctxcolor,27 24
+mag_classnorm,emotion,27 22 24
+grid_c1_s1_a1,weekday,23 18 16
+grid_c1_s1_a1,month,23 18 25
+grid_c1_s1_a1,hour,23 19
+grid_c1_s1_a1,letter,22 27 14
+grid_c1_s1_a1,city,19 21 23
+grid_c1_s1_a1,continent,22 11 18
+grid_c1_s1_a1,capital2hop,16 19 22
+grid_c1_s1_a1,color,24 21 13
+grid_c1_s1_a1,ctxcolor,19 21 24
+grid_c1_s1_a1,emotion,22 13 18
+grid_c1_s1_a0,weekday,
+grid_c1_s1_a0,month,
+grid_c1_s1_a0,hour,
+grid_c1_s1_a0,letter,
+grid_c1_s1_a0,city,19
+grid_c1_s1_a0,continent,
+grid_c1_s1_a0,capital2hop,
+grid_c1_s1_a0,color,
+grid_c1_s1_a0,ctxcolor,
+grid_c1_s1_a0,emotion,13 7 18
+grid_c1_s0_a1,weekday,23 16 19
+grid_c1_s0_a1,month,23 19 14
+grid_c1_s0_a1,hour,23 19 16
+grid_c1_s0_a1,letter,23 27 18
+grid_c1_s0_a1,city,21 19 23
+grid_c1_s0_a1,continent,23 18
+grid_c1_s0_a1,capital2hop,22 19 16
+grid_c1_s0_a1,color,23 21 19
+grid_c1_s0_a1,ctxcolor,17 22 19
+grid_c1_s0_a1,emotion,13 18 22
+grid_c1_s0_a0,weekday,
+grid_c1_s0_a0,month,
+grid_c1_s0_a0,hour,
+grid_c1_s0_a0,letter,
+grid_c1_s0_a0,city,
+grid_c1_s0_a0,continent,
+grid_c1_s0_a0,capital2hop,
+grid_c1_s0_a0,color,
+grid_c1_s0_a0,ctxcolor,
+grid_c1_s0_a0,emotion,7 13
+grid_c0_s1_a1,weekday,23 27 19
+grid_c0_s1_a1,month,23 27 25
+grid_c0_s1_a1,hour,23 27 19
+grid_c0_s1_a1,letter,27 23 19
+grid_c0_s1_a1,city,27 24 21
+grid_c0_s1_a1,continent,27 25 23
+grid_c0_s1_a1,capital2hop,27 24 19
+grid_c0_s1_a1,color,23 27 21
+grid_c0_s1_a1,ctxcolor,27 22 19
+grid_c0_s1_a1,emotion,27 22 19
+grid_c0_s1_a0,weekday,27 9 23
+grid_c0_s1_a0,month,27 23
+grid_c0_s1_a0,hour,27 23
+grid_c0_s1_a0,letter,27 23
+grid_c0_s1_a0,city,27 9
+grid_c0_s1_a0,continent,27 9
+grid_c0_s1_a0,capital2hop,27 9
+grid_c0_s1_a0,color,27 9
+grid_c0_s1_a0,ctxcolor,27 9
+grid_c0_s1_a0,emotion,27 9
+grid_c0_s0_a1,weekday,23 25 27
+grid_c0_s0_a1,month,23 25 14
+grid_c0_s0_a1,hour,23 25 14
+grid_c0_s0_a1,letter,27 23 25
+grid_c0_s0_a1,city,26 23 9
+grid_c0_s0_a1,continent,23 14 26
+grid_c0_s0_a1,capital2hop,14 23 26
+grid_c0_s0_a1,color,24 26 14
+grid_c0_s0_a1,ctxcolor,27 14 24
+grid_c0_s0_a1,emotion,9 22 25
+grid_c0_s0_a0,weekday,27 9
+grid_c0_s0_a0,month,27 23
+grid_c0_s0_a0,hour,27 23 25
+grid_c0_s0_a0,letter,27 23
+grid_c0_s0_a0,city,27 9
+grid_c0_s0_a0,continent,27 9
+grid_c0_s0_a0,capital2hop,27
+grid_c0_s0_a0,color,27 9
+grid_c0_s0_a0,ctxcolor,27 9
+grid_c0_s0_a0,emotion,27 9
+dir_centroid,weekday,23
+dir_centroid,month,23
+dir_centroid,hour,22
+dir_centroid,letter,22
+dir_centroid,city,19 21 8
+dir_centroid,continent,18
+dir_centroid,capital2hop,19
+dir_centroid,color,
+dir_centroid,ctxcolor,
+dir_centroid,emotion,13 7 18
+dir_pair,weekday,23
+dir_pair,month,23
+dir_pair,hour,22
+dir_pair,letter,22
+dir_pair,city,19 21 8
+dir_pair,continent,18
+dir_pair,capital2hop,19
+dir_pair,color,
+dir_pair,ctxcolor,
+dir_pair,emotion,13 7 18
