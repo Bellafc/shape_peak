@@ -24,3 +24,14 @@ bash experiments/rebuttal/run.sh
 
 Steps: `extract_acts.py` (GPU, per task) → `alt_metrics.py` (CPU) → `evaluate.py` (CPU: peaks with the paper's rule, within ±1 of each
 boundary, circular-shift null with 10,000 draws). Output: `rebuttal_results/` (untracked on the GPU machine); the committed copies are in `experiments/rebuttal/results/`.
+
+## Pilots beyond single-word lookups
+
+`pilot.py` (GPU) and `pilot_eval.py` (CPU), run by `run.sh` after the metric comparison, on Qwen2.5-7B and Llama-3.1-8B:
+
+- `arith`: multi-step arithmetic word problems (1, 2 or 3 operations; answer 0–9), short (~60 tokens) or long (24 unrelated
+  sentences interleaved, ~300 tokens).
+- `kin`: multiple-choice kinship reasoning (CLUTRR-style, 2 or 3 hops); the answer class is the option letter A–D, options shuffled.
+
+Per layer: Procrustes shape change, identity probe, patching of the user message / all answer positions / the last position,
+α = 1 centroid-difference steering. Boundaries and peaks as in the paper; `pilot_report.md` tests them with the circular-shift null.
