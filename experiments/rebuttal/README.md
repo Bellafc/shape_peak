@@ -23,4 +23,4 @@ bash experiments/rebuttal/run.sh
 ```
 
 Steps: `extract_acts.py` (GPU, per task) → `alt_metrics.py` (CPU) → `evaluate.py` (CPU: peaks with the paper's rule, within ±1 of each
-boundary, circular-shift null with 10,000 draws). Output: `rebuttal_results/report_Qwen2.5-7B-Instruct.md`, `curves_*.png`, per-layer CSVs.
+boundary, circular-shift null with 10,000 draws). Output: `rebuttal_results/` (untracked on the GPU machine); the committed copies are in `experiments/rebuttal/results/`.
