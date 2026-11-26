@@ -1,0 +1,532 @@
+model,rule,task,layers,boundaries
+Qwen2.5-7B-Instruct,top3,capital2hop,16 19 22,probe=7 patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,top3,city,19 21 23,probe=19 patch=22 steer=22 handoff=21 onset1=22 onset8=19 transfer=21
+Qwen2.5-7B-Instruct,top3,color,24 21 19,probe=21 patch=22 steer=23 handoff=21 onset1=22 onset8=19 transfer=23
+Qwen2.5-7B-Instruct,top3,continent,22 18 16,patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,top3,ctxcolor,19 21 14,probe=17 patch=23 steer=23 handoff=21 onset1=23 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,top3,emotion,22 13 18,probe=13 patch=19 steer=21 onset1=19 onset8=16 transfer=22
+Qwen2.5-7B-Instruct,top3,hour,23 19 7,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,top3,letter,23 27 14,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=21 transfer=23
+Qwen2.5-7B-Instruct,top3,month,23 25 14,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,top3,weekday,23 16 12,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,argmax,capital2hop,16,probe=7 patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,argmax,city,19,probe=19 patch=22 steer=22 handoff=21 onset1=22 onset8=19 transfer=21
+Qwen2.5-7B-Instruct,argmax,color,24,probe=21 patch=22 steer=23 handoff=21 onset1=22 onset8=19 transfer=23
+Qwen2.5-7B-Instruct,argmax,continent,22,patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,argmax,ctxcolor,19,probe=17 patch=23 steer=23 handoff=21 onset1=23 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,argmax,emotion,22,probe=13 patch=19 steer=21 onset1=19 onset8=16 transfer=22
+Qwen2.5-7B-Instruct,argmax,hour,23,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,argmax,letter,23,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=21 transfer=23
+Qwen2.5-7B-Instruct,argmax,month,23,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,argmax,weekday,23,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 2,capital2hop,16 19 22 23 24,probe=7 patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 2,city,19 21,probe=19 patch=22 steer=22 handoff=21 onset1=22 onset8=19 transfer=21
+Qwen2.5-7B-Instruct,mad 2,color,21 23 24,probe=21 patch=22 steer=23 handoff=21 onset1=22 onset8=19 transfer=23
+Qwen2.5-7B-Instruct,mad 2,continent,16 18 19 22 23 24,patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 2,ctxcolor,19 21,probe=17 patch=23 steer=23 handoff=21 onset1=23 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 2,emotion,13 18 22,probe=13 patch=19 steer=21 onset1=19 onset8=16 transfer=22
+Qwen2.5-7B-Instruct,mad 2,hour,19 22 23 24 25,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 2,letter,22 23 27,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=21 transfer=23
+Qwen2.5-7B-Instruct,mad 2,month,14 22 23 24 25,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 2,weekday,16 21 22 23 24,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 3,capital2hop,16 19 22 23 24,probe=7 patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 3,city,19,probe=19 patch=22 steer=22 handoff=21 onset1=22 onset8=19 transfer=21
+Qwen2.5-7B-Instruct,mad 3,color,21 23 24,probe=21 patch=22 steer=23 handoff=21 onset1=22 onset8=19 transfer=23
+Qwen2.5-7B-Instruct,mad 3,continent,16 18 22 23 24,patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 3,ctxcolor,19 21,probe=17 patch=23 steer=23 handoff=21 onset1=23 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 3,emotion,22,probe=13 patch=19 steer=21 onset1=19 onset8=16 transfer=22
+Qwen2.5-7B-Instruct,mad 3,hour,19 22 23 24,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 3,letter,22 23 27,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=21 transfer=23
+Qwen2.5-7B-Instruct,mad 3,month,22 23 25,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 3,weekday,21 22 23 24,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 4,capital2hop,16,probe=7 patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 4,city,19,probe=19 patch=22 steer=22 handoff=21 onset1=22 onset8=19 transfer=21
+Qwen2.5-7B-Instruct,mad 4,color,21 23 24,probe=21 patch=22 steer=23 handoff=21 onset1=22 onset8=19 transfer=23
+Qwen2.5-7B-Instruct,mad 4,continent,18 22 23,patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 4,ctxcolor,19,probe=17 patch=23 steer=23 handoff=21 onset1=23 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 4,emotion,22,probe=13 patch=19 steer=21 onset1=19 onset8=16 transfer=22
+Qwen2.5-7B-Instruct,mad 4,hour,23,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 4,letter,22 23,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=21 transfer=23
+Qwen2.5-7B-Instruct,mad 4,month,23 25,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 4,weekday,23,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 5,capital2hop,,probe=7 patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 5,city,,probe=19 patch=22 steer=22 handoff=21 onset1=22 onset8=19 transfer=21
+Qwen2.5-7B-Instruct,mad 5,color,23 24,probe=21 patch=22 steer=23 handoff=21 onset1=22 onset8=19 transfer=23
+Qwen2.5-7B-Instruct,mad 5,continent,22 23,patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 5,ctxcolor,19,probe=17 patch=23 steer=23 handoff=21 onset1=23 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,mad 5,emotion,22,probe=13 patch=19 steer=21 onset1=19 onset8=16 transfer=22
+Qwen2.5-7B-Instruct,mad 5,hour,23,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 5,letter,22 23,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=21 transfer=23
+Qwen2.5-7B-Instruct,mad 5,month,23,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,mad 5,weekday,23,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,fold 2,capital2hop,16 19 21 22 23 24,probe=7 patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,fold 2,city,19 21,probe=19 patch=22 steer=22 handoff=21 onset1=22 onset8=19 transfer=21
+Qwen2.5-7B-Instruct,fold 2,color,11 19 21 23 24 25,probe=21 patch=22 steer=23 handoff=21 onset1=22 onset8=19 transfer=23
+Qwen2.5-7B-Instruct,fold 2,continent,11 16 18 19 21 22 23 24 25,patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,fold 2,ctxcolor,14 15 19 21,probe=17 patch=23 steer=23 handoff=21 onset1=23 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,fold 2,emotion,13 14 18 19 21 22,probe=13 patch=19 steer=21 onset1=19 onset8=16 transfer=22
+Qwen2.5-7B-Instruct,fold 2,hour,19 22 23 24 25,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,fold 2,letter,14 22 23 24 27,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=21 transfer=23
+Qwen2.5-7B-Instruct,fold 2,month,12 14 18 21 22 23 24 25,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,fold 2,weekday,16 21 22 23 24,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,fold 3,capital2hop,16 19 22 23 24,probe=7 patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,fold 3,city,19,probe=19 patch=22 steer=22 handoff=21 onset1=22 onset8=19 transfer=21
+Qwen2.5-7B-Instruct,fold 3,color,21 23 24,probe=21 patch=22 steer=23 handoff=21 onset1=22 onset8=19 transfer=23
+Qwen2.5-7B-Instruct,fold 3,continent,16 18 19 22 23 24,patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,fold 3,ctxcolor,19 21,probe=17 patch=23 steer=23 handoff=21 onset1=23 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,fold 3,emotion,13 18 22,probe=13 patch=19 steer=21 onset1=19 onset8=16 transfer=22
+Qwen2.5-7B-Instruct,fold 3,hour,19 22 23 24,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,fold 3,letter,22 23 27,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=21 transfer=23
+Qwen2.5-7B-Instruct,fold 3,month,14 22 23 25,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,fold 3,weekday,16 21 22 23 24,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,fold 4,capital2hop,16 19 22 23 24,probe=7 patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,fold 4,city,19,probe=19 patch=22 steer=22 handoff=21 onset1=22 onset8=19 transfer=21
+Qwen2.5-7B-Instruct,fold 4,color,21 23 24,probe=21 patch=22 steer=23 handoff=21 onset1=22 onset8=19 transfer=23
+Qwen2.5-7B-Instruct,fold 4,continent,16 18 19 22 23 24,patch=22 steer=22 handoff=22 onset1=22 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,fold 4,ctxcolor,19 21,probe=17 patch=23 steer=23 handoff=21 onset1=23 onset8=19 transfer=22
+Qwen2.5-7B-Instruct,fold 4,emotion,22,probe=13 patch=19 steer=21 onset1=19 onset8=16 transfer=22
+Qwen2.5-7B-Instruct,fold 4,hour,23,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,fold 4,letter,22 23 27,probe=23 patch=22 steer=23 handoff=22 onset1=23 onset8=21 transfer=23
+Qwen2.5-7B-Instruct,fold 4,month,23 25,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Qwen2.5-7B-Instruct,fold 4,weekday,23,probe=23 patch=23 steer=23 handoff=23 onset1=23 onset8=22 transfer=23
+Llama-3.1-8B-Instruct,top3,capital2hop,16 14 20,probe=4 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,top3,city,14 16 20,probe=14 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=16
+Llama-3.1-8B-Instruct,top3,color,14 22 12,probe=14 patch=16 steer=21 handoff=16 onset1=20 onset8=13 transfer=21
+Llama-3.1-8B-Instruct,top3,continent,14 17 20,probe=1 patch=17 steer=17 handoff=17 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,top3,ctxcolor,12 16 14,probe=12 patch=17 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,top3,emotion,13 18 20,patch=15 steer=15 onset1=16 onset8=13 transfer=18
+Llama-3.1-8B-Instruct,top3,hour,16 14 24,probe=16 patch=18 steer=18 handoff=16 onset1=18 onset8=16 transfer=18
+Llama-3.1-8B-Instruct,top3,letter,18 16 21,probe=18 patch=18 steer=18 handoff=18 onset1=18 onset8=14 transfer=28
+Llama-3.1-8B-Instruct,top3,month,18 21 16,probe=18 patch=18 steer=21 handoff=18 onset1=20 onset8=17 transfer=21
+Llama-3.1-8B-Instruct,top3,weekday,17 22 13,probe=18 patch=18 steer=18 handoff=18 onset1=21 onset8=16 transfer=22
+Llama-3.1-8B-Instruct,argmax,capital2hop,16,probe=4 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,argmax,city,14,probe=14 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=16
+Llama-3.1-8B-Instruct,argmax,color,14,probe=14 patch=16 steer=21 handoff=16 onset1=20 onset8=13 transfer=21
+Llama-3.1-8B-Instruct,argmax,continent,14,probe=1 patch=17 steer=17 handoff=17 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,argmax,ctxcolor,12,probe=12 patch=17 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,argmax,emotion,13,patch=15 steer=15 onset1=16 onset8=13 transfer=18
+Llama-3.1-8B-Instruct,argmax,hour,16,probe=16 patch=18 steer=18 handoff=16 onset1=18 onset8=16 transfer=18
+Llama-3.1-8B-Instruct,argmax,letter,18,probe=18 patch=18 steer=18 handoff=18 onset1=18 onset8=14 transfer=28
+Llama-3.1-8B-Instruct,argmax,month,18,probe=18 patch=18 steer=21 handoff=18 onset1=20 onset8=17 transfer=21
+Llama-3.1-8B-Instruct,argmax,weekday,17,probe=18 patch=18 steer=18 handoff=18 onset1=21 onset8=16 transfer=22
+Llama-3.1-8B-Instruct,mad 2,capital2hop,13 14 16 17 20 25,probe=4 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 2,city,13 14 16,probe=14 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=16
+Llama-3.1-8B-Instruct,mad 2,color,14 22,probe=14 patch=16 steer=21 handoff=16 onset1=20 onset8=13 transfer=21
+Llama-3.1-8B-Instruct,mad 2,continent,13 14 16 17 20,probe=1 patch=17 steer=17 handoff=17 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 2,ctxcolor,9 10 11 12 13 14 15 16,probe=12 patch=17 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 2,emotion,12 13 18,patch=15 steer=15 onset1=16 onset8=13 transfer=18
+Llama-3.1-8B-Instruct,mad 2,hour,16 17,probe=16 patch=18 steer=18 handoff=16 onset1=18 onset8=16 transfer=18
+Llama-3.1-8B-Instruct,mad 2,letter,13 16 18 20 21,probe=18 patch=18 steer=18 handoff=18 onset1=18 onset8=14 transfer=28
+Llama-3.1-8B-Instruct,mad 2,month,16 17 18 20 21,probe=18 patch=18 steer=21 handoff=18 onset1=20 onset8=17 transfer=21
+Llama-3.1-8B-Instruct,mad 2,weekday,13 16 17 18 21 22,probe=18 patch=18 steer=18 handoff=18 onset1=21 onset8=16 transfer=22
+Llama-3.1-8B-Instruct,mad 3,capital2hop,14 16 17 20,probe=4 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 3,city,14 16,probe=14 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=16
+Llama-3.1-8B-Instruct,mad 3,color,14 22,probe=14 patch=16 steer=21 handoff=16 onset1=20 onset8=13 transfer=21
+Llama-3.1-8B-Instruct,mad 3,continent,13 14 16 17 20,probe=1 patch=17 steer=17 handoff=17 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 3,ctxcolor,9 10 11 12 14 15 16,probe=12 patch=17 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 3,emotion,13,patch=15 steer=15 onset1=16 onset8=13 transfer=18
+Llama-3.1-8B-Instruct,mad 3,hour,16,probe=16 patch=18 steer=18 handoff=16 onset1=18 onset8=16 transfer=18
+Llama-3.1-8B-Instruct,mad 3,letter,16 18 20 21,probe=18 patch=18 steer=18 handoff=18 onset1=18 onset8=14 transfer=28
+Llama-3.1-8B-Instruct,mad 3,month,16 17 18 21,probe=18 patch=18 steer=21 handoff=18 onset1=20 onset8=17 transfer=21
+Llama-3.1-8B-Instruct,mad 3,weekday,13 17 18 22,probe=18 patch=18 steer=18 handoff=18 onset1=21 onset8=16 transfer=22
+Llama-3.1-8B-Instruct,mad 4,capital2hop,14 16 17 20,probe=4 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 4,city,14 16,probe=14 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=16
+Llama-3.1-8B-Instruct,mad 4,color,14,probe=14 patch=16 steer=21 handoff=16 onset1=20 onset8=13 transfer=21
+Llama-3.1-8B-Instruct,mad 4,continent,14 16 17 20,probe=1 patch=17 steer=17 handoff=17 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 4,ctxcolor,12 14 16,probe=12 patch=17 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 4,emotion,,patch=15 steer=15 onset1=16 onset8=13 transfer=18
+Llama-3.1-8B-Instruct,mad 4,hour,16,probe=16 patch=18 steer=18 handoff=16 onset1=18 onset8=16 transfer=18
+Llama-3.1-8B-Instruct,mad 4,letter,16 18 21,probe=18 patch=18 steer=18 handoff=18 onset1=18 onset8=14 transfer=28
+Llama-3.1-8B-Instruct,mad 4,month,18,probe=18 patch=18 steer=21 handoff=18 onset1=20 onset8=17 transfer=21
+Llama-3.1-8B-Instruct,mad 4,weekday,17 18 22,probe=18 patch=18 steer=18 handoff=18 onset1=21 onset8=16 transfer=22
+Llama-3.1-8B-Instruct,mad 5,capital2hop,14 16 20,probe=4 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 5,city,14,probe=14 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=16
+Llama-3.1-8B-Instruct,mad 5,color,,probe=14 patch=16 steer=21 handoff=16 onset1=20 onset8=13 transfer=21
+Llama-3.1-8B-Instruct,mad 5,continent,14 17 20,probe=1 patch=17 steer=17 handoff=17 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 5,ctxcolor,12 14 16,probe=12 patch=17 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,mad 5,emotion,,patch=15 steer=15 onset1=16 onset8=13 transfer=18
+Llama-3.1-8B-Instruct,mad 5,hour,16,probe=16 patch=18 steer=18 handoff=16 onset1=18 onset8=16 transfer=18
+Llama-3.1-8B-Instruct,mad 5,letter,18,probe=18 patch=18 steer=18 handoff=18 onset1=18 onset8=14 transfer=28
+Llama-3.1-8B-Instruct,mad 5,month,18,probe=18 patch=18 steer=21 handoff=18 onset1=20 onset8=17 transfer=21
+Llama-3.1-8B-Instruct,mad 5,weekday,17,probe=18 patch=18 steer=18 handoff=18 onset1=21 onset8=16 transfer=22
+Llama-3.1-8B-Instruct,fold 2,capital2hop,12 13 14 15 16 17 18 20 25,probe=4 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,fold 2,city,13 14 15 16 20,probe=14 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=16
+Llama-3.1-8B-Instruct,fold 2,color,12 14 22,probe=14 patch=16 steer=21 handoff=16 onset1=20 onset8=13 transfer=21
+Llama-3.1-8B-Instruct,fold 2,continent,13 14 16 17 18 20 25,probe=1 patch=17 steer=17 handoff=17 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,fold 2,ctxcolor,9 10 11 12 13 14 15 16,probe=12 patch=17 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,fold 2,emotion,10 12 13 15 18 20 21,patch=15 steer=15 onset1=16 onset8=13 transfer=18
+Llama-3.1-8B-Instruct,fold 2,hour,14 16 17,probe=16 patch=18 steer=18 handoff=16 onset1=18 onset8=16 transfer=18
+Llama-3.1-8B-Instruct,fold 2,letter,13 14 16 18 20 21,probe=18 patch=18 steer=18 handoff=18 onset1=18 onset8=14 transfer=28
+Llama-3.1-8B-Instruct,fold 2,month,16 17 18 20 21 22,probe=18 patch=18 steer=21 handoff=18 onset1=20 onset8=17 transfer=21
+Llama-3.1-8B-Instruct,fold 2,weekday,13 16 17 18 21 22 23 24,probe=18 patch=18 steer=18 handoff=18 onset1=21 onset8=16 transfer=22
+Llama-3.1-8B-Instruct,fold 3,capital2hop,13 14 16 17 20 25,probe=4 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,fold 3,city,13 14 16,probe=14 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=16
+Llama-3.1-8B-Instruct,fold 3,color,14 22,probe=14 patch=16 steer=21 handoff=16 onset1=20 onset8=13 transfer=21
+Llama-3.1-8B-Instruct,fold 3,continent,13 14 16 17 20,probe=1 patch=17 steer=17 handoff=17 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,fold 3,ctxcolor,9 10 11 12 13 14 15 16,probe=12 patch=17 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,fold 3,emotion,12 13 18 20,patch=15 steer=15 onset1=16 onset8=13 transfer=18
+Llama-3.1-8B-Instruct,fold 3,hour,16 17,probe=16 patch=18 steer=18 handoff=16 onset1=18 onset8=16 transfer=18
+Llama-3.1-8B-Instruct,fold 3,letter,16 18 20 21,probe=18 patch=18 steer=18 handoff=18 onset1=18 onset8=14 transfer=28
+Llama-3.1-8B-Instruct,fold 3,month,16 17 18 20 21,probe=18 patch=18 steer=21 handoff=18 onset1=20 onset8=17 transfer=21
+Llama-3.1-8B-Instruct,fold 3,weekday,13 16 17 18 22,probe=18 patch=18 steer=18 handoff=18 onset1=21 onset8=16 transfer=22
+Llama-3.1-8B-Instruct,fold 4,capital2hop,14 16 17 20,probe=4 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,fold 4,city,14 16,probe=14 patch=16 steer=17 handoff=16 onset1=17 onset8=14 transfer=16
+Llama-3.1-8B-Instruct,fold 4,color,14,probe=14 patch=16 steer=21 handoff=16 onset1=20 onset8=13 transfer=21
+Llama-3.1-8B-Instruct,fold 4,continent,13 14 16 17 20,probe=1 patch=17 steer=17 handoff=17 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,fold 4,ctxcolor,12 14 16,probe=12 patch=17 steer=17 handoff=16 onset1=17 onset8=14 transfer=17
+Llama-3.1-8B-Instruct,fold 4,emotion,13,patch=15 steer=15 onset1=16 onset8=13 transfer=18
+Llama-3.1-8B-Instruct,fold 4,hour,16,probe=16 patch=18 steer=18 handoff=16 onset1=18 onset8=16 transfer=18
+Llama-3.1-8B-Instruct,fold 4,letter,16 18 21,probe=18 patch=18 steer=18 handoff=18 onset1=18 onset8=14 transfer=28
+Llama-3.1-8B-Instruct,fold 4,month,18 21,probe=18 patch=18 steer=21 handoff=18 onset1=20 onset8=17 transfer=21
+Llama-3.1-8B-Instruct,fold 4,weekday,13 17 18 22,probe=18 patch=18 steer=18 handoff=18 onset1=21 onset8=16 transfer=22
+Mistral-7B-Instruct-v0.3,top3,capital2hop,18 15 31,probe=1 patch=18 steer=18 handoff=18 onset1=18 onset8=16 transfer=18
+Mistral-7B-Instruct-v0.3,top3,city,15 18 12,probe=15 patch=18 steer=19 handoff=18 onset1=18 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,top3,color,15 19 23,probe=18 patch=19 steer=19 handoff=17 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,top3,continent,18 14 31,patch=18 steer=19 handoff=18 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,top3,ctxcolor,19 15 13,probe=15 patch=19 steer=19 handoff=16 onset1=19 onset8=15 transfer=19
+Mistral-7B-Instruct-v0.3,top3,emotion,13 20 15,patch=20 steer=20 onset1=19 onset8=14 transfer=20
+Mistral-7B-Instruct-v0.3,top3,letter,19 31 28,probe=23 patch=20 steer=21 handoff=20 onset1=20 onset8=16 transfer=28
+Mistral-7B-Instruct-v0.3,top3,month,20 17 25,probe=20 patch=20 steer=20 handoff=19 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,top3,weekday,20 17 25,probe=20 patch=20 steer=21 handoff=20 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,argmax,capital2hop,18,probe=1 patch=18 steer=18 handoff=18 onset1=18 onset8=16 transfer=18
+Mistral-7B-Instruct-v0.3,argmax,city,15,probe=15 patch=18 steer=19 handoff=18 onset1=18 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,argmax,color,15,probe=18 patch=19 steer=19 handoff=17 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,argmax,continent,18,patch=18 steer=19 handoff=18 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,argmax,ctxcolor,19,probe=15 patch=19 steer=19 handoff=16 onset1=19 onset8=15 transfer=19
+Mistral-7B-Instruct-v0.3,argmax,emotion,13,patch=20 steer=20 onset1=19 onset8=14 transfer=20
+Mistral-7B-Instruct-v0.3,argmax,letter,19,probe=23 patch=20 steer=21 handoff=20 onset1=20 onset8=16 transfer=28
+Mistral-7B-Instruct-v0.3,argmax,month,20,probe=20 patch=20 steer=20 handoff=19 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,argmax,weekday,20,probe=20 patch=20 steer=21 handoff=20 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,mad 2,capital2hop,15 18 22 30 31,probe=1 patch=18 steer=18 handoff=18 onset1=18 onset8=16 transfer=18
+Mistral-7B-Instruct-v0.3,mad 2,city,15 18,probe=15 patch=18 steer=19 handoff=18 onset1=18 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 2,color,12 15 18 19 23 25 26,probe=18 patch=19 steer=19 handoff=17 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 2,continent,14 18 31,patch=18 steer=19 handoff=18 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 2,ctxcolor,8 13 14 15 16 19,probe=15 patch=19 steer=19 handoff=16 onset1=19 onset8=15 transfer=19
+Mistral-7B-Instruct-v0.3,mad 2,emotion,12 13 15 20 26,patch=20 steer=20 onset1=19 onset8=14 transfer=20
+Mistral-7B-Instruct-v0.3,mad 2,letter,19 20 21 31,probe=23 patch=20 steer=21 handoff=20 onset1=20 onset8=16 transfer=28
+Mistral-7B-Instruct-v0.3,mad 2,month,17 20,probe=20 patch=20 steer=20 handoff=19 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,mad 2,weekday,17 19 20 21,probe=20 patch=20 steer=21 handoff=20 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,mad 3,capital2hop,15 18 30 31,probe=1 patch=18 steer=18 handoff=18 onset1=18 onset8=16 transfer=18
+Mistral-7B-Instruct-v0.3,mad 3,city,15 18,probe=15 patch=18 steer=19 handoff=18 onset1=18 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 3,color,12 15 19 23 25 26,probe=18 patch=19 steer=19 handoff=17 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 3,continent,14 18 31,patch=18 steer=19 handoff=18 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 3,ctxcolor,13 15 16 19,probe=15 patch=19 steer=19 handoff=16 onset1=19 onset8=15 transfer=19
+Mistral-7B-Instruct-v0.3,mad 3,emotion,12 13 20,patch=20 steer=20 onset1=19 onset8=14 transfer=20
+Mistral-7B-Instruct-v0.3,mad 3,letter,19 31,probe=23 patch=20 steer=21 handoff=20 onset1=20 onset8=16 transfer=28
+Mistral-7B-Instruct-v0.3,mad 3,month,17 20,probe=20 patch=20 steer=20 handoff=19 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,mad 3,weekday,17 19 20 21,probe=20 patch=20 steer=21 handoff=20 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,mad 4,capital2hop,15 18 30 31,probe=1 patch=18 steer=18 handoff=18 onset1=18 onset8=16 transfer=18
+Mistral-7B-Instruct-v0.3,mad 4,city,15 18,probe=15 patch=18 steer=19 handoff=18 onset1=18 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 4,color,15 19 23 25,probe=18 patch=19 steer=19 handoff=17 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 4,continent,14 18,patch=18 steer=19 handoff=18 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 4,ctxcolor,13 15 19,probe=15 patch=19 steer=19 handoff=16 onset1=19 onset8=15 transfer=19
+Mistral-7B-Instruct-v0.3,mad 4,emotion,12 13 20,patch=20 steer=20 onset1=19 onset8=14 transfer=20
+Mistral-7B-Instruct-v0.3,mad 4,letter,19 31,probe=23 patch=20 steer=21 handoff=20 onset1=20 onset8=16 transfer=28
+Mistral-7B-Instruct-v0.3,mad 4,month,17 20,probe=20 patch=20 steer=20 handoff=19 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,mad 4,weekday,17 19 20 21,probe=20 patch=20 steer=21 handoff=20 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,mad 5,capital2hop,15 18 31,probe=1 patch=18 steer=18 handoff=18 onset1=18 onset8=16 transfer=18
+Mistral-7B-Instruct-v0.3,mad 5,city,15 18,probe=15 patch=18 steer=19 handoff=18 onset1=18 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 5,color,15 19,probe=18 patch=19 steer=19 handoff=17 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 5,continent,18,patch=18 steer=19 handoff=18 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,mad 5,ctxcolor,13 15 19,probe=15 patch=19 steer=19 handoff=16 onset1=19 onset8=15 transfer=19
+Mistral-7B-Instruct-v0.3,mad 5,emotion,13,patch=20 steer=20 onset1=19 onset8=14 transfer=20
+Mistral-7B-Instruct-v0.3,mad 5,letter,19,probe=23 patch=20 steer=21 handoff=20 onset1=20 onset8=16 transfer=28
+Mistral-7B-Instruct-v0.3,mad 5,month,20,probe=20 patch=20 steer=20 handoff=19 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,mad 5,weekday,17 19 20 21,probe=20 patch=20 steer=21 handoff=20 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,fold 2,capital2hop,12 15 18 19 22 24 25 30 31,probe=1 patch=18 steer=18 handoff=18 onset1=18 onset8=16 transfer=18
+Mistral-7B-Instruct-v0.3,fold 2,city,12 15 18,probe=15 patch=18 steer=19 handoff=18 onset1=18 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,fold 2,color,12 13 15 18 19 23 25 26,probe=18 patch=19 steer=19 handoff=17 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,fold 2,continent,14 18 22 30 31,patch=18 steer=19 handoff=18 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,fold 2,ctxcolor,8 13 14 15 16 19,probe=15 patch=19 steer=19 handoff=16 onset1=19 onset8=15 transfer=19
+Mistral-7B-Instruct-v0.3,fold 2,emotion,12 13 14 15 16 20 26,patch=20 steer=20 onset1=19 onset8=14 transfer=20
+Mistral-7B-Instruct-v0.3,fold 2,letter,13 15 16 17 19 20 21 28 31,probe=23 patch=20 steer=21 handoff=20 onset1=20 onset8=16 transfer=28
+Mistral-7B-Instruct-v0.3,fold 2,month,17 20,probe=20 patch=20 steer=20 handoff=19 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,fold 2,weekday,17 19 20 21 25,probe=20 patch=20 steer=21 handoff=20 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,fold 3,capital2hop,15 18 30 31,probe=1 patch=18 steer=18 handoff=18 onset1=18 onset8=16 transfer=18
+Mistral-7B-Instruct-v0.3,fold 3,city,15 18,probe=15 patch=18 steer=19 handoff=18 onset1=18 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,fold 3,color,12 15 19 23 25 26,probe=18 patch=19 steer=19 handoff=17 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,fold 3,continent,14 18 31,patch=18 steer=19 handoff=18 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,fold 3,ctxcolor,13 14 15 16 19,probe=15 patch=19 steer=19 handoff=16 onset1=19 onset8=15 transfer=19
+Mistral-7B-Instruct-v0.3,fold 3,emotion,12 13 15 20 26,patch=20 steer=20 onset1=19 onset8=14 transfer=20
+Mistral-7B-Instruct-v0.3,fold 3,letter,19 20 21 31,probe=23 patch=20 steer=21 handoff=20 onset1=20 onset8=16 transfer=28
+Mistral-7B-Instruct-v0.3,fold 3,month,17 20,probe=20 patch=20 steer=20 handoff=19 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,fold 3,weekday,17 19 20 21,probe=20 patch=20 steer=21 handoff=20 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,fold 4,capital2hop,15 18 30 31,probe=1 patch=18 steer=18 handoff=18 onset1=18 onset8=16 transfer=18
+Mistral-7B-Instruct-v0.3,fold 4,city,15 18,probe=15 patch=18 steer=19 handoff=18 onset1=18 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,fold 4,color,15 19 23 25 26,probe=18 patch=19 steer=19 handoff=17 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,fold 4,continent,14 18 31,patch=18 steer=19 handoff=18 onset1=19 onset8=15 transfer=18
+Mistral-7B-Instruct-v0.3,fold 4,ctxcolor,13 15 19,probe=15 patch=19 steer=19 handoff=16 onset1=19 onset8=15 transfer=19
+Mistral-7B-Instruct-v0.3,fold 4,emotion,12 13 20,patch=20 steer=20 onset1=19 onset8=14 transfer=20
+Mistral-7B-Instruct-v0.3,fold 4,letter,19 31,probe=23 patch=20 steer=21 handoff=20 onset1=20 onset8=16 transfer=28
+Mistral-7B-Instruct-v0.3,fold 4,month,17 20,probe=20 patch=20 steer=20 handoff=19 onset1=21 onset8=17 transfer=25
+Mistral-7B-Instruct-v0.3,fold 4,weekday,17 19 20 21,probe=20 patch=20 steer=21 handoff=20 onset1=21 onset8=17 transfer=25
+Gemma-2-9B-it,top3,capital2hop,25 32 19,probe=3 patch=25 steer=25 handoff=25 onset1=25 onset8=22 transfer=25
+Gemma-2-9B-it,top3,city,25 29 20,probe=3 patch=25 steer=29 handoff=25 onset1=28 onset8=20 transfer=25
+Gemma-2-9B-it,top3,color,29 33 41,probe=25 patch=29 steer=29 handoff=26 onset1=29 onset8=23 transfer=29
+Gemma-2-9B-it,top3,continent,25 32 19,probe=1 patch=25 steer=25 handoff=25 onset1=25 onset8=21 transfer=25
+Gemma-2-9B-it,top3,ctxcolor,13 18 28,probe=18 patch=28 steer=28 handoff=27 onset1=28 onset8=24 transfer=28
+Gemma-2-9B-it,top3,emotion,20 34 31,patch=25 steer=25 onset1=25 onset8=21
+Gemma-2-9B-it,top3,hour,33 31 28,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=33
+Gemma-2-9B-it,top3,letter,27 16 33,probe=33 patch=29 steer=33 handoff=29 onset1=30 onset8=26 transfer=36
+Gemma-2-9B-it,top3,month,33 36 31,probe=31 patch=29 steer=33 handoff=29 onset1=32 onset8=26 transfer=32
+Gemma-2-9B-it,top3,weekday,34 19 28,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=32
+Gemma-2-9B-it,argmax,capital2hop,25,probe=3 patch=25 steer=25 handoff=25 onset1=25 onset8=22 transfer=25
+Gemma-2-9B-it,argmax,city,25,probe=3 patch=25 steer=29 handoff=25 onset1=28 onset8=20 transfer=25
+Gemma-2-9B-it,argmax,color,29,probe=25 patch=29 steer=29 handoff=26 onset1=29 onset8=23 transfer=29
+Gemma-2-9B-it,argmax,continent,25,probe=1 patch=25 steer=25 handoff=25 onset1=25 onset8=21 transfer=25
+Gemma-2-9B-it,argmax,ctxcolor,13,probe=18 patch=28 steer=28 handoff=27 onset1=28 onset8=24 transfer=28
+Gemma-2-9B-it,argmax,emotion,20,patch=25 steer=25 onset1=25 onset8=21
+Gemma-2-9B-it,argmax,hour,33,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=33
+Gemma-2-9B-it,argmax,letter,27,probe=33 patch=29 steer=33 handoff=29 onset1=30 onset8=26 transfer=36
+Gemma-2-9B-it,argmax,month,33,probe=31 patch=29 steer=33 handoff=29 onset1=32 onset8=26 transfer=32
+Gemma-2-9B-it,argmax,weekday,34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=32
+Gemma-2-9B-it,mad 2,capital2hop,18 19 25 32,probe=3 patch=25 steer=25 handoff=25 onset1=25 onset8=22 transfer=25
+Gemma-2-9B-it,mad 2,city,20 25 29 31,probe=3 patch=25 steer=29 handoff=25 onset1=28 onset8=20 transfer=25
+Gemma-2-9B-it,mad 2,color,29 33 34,probe=25 patch=29 steer=29 handoff=26 onset1=29 onset8=23 transfer=29
+Gemma-2-9B-it,mad 2,continent,10 18 19 25 29 30 32,probe=1 patch=25 steer=25 handoff=25 onset1=25 onset8=21 transfer=25
+Gemma-2-9B-it,mad 2,ctxcolor,13 16 18 20 28,probe=18 patch=28 steer=28 handoff=27 onset1=28 onset8=24 transfer=28
+Gemma-2-9B-it,mad 2,emotion,19 20,patch=25 steer=25 onset1=25 onset8=21
+Gemma-2-9B-it,mad 2,hour,28 29 31 32 33 34 35 36 37,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=33
+Gemma-2-9B-it,mad 2,letter,16 27 28 29 32 33 34,probe=33 patch=29 steer=33 handoff=29 onset1=30 onset8=26 transfer=36
+Gemma-2-9B-it,mad 2,month,26 31 33 34 36,probe=31 patch=29 steer=33 handoff=29 onset1=32 onset8=26 transfer=32
+Gemma-2-9B-it,mad 2,weekday,19 28 33 34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=32
+Gemma-2-9B-it,mad 3,capital2hop,19 25 32,probe=3 patch=25 steer=25 handoff=25 onset1=25 onset8=22 transfer=25
+Gemma-2-9B-it,mad 3,city,20 25 29,probe=3 patch=25 steer=29 handoff=25 onset1=28 onset8=20 transfer=25
+Gemma-2-9B-it,mad 3,color,29 33,probe=25 patch=29 steer=29 handoff=26 onset1=29 onset8=23 transfer=29
+Gemma-2-9B-it,mad 3,continent,10 19 25 32,probe=1 patch=25 steer=25 handoff=25 onset1=25 onset8=21 transfer=25
+Gemma-2-9B-it,mad 3,ctxcolor,13 16 18 20 28,probe=18 patch=28 steer=28 handoff=27 onset1=28 onset8=24 transfer=28
+Gemma-2-9B-it,mad 3,emotion,,patch=25 steer=25 onset1=25 onset8=21
+Gemma-2-9B-it,mad 3,hour,28 31 32 33 34 35 36 37,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=33
+Gemma-2-9B-it,mad 3,letter,16 27 28 29 33 34,probe=33 patch=29 steer=33 handoff=29 onset1=30 onset8=26 transfer=36
+Gemma-2-9B-it,mad 3,month,33 34 36,probe=31 patch=29 steer=33 handoff=29 onset1=32 onset8=26 transfer=32
+Gemma-2-9B-it,mad 3,weekday,19 33 34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=32
+Gemma-2-9B-it,mad 4,capital2hop,25 32,probe=3 patch=25 steer=25 handoff=25 onset1=25 onset8=22 transfer=25
+Gemma-2-9B-it,mad 4,city,25 29,probe=3 patch=25 steer=29 handoff=25 onset1=28 onset8=20 transfer=25
+Gemma-2-9B-it,mad 4,color,29 33,probe=25 patch=29 steer=29 handoff=26 onset1=29 onset8=23 transfer=29
+Gemma-2-9B-it,mad 4,continent,19 25 32,probe=1 patch=25 steer=25 handoff=25 onset1=25 onset8=21 transfer=25
+Gemma-2-9B-it,mad 4,ctxcolor,13 18 28,probe=18 patch=28 steer=28 handoff=27 onset1=28 onset8=24 transfer=28
+Gemma-2-9B-it,mad 4,emotion,,patch=25 steer=25 onset1=25 onset8=21
+Gemma-2-9B-it,mad 4,hour,28 31 33 34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=33
+Gemma-2-9B-it,mad 4,letter,16 27 28 33 34,probe=33 patch=29 steer=33 handoff=29 onset1=30 onset8=26 transfer=36
+Gemma-2-9B-it,mad 4,month,33 34 36,probe=31 patch=29 steer=33 handoff=29 onset1=32 onset8=26 transfer=32
+Gemma-2-9B-it,mad 4,weekday,33 34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=32
+Gemma-2-9B-it,mad 5,capital2hop,25 32,probe=3 patch=25 steer=25 handoff=25 onset1=25 onset8=22 transfer=25
+Gemma-2-9B-it,mad 5,city,25 29,probe=3 patch=25 steer=29 handoff=25 onset1=28 onset8=20 transfer=25
+Gemma-2-9B-it,mad 5,color,29,probe=25 patch=29 steer=29 handoff=26 onset1=29 onset8=23 transfer=29
+Gemma-2-9B-it,mad 5,continent,19 25 32,probe=1 patch=25 steer=25 handoff=25 onset1=25 onset8=21 transfer=25
+Gemma-2-9B-it,mad 5,ctxcolor,13 18,probe=18 patch=28 steer=28 handoff=27 onset1=28 onset8=24 transfer=28
+Gemma-2-9B-it,mad 5,emotion,,patch=25 steer=25 onset1=25 onset8=21
+Gemma-2-9B-it,mad 5,hour,31 33,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=33
+Gemma-2-9B-it,mad 5,letter,16 27 28 33,probe=33 patch=29 steer=33 handoff=29 onset1=30 onset8=26 transfer=36
+Gemma-2-9B-it,mad 5,month,33 34,probe=31 patch=29 steer=33 handoff=29 onset1=32 onset8=26 transfer=32
+Gemma-2-9B-it,mad 5,weekday,33 34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=32
+Gemma-2-9B-it,fold 2,capital2hop,18 19 22 25 29 32 41,probe=3 patch=25 steer=25 handoff=25 onset1=25 onset8=22 transfer=25
+Gemma-2-9B-it,fold 2,city,10 17 20 25 29 31 41,probe=3 patch=25 steer=29 handoff=25 onset1=28 onset8=20 transfer=25
+Gemma-2-9B-it,fold 2,color,29 33 34,probe=25 patch=29 steer=29 handoff=26 onset1=29 onset8=23 transfer=29
+Gemma-2-9B-it,fold 2,continent,10 18 19 25 26 29 30 32,probe=1 patch=25 steer=25 handoff=25 onset1=25 onset8=21 transfer=25
+Gemma-2-9B-it,fold 2,ctxcolor,13 16 18 19 20 28 29 34 37,probe=18 patch=28 steer=28 handoff=27 onset1=28 onset8=24 transfer=28
+Gemma-2-9B-it,fold 2,emotion,16 19 20 31 34,patch=25 steer=25 onset1=25 onset8=21
+Gemma-2-9B-it,fold 2,hour,28 29 31 32 33 34 35 36 37,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=33
+Gemma-2-9B-it,fold 2,letter,16 27 28 29 32 33 34 41,probe=33 patch=29 steer=33 handoff=29 onset1=30 onset8=26 transfer=36
+Gemma-2-9B-it,fold 2,month,18 26 28 30 31 32 33 34 36,probe=31 patch=29 steer=33 handoff=29 onset1=32 onset8=26 transfer=32
+Gemma-2-9B-it,fold 2,weekday,18 19 21 28 29 33 34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=32
+Gemma-2-9B-it,fold 3,capital2hop,19 25 32,probe=3 patch=25 steer=25 handoff=25 onset1=25 onset8=22 transfer=25
+Gemma-2-9B-it,fold 3,city,20 25 29,probe=3 patch=25 steer=29 handoff=25 onset1=28 onset8=20 transfer=25
+Gemma-2-9B-it,fold 3,color,29 33,probe=25 patch=29 steer=29 handoff=26 onset1=29 onset8=23 transfer=29
+Gemma-2-9B-it,fold 3,continent,10 19 25 29 32,probe=1 patch=25 steer=25 handoff=25 onset1=25 onset8=21 transfer=25
+Gemma-2-9B-it,fold 3,ctxcolor,13 16 18 20 28,probe=18 patch=28 steer=28 handoff=27 onset1=28 onset8=24 transfer=28
+Gemma-2-9B-it,fold 3,emotion,19 20,patch=25 steer=25 onset1=25 onset8=21
+Gemma-2-9B-it,fold 3,hour,28 31 32 33 34 35 36 37,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=33
+Gemma-2-9B-it,fold 3,letter,16 27 28 29 33 34,probe=33 patch=29 steer=33 handoff=29 onset1=30 onset8=26 transfer=36
+Gemma-2-9B-it,fold 3,month,31 33 34 36,probe=31 patch=29 steer=33 handoff=29 onset1=32 onset8=26 transfer=32
+Gemma-2-9B-it,fold 3,weekday,19 28 33 34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=32
+Gemma-2-9B-it,fold 4,capital2hop,25 32,probe=3 patch=25 steer=25 handoff=25 onset1=25 onset8=22 transfer=25
+Gemma-2-9B-it,fold 4,city,25 29,probe=3 patch=25 steer=29 handoff=25 onset1=28 onset8=20 transfer=25
+Gemma-2-9B-it,fold 4,color,29 33,probe=25 patch=29 steer=29 handoff=26 onset1=29 onset8=23 transfer=29
+Gemma-2-9B-it,fold 4,continent,10 19 25 32,probe=1 patch=25 steer=25 handoff=25 onset1=25 onset8=21 transfer=25
+Gemma-2-9B-it,fold 4,ctxcolor,13 16 18 28,probe=18 patch=28 steer=28 handoff=27 onset1=28 onset8=24 transfer=28
+Gemma-2-9B-it,fold 4,emotion,,patch=25 steer=25 onset1=25 onset8=21
+Gemma-2-9B-it,fold 4,hour,28 31 32 33 34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=33
+Gemma-2-9B-it,fold 4,letter,16 27 28 33,probe=33 patch=29 steer=33 handoff=29 onset1=30 onset8=26 transfer=36
+Gemma-2-9B-it,fold 4,month,33 34 36,probe=31 patch=29 steer=33 handoff=29 onset1=32 onset8=26 transfer=32
+Gemma-2-9B-it,fold 4,weekday,33 34,probe=29 patch=29 steer=33 handoff=29 onset1=33 onset8=28 transfer=32
+Qwen2.5-14B-Instruct,top3,capital2hop,34 32 36,probe=4 patch=34 steer=34 handoff=34 onset1=34 onset8=30 transfer=32
+Qwen2.5-14B-Instruct,top3,city,34 31 23,probe=9 patch=34 steer=35 handoff=32 onset1=35 onset8=28 transfer=34
+Qwen2.5-14B-Instruct,top3,color,41 43 23,patch=34 steer=36 handoff=34 onset1=35 onset8=29 transfer=33
+Qwen2.5-14B-Instruct,top3,continent,34 32 26,patch=34 steer=35 handoff=34 onset1=35 onset8=29 transfer=32
+Qwen2.5-14B-Instruct,top3,ctxcolor,28 26 23,probe=28 patch=36 steer=36 handoff=34 onset1=36 onset8=29 transfer=35
+Qwen2.5-14B-Instruct,top3,emotion,28 23 40,patch=31 steer=31 onset1=31 onset8=24 transfer=31
+Qwen2.5-14B-Instruct,top3,hour,37 40 32,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=35 transfer=37
+Qwen2.5-14B-Instruct,top3,letter,37 40 32,probe=37 patch=36 steer=38 handoff=36 onset1=37 onset8=33 transfer=40
+Qwen2.5-14B-Instruct,top3,month,37 40 42,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=33 transfer=37
+Qwen2.5-14B-Instruct,top3,weekday,37 40 32,probe=36 patch=36 steer=37 handoff=36 onset1=37 onset8=34 transfer=36
+Qwen2.5-14B-Instruct,argmax,capital2hop,34,probe=4 patch=34 steer=34 handoff=34 onset1=34 onset8=30 transfer=32
+Qwen2.5-14B-Instruct,argmax,city,34,probe=9 patch=34 steer=35 handoff=32 onset1=35 onset8=28 transfer=34
+Qwen2.5-14B-Instruct,argmax,color,41,patch=34 steer=36 handoff=34 onset1=35 onset8=29 transfer=33
+Qwen2.5-14B-Instruct,argmax,continent,34,patch=34 steer=35 handoff=34 onset1=35 onset8=29 transfer=32
+Qwen2.5-14B-Instruct,argmax,ctxcolor,28,probe=28 patch=36 steer=36 handoff=34 onset1=36 onset8=29 transfer=35
+Qwen2.5-14B-Instruct,argmax,emotion,28,patch=31 steer=31 onset1=31 onset8=24 transfer=31
+Qwen2.5-14B-Instruct,argmax,hour,37,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=35 transfer=37
+Qwen2.5-14B-Instruct,argmax,letter,37,probe=37 patch=36 steer=38 handoff=36 onset1=37 onset8=33 transfer=40
+Qwen2.5-14B-Instruct,argmax,month,37,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=33 transfer=37
+Qwen2.5-14B-Instruct,argmax,weekday,37,probe=36 patch=36 steer=37 handoff=36 onset1=37 onset8=34 transfer=36
+Qwen2.5-14B-Instruct,mad 2,capital2hop,26 27 31 32 34 36,probe=4 patch=34 steer=34 handoff=34 onset1=34 onset8=30 transfer=32
+Qwen2.5-14B-Instruct,mad 2,city,22 23 31 32 34 35 36 39,probe=9 patch=34 steer=35 handoff=32 onset1=35 onset8=28 transfer=34
+Qwen2.5-14B-Instruct,mad 2,color,23 40 41 43,patch=34 steer=36 handoff=34 onset1=35 onset8=29 transfer=33
+Qwen2.5-14B-Instruct,mad 2,continent,26 27 31 32 34 35 36,patch=34 steer=35 handoff=34 onset1=35 onset8=29 transfer=32
+Qwen2.5-14B-Instruct,mad 2,ctxcolor,20 23 26 28 32 36 43,probe=28 patch=36 steer=36 handoff=34 onset1=36 onset8=29 transfer=35
+Qwen2.5-14B-Instruct,mad 2,emotion,15 23 24 28 29 33 40 41,patch=31 steer=31 onset1=31 onset8=24 transfer=31
+Qwen2.5-14B-Instruct,mad 2,hour,32 36 37 38 40 42 47,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=35 transfer=37
+Qwen2.5-14B-Instruct,mad 2,letter,28 32 36 37 38 40,probe=37 patch=36 steer=38 handoff=36 onset1=37 onset8=33 transfer=40
+Qwen2.5-14B-Instruct,mad 2,month,36 37 38 40 41 42,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=33 transfer=37
+Qwen2.5-14B-Instruct,mad 2,weekday,37 39 40,probe=36 patch=36 steer=37 handoff=36 onset1=37 onset8=34 transfer=36
+Qwen2.5-14B-Instruct,mad 3,capital2hop,32 34 36,probe=4 patch=34 steer=34 handoff=34 onset1=34 onset8=30 transfer=32
+Qwen2.5-14B-Instruct,mad 3,city,22 23 31 32 34 35,probe=9 patch=34 steer=35 handoff=32 onset1=35 onset8=28 transfer=34
+Qwen2.5-14B-Instruct,mad 3,color,41 43,patch=34 steer=36 handoff=34 onset1=35 onset8=29 transfer=33
+Qwen2.5-14B-Instruct,mad 3,continent,26 31 32 34,patch=34 steer=35 handoff=34 onset1=35 onset8=29 transfer=32
+Qwen2.5-14B-Instruct,mad 3,ctxcolor,23 26 28 32 36 43,probe=28 patch=36 steer=36 handoff=34 onset1=36 onset8=29 transfer=35
+Qwen2.5-14B-Instruct,mad 3,emotion,15 23 24 28 29 33 40,patch=31 steer=31 onset1=31 onset8=24 transfer=31
+Qwen2.5-14B-Instruct,mad 3,hour,32 36 37 38 40,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=35 transfer=37
+Qwen2.5-14B-Instruct,mad 3,letter,36 37 38 40,probe=37 patch=36 steer=38 handoff=36 onset1=37 onset8=33 transfer=40
+Qwen2.5-14B-Instruct,mad 3,month,36 37 38 40,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=33 transfer=37
+Qwen2.5-14B-Instruct,mad 3,weekday,37 40,probe=36 patch=36 steer=37 handoff=36 onset1=37 onset8=34 transfer=36
+Qwen2.5-14B-Instruct,mad 4,capital2hop,32 34 36,probe=4 patch=34 steer=34 handoff=34 onset1=34 onset8=30 transfer=32
+Qwen2.5-14B-Instruct,mad 4,city,23 31 34 35,probe=9 patch=34 steer=35 handoff=32 onset1=35 onset8=28 transfer=34
+Qwen2.5-14B-Instruct,mad 4,color,41,patch=34 steer=36 handoff=34 onset1=35 onset8=29 transfer=33
+Qwen2.5-14B-Instruct,mad 4,continent,31 32 34,patch=34 steer=35 handoff=34 onset1=35 onset8=29 transfer=32
+Qwen2.5-14B-Instruct,mad 4,ctxcolor,23 26 28 36,probe=28 patch=36 steer=36 handoff=34 onset1=36 onset8=29 transfer=35
+Qwen2.5-14B-Instruct,mad 4,emotion,15 23 28 29 33 40,patch=31 steer=31 onset1=31 onset8=24 transfer=31
+Qwen2.5-14B-Instruct,mad 4,hour,32 36 37 38 40,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=35 transfer=37
+Qwen2.5-14B-Instruct,mad 4,letter,36 37 38 40,probe=37 patch=36 steer=38 handoff=36 onset1=37 onset8=33 transfer=40
+Qwen2.5-14B-Instruct,mad 4,month,36 37 38 40,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=33 transfer=37
+Qwen2.5-14B-Instruct,mad 4,weekday,37 40,probe=36 patch=36 steer=37 handoff=36 onset1=37 onset8=34 transfer=36
+Qwen2.5-14B-Instruct,mad 5,capital2hop,34,probe=4 patch=34 steer=34 handoff=34 onset1=34 onset8=30 transfer=32
+Qwen2.5-14B-Instruct,mad 5,city,23 31 34 35,probe=9 patch=34 steer=35 handoff=32 onset1=35 onset8=28 transfer=34
+Qwen2.5-14B-Instruct,mad 5,color,41,patch=34 steer=36 handoff=34 onset1=35 onset8=29 transfer=33
+Qwen2.5-14B-Instruct,mad 5,continent,31 32 34,patch=34 steer=35 handoff=34 onset1=35 onset8=29 transfer=32
+Qwen2.5-14B-Instruct,mad 5,ctxcolor,26 28,probe=28 patch=36 steer=36 handoff=34 onset1=36 onset8=29 transfer=35
+Qwen2.5-14B-Instruct,mad 5,emotion,15 23 28 40,patch=31 steer=31 onset1=31 onset8=24 transfer=31
+Qwen2.5-14B-Instruct,mad 5,hour,32 36 37 38 40,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=35 transfer=37
+Qwen2.5-14B-Instruct,mad 5,letter,36 37 38 40,probe=37 patch=36 steer=38 handoff=36 onset1=37 onset8=33 transfer=40
+Qwen2.5-14B-Instruct,mad 5,month,37 38,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=33 transfer=37
+Qwen2.5-14B-Instruct,mad 5,weekday,37,probe=36 patch=36 steer=37 handoff=36 onset1=37 onset8=34 transfer=36
+Qwen2.5-14B-Instruct,fold 2,capital2hop,26 27 28 31 32 34 35 36 43,probe=4 patch=34 steer=34 handoff=34 onset1=34 onset8=30 transfer=32
+Qwen2.5-14B-Instruct,fold 2,city,22 23 31 32 34 35 36 39,probe=9 patch=34 steer=35 handoff=32 onset1=35 onset8=28 transfer=34
+Qwen2.5-14B-Instruct,fold 2,color,23 26 34 39 40 41 43 44,patch=34 steer=36 handoff=34 onset1=35 onset8=29 transfer=33
+Qwen2.5-14B-Instruct,fold 2,continent,23 26 27 28 31 32 34 35 36 39 40 43,patch=34 steer=35 handoff=34 onset1=35 onset8=29 transfer=32
+Qwen2.5-14B-Instruct,fold 2,ctxcolor,20 23 26 28 32 34 35 36 43,probe=28 patch=36 steer=36 handoff=34 onset1=36 onset8=29 transfer=35
+Qwen2.5-14B-Instruct,fold 2,emotion,15 22 23 24 27 28 29 31 33 39 40 41,patch=31 steer=31 onset1=31 onset8=24 transfer=31
+Qwen2.5-14B-Instruct,fold 2,hour,32 36 37 38 40 42 47,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=35 transfer=37
+Qwen2.5-14B-Instruct,fold 2,letter,24 28 32 35 36 37 38 39 40 47,probe=37 patch=36 steer=38 handoff=36 onset1=37 onset8=33 transfer=40
+Qwen2.5-14B-Instruct,fold 2,month,23 36 37 38 40 41 42 43,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=33 transfer=37
+Qwen2.5-14B-Instruct,fold 2,weekday,22 23 32 36 37 39 40 41,probe=36 patch=36 steer=37 handoff=36 onset1=37 onset8=34 transfer=36
+Qwen2.5-14B-Instruct,fold 3,capital2hop,26 27 31 32 34 36,probe=4 patch=34 steer=34 handoff=34 onset1=34 onset8=30 transfer=32
+Qwen2.5-14B-Instruct,fold 3,city,22 23 31 32 34 35 36 39,probe=9 patch=34 steer=35 handoff=32 onset1=35 onset8=28 transfer=34
+Qwen2.5-14B-Instruct,fold 3,color,23 40 41 43,patch=34 steer=36 handoff=34 onset1=35 onset8=29 transfer=33
+Qwen2.5-14B-Instruct,fold 3,continent,23 26 27 31 32 34 35 36,patch=34 steer=35 handoff=34 onset1=35 onset8=29 transfer=32
+Qwen2.5-14B-Instruct,fold 3,ctxcolor,23 26 28 32 36 43,probe=28 patch=36 steer=36 handoff=34 onset1=36 onset8=29 transfer=35
+Qwen2.5-14B-Instruct,fold 3,emotion,15 23 24 28 29 33 40 41,patch=31 steer=31 onset1=31 onset8=24 transfer=31
+Qwen2.5-14B-Instruct,fold 3,hour,32 36 37 38 40 42,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=35 transfer=37
+Qwen2.5-14B-Instruct,fold 3,letter,32 36 37 38 40,probe=37 patch=36 steer=38 handoff=36 onset1=37 onset8=33 transfer=40
+Qwen2.5-14B-Instruct,fold 3,month,36 37 38 40,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=33 transfer=37
+Qwen2.5-14B-Instruct,fold 3,weekday,37 39 40,probe=36 patch=36 steer=37 handoff=36 onset1=37 onset8=34 transfer=36
+Qwen2.5-14B-Instruct,fold 4,capital2hop,32 34 36,probe=4 patch=34 steer=34 handoff=34 onset1=34 onset8=30 transfer=32
+Qwen2.5-14B-Instruct,fold 4,city,23 31 34 35,probe=9 patch=34 steer=35 handoff=32 onset1=35 onset8=28 transfer=34
+Qwen2.5-14B-Instruct,fold 4,color,41 43,patch=34 steer=36 handoff=34 onset1=35 onset8=29 transfer=33
+Qwen2.5-14B-Instruct,fold 4,continent,26 27 31 32 34 35 36,patch=34 steer=35 handoff=34 onset1=35 onset8=29 transfer=32
+Qwen2.5-14B-Instruct,fold 4,ctxcolor,23 26 28 32 36,probe=28 patch=36 steer=36 handoff=34 onset1=36 onset8=29 transfer=35
+Qwen2.5-14B-Instruct,fold 4,emotion,15 23 28 29 33 40,patch=31 steer=31 onset1=31 onset8=24 transfer=31
+Qwen2.5-14B-Instruct,fold 4,hour,32 36 37 38 40,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=35 transfer=37
+Qwen2.5-14B-Instruct,fold 4,letter,36 37 38 40,probe=37 patch=36 steer=38 handoff=36 onset1=37 onset8=33 transfer=40
+Qwen2.5-14B-Instruct,fold 4,month,36 37 38 40,probe=36 patch=36 steer=38 handoff=36 onset1=38 onset8=33 transfer=37
+Qwen2.5-14B-Instruct,fold 4,weekday,37 40,probe=36 patch=36 steer=37 handoff=36 onset1=37 onset8=34 transfer=36
+Phi-4-14B,top3,capital2hop,22 16 25,patch=22 steer=22 handoff=22 onset1=22 onset8=17 transfer=22
+Phi-4-14B,top3,city,22 17 10,probe=22 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,top3,color,16 13 23,probe=23 patch=23 steer=23 handoff=23 onset1=24 onset8=18 transfer=23
+Phi-4-14B,top3,continent,22 16 18,probe=1 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,top3,ctxcolor,21 17 27,probe=15 patch=26 steer=26 handoff=25 onset1=26 onset8=18 transfer=24
+Phi-4-14B,top3,emotion,20 17 32,probe=8 patch=20 steer=20 onset1=21 onset8=16 transfer=20
+Phi-4-14B,top3,hour,21 28 24,probe=21 patch=21 steer=25 handoff=21 onset1=26 onset8=21 transfer=25
+Phi-4-14B,top3,letter,19 24 17,probe=21 patch=21 steer=26 handoff=21 onset1=25 onset8=19 transfer=31
+Phi-4-14B,top3,month,24 22 19,probe=21 patch=21 steer=25 handoff=21 onset1=25 onset8=20 transfer=24
+Phi-4-14B,top3,weekday,19 24 21,probe=21 patch=21 steer=26 handoff=21 onset1=27 onset8=22 transfer=26
+Phi-4-14B,argmax,capital2hop,22,patch=22 steer=22 handoff=22 onset1=22 onset8=17 transfer=22
+Phi-4-14B,argmax,city,22,probe=22 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,argmax,color,16,probe=23 patch=23 steer=23 handoff=23 onset1=24 onset8=18 transfer=23
+Phi-4-14B,argmax,continent,22,probe=1 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,argmax,ctxcolor,21,probe=15 patch=26 steer=26 handoff=25 onset1=26 onset8=18 transfer=24
+Phi-4-14B,argmax,emotion,20,probe=8 patch=20 steer=20 onset1=21 onset8=16 transfer=20
+Phi-4-14B,argmax,hour,21,probe=21 patch=21 steer=25 handoff=21 onset1=26 onset8=21 transfer=25
+Phi-4-14B,argmax,letter,19,probe=21 patch=21 steer=26 handoff=21 onset1=25 onset8=19 transfer=31
+Phi-4-14B,argmax,month,24,probe=21 patch=21 steer=25 handoff=21 onset1=25 onset8=20 transfer=24
+Phi-4-14B,argmax,weekday,19,probe=21 patch=21 steer=26 handoff=21 onset1=27 onset8=22 transfer=26
+Phi-4-14B,mad 2,capital2hop,15 16 17 18 22 25,patch=22 steer=22 handoff=22 onset1=22 onset8=17 transfer=22
+Phi-4-14B,mad 2,city,16 17 22,probe=22 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,mad 2,color,15 16 17,probe=23 patch=23 steer=23 handoff=23 onset1=24 onset8=18 transfer=23
+Phi-4-14B,mad 2,continent,15 16 17 18 22 25,probe=1 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,mad 2,ctxcolor,14 16 17 21 27,probe=15 patch=26 steer=26 handoff=25 onset1=26 onset8=18 transfer=24
+Phi-4-14B,mad 2,emotion,16 17 20 32,probe=8 patch=20 steer=20 onset1=21 onset8=16 transfer=20
+Phi-4-14B,mad 2,hour,19 21 22 24 25 28,probe=21 patch=21 steer=25 handoff=21 onset1=26 onset8=21 transfer=25
+Phi-4-14B,mad 2,letter,16 17 19 24 25,probe=21 patch=21 steer=26 handoff=21 onset1=25 onset8=19 transfer=31
+Phi-4-14B,mad 2,month,17 19 21 22 23 24 25 26 28 29 30,probe=21 patch=21 steer=25 handoff=21 onset1=25 onset8=20 transfer=24
+Phi-4-14B,mad 2,weekday,17 19 21 24 25 29,probe=21 patch=21 steer=26 handoff=21 onset1=27 onset8=22 transfer=26
+Phi-4-14B,mad 3,capital2hop,16 17 18 22 25,patch=22 steer=22 handoff=22 onset1=22 onset8=17 transfer=22
+Phi-4-14B,mad 3,city,17 22,probe=22 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,mad 3,color,15 16,probe=23 patch=23 steer=23 handoff=23 onset1=24 onset8=18 transfer=23
+Phi-4-14B,mad 3,continent,15 16 17 18 22 25,probe=1 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,mad 3,ctxcolor,16 17 21,probe=15 patch=26 steer=26 handoff=25 onset1=26 onset8=18 transfer=24
+Phi-4-14B,mad 3,emotion,16 17 20,probe=8 patch=20 steer=20 onset1=21 onset8=16 transfer=20
+Phi-4-14B,mad 3,hour,21 22 24 28,probe=21 patch=21 steer=25 handoff=21 onset1=26 onset8=21 transfer=25
+Phi-4-14B,mad 3,letter,17 19 24 25,probe=21 patch=21 steer=26 handoff=21 onset1=25 onset8=19 transfer=31
+Phi-4-14B,mad 3,month,17 19 21 22 23 24 25 28 29 30,probe=21 patch=21 steer=25 handoff=21 onset1=25 onset8=20 transfer=24
+Phi-4-14B,mad 3,weekday,17 19 21 24,probe=21 patch=21 steer=26 handoff=21 onset1=27 onset8=22 transfer=26
+Phi-4-14B,mad 4,capital2hop,16 17 18 22 25,patch=22 steer=22 handoff=22 onset1=22 onset8=17 transfer=22
+Phi-4-14B,mad 4,city,17 22,probe=22 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,mad 4,color,16,probe=23 patch=23 steer=23 handoff=23 onset1=24 onset8=18 transfer=23
+Phi-4-14B,mad 4,continent,15 16 17 18 22 25,probe=1 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,mad 4,ctxcolor,16 17 21,probe=15 patch=26 steer=26 handoff=25 onset1=26 onset8=18 transfer=24
+Phi-4-14B,mad 4,emotion,20,probe=8 patch=20 steer=20 onset1=21 onset8=16 transfer=20
+Phi-4-14B,mad 4,hour,21 22 28,probe=21 patch=21 steer=25 handoff=21 onset1=26 onset8=21 transfer=25
+Phi-4-14B,mad 4,letter,17 19 24 25,probe=21 patch=21 steer=26 handoff=21 onset1=25 onset8=19 transfer=31
+Phi-4-14B,mad 4,month,19 21 22 24 28 30,probe=21 patch=21 steer=25 handoff=21 onset1=25 onset8=20 transfer=24
+Phi-4-14B,mad 4,weekday,19 21 24,probe=21 patch=21 steer=26 handoff=21 onset1=27 onset8=22 transfer=26
+Phi-4-14B,mad 5,capital2hop,16 17 18 22 25,patch=22 steer=22 handoff=22 onset1=22 onset8=17 transfer=22
+Phi-4-14B,mad 5,city,22,probe=22 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,mad 5,color,16,probe=23 patch=23 steer=23 handoff=23 onset1=24 onset8=18 transfer=23
+Phi-4-14B,mad 5,continent,15 16 17 18 22,probe=1 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,mad 5,ctxcolor,21,probe=15 patch=26 steer=26 handoff=25 onset1=26 onset8=18 transfer=24
+Phi-4-14B,mad 5,emotion,20,probe=8 patch=20 steer=20 onset1=21 onset8=16 transfer=20
+Phi-4-14B,mad 5,hour,21 22,probe=21 patch=21 steer=25 handoff=21 onset1=26 onset8=21 transfer=25
+Phi-4-14B,mad 5,letter,19 24,probe=21 patch=21 steer=26 handoff=21 onset1=25 onset8=19 transfer=31
+Phi-4-14B,mad 5,month,19 21 22 24 28,probe=21 patch=21 steer=25 handoff=21 onset1=25 onset8=20 transfer=24
+Phi-4-14B,mad 5,weekday,19 24,probe=21 patch=21 steer=26 handoff=21 onset1=27 onset8=22 transfer=26
+Phi-4-14B,fold 2,capital2hop,15 16 17 18 22 25 27,patch=22 steer=22 handoff=22 onset1=22 onset8=17 transfer=22
+Phi-4-14B,fold 2,city,10 16 17 22 23 27,probe=22 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,fold 2,color,13 14 15 16 17 18 23,probe=23 patch=23 steer=23 handoff=23 onset1=24 onset8=18 transfer=23
+Phi-4-14B,fold 2,continent,15 16 17 18 22 25 27,probe=1 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,fold 2,ctxcolor,10 11 14 15 16 17 19 21 24 25 26 27,probe=15 patch=26 steer=26 handoff=25 onset1=26 onset8=18 transfer=24
+Phi-4-14B,fold 2,emotion,14 16 17 18 20 28 32,probe=8 patch=20 steer=20 onset1=21 onset8=16 transfer=20
+Phi-4-14B,fold 2,hour,17 19 21 22 23 24 25 26 28 29,probe=21 patch=21 steer=25 handoff=21 onset1=26 onset8=21 transfer=25
+Phi-4-14B,fold 2,letter,16 17 19 24 25 30,probe=21 patch=21 steer=26 handoff=21 onset1=25 onset8=19 transfer=31
+Phi-4-14B,fold 2,month,17 19 21 22 23 24 25 26 27 28 29 30,probe=21 patch=21 steer=25 handoff=21 onset1=25 onset8=20 transfer=24
+Phi-4-14B,fold 2,weekday,17 19 21 22 24 25 29 30 31,probe=21 patch=21 steer=26 handoff=21 onset1=27 onset8=22 transfer=26
+Phi-4-14B,fold 3,capital2hop,15 16 17 18 22 25,patch=22 steer=22 handoff=22 onset1=22 onset8=17 transfer=22
+Phi-4-14B,fold 3,city,16 17 22,probe=22 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,fold 3,color,13 15 16 17,probe=23 patch=23 steer=23 handoff=23 onset1=24 onset8=18 transfer=23
+Phi-4-14B,fold 3,continent,15 16 17 18 22 25,probe=1 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,fold 3,ctxcolor,14 15 16 17 21 27,probe=15 patch=26 steer=26 handoff=25 onset1=26 onset8=18 transfer=24
+Phi-4-14B,fold 3,emotion,14 16 17 20 32,probe=8 patch=20 steer=20 onset1=21 onset8=16 transfer=20
+Phi-4-14B,fold 3,hour,19 21 22 24 25 28,probe=21 patch=21 steer=25 handoff=21 onset1=26 onset8=21 transfer=25
+Phi-4-14B,fold 3,letter,17 19 24 25,probe=21 patch=21 steer=26 handoff=21 onset1=25 onset8=19 transfer=31
+Phi-4-14B,fold 3,month,17 19 21 22 23 24 25 28 29 30,probe=21 patch=21 steer=25 handoff=21 onset1=25 onset8=20 transfer=24
+Phi-4-14B,fold 3,weekday,17 19 21 22 24 25 29,probe=21 patch=21 steer=26 handoff=21 onset1=27 onset8=22 transfer=26
+Phi-4-14B,fold 4,capital2hop,16 17 18 22 25,patch=22 steer=22 handoff=22 onset1=22 onset8=17 transfer=22
+Phi-4-14B,fold 4,city,16 17 22,probe=22 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,fold 4,color,15 16 17,probe=23 patch=23 steer=23 handoff=23 onset1=24 onset8=18 transfer=23
+Phi-4-14B,fold 4,continent,15 16 17 18 22 25,probe=1 patch=22 steer=22 handoff=22 onset1=22 onset8=18 transfer=22
+Phi-4-14B,fold 4,ctxcolor,16 17 21,probe=15 patch=26 steer=26 handoff=25 onset1=26 onset8=18 transfer=24
+Phi-4-14B,fold 4,emotion,16 17 20,probe=8 patch=20 steer=20 onset1=21 onset8=16 transfer=20
+Phi-4-14B,fold 4,hour,21 22 24 25 28,probe=21 patch=21 steer=25 handoff=21 onset1=26 onset8=21 transfer=25
+Phi-4-14B,fold 4,letter,17 19 24 25,probe=21 patch=21 steer=26 handoff=21 onset1=25 onset8=19 transfer=31
+Phi-4-14B,fold 4,month,19 21 22 23 24 25 28 30,probe=21 patch=21 steer=25 handoff=21 onset1=25 onset8=20 transfer=24
+Phi-4-14B,fold 4,weekday,17 19 21 24 25 29,probe=21 patch=21 steer=26 handoff=21 onset1=27 onset8=22 transfer=26
