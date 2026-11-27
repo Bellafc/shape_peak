@@ -9,7 +9,9 @@ The three boundaries of the paper, each as "the first late layer at which a per-
                where the layer's own vector works). One test = evaluating T at one build layer, i.e. |Y| interventions.
 Search strategies (one test = one layer): full sweep of the late layers; binary search (assumes the test keeps passing once it
 passes); start at the first layer with A_lin > 0.1 (logit lens, Billa 2026) or at the highest peak, then walk down while the test
-passes or up until it passes. A strategy is correct if it returns the layer a full sweep returns.
+passes or up until it passes; peak jumps (test the highest peak, then the next shallower peaks while the test passes or the next
+deeper peaks until it passes, then bisect between the two peaks that bracket the boundary); binary search restricted to the layers
+from one layer before the earliest of the three highest peaks (the near lower bound of Section 5). A strategy is correct if it returns the layer a full sweep returns.
 Sweep data cover only part of the late layers (steer_sweep stops 3 layers after the highest peak); untested layers take the nearest
 tested value. The alpha = 1 onset lies inside the tested range in every pair, so its search costs are unaffected.
 Writes DATA/rebuttal/search_cost.md and search_cost.csv."""
@@ -45,11 +47,35 @@ def tests(M, t, NL):
     except FileNotFoundError: pass
     return out
 
-def search(f, lo, hi, mode, start=None):
+def search(f, lo, hi, mode, start=None, cands=None):
     seen = {}
     def ok(L):
         if L not in seen: seen[L] = bool(f(L))
         return seen[L]
+    def bisect(a, b):                                    # a fails (or a = lo - 1), b passes: first passing layer in (a, b]
+        while b - a > 1:
+            m = (a + b) // 2
+            if ok(m): b = m
+            else: a = m
+        return b
+    if mode == "pruned":                                 # binary search that starts one layer before the earliest peak
+        a = max(lo, min(cands) - 1) - 1
+        if not ok(hi): return None, len(seen)
+        return bisect(a, hi), len(seen)
+    if mode == "jump":                                   # test the highest peak, then jump between peaks, then bisect
+        P = sorted(cands); i = P.index(start)
+        if ok(start):
+            b = start
+            for q in reversed(P[:i]):
+                if not ok(q): return bisect(q, b), len(seen)
+                b = q
+            return bisect(lo - 1, b), len(seen)
+        a = start
+        for q in P[i + 1:]:
+            if ok(q): return bisect(a, q), len(seen)
+            a = q
+        if not ok(hi): return None, len(seen)
+        return bisect(a, hi), len(seen)
     if mode == "full":
         for L in range(lo, hi + 1): ok(L)
         return next((L for L in range(lo, hi + 1) if seen[L]), None), len(seen)
@@ -70,20 +96,21 @@ def search(f, lo, hi, mode, start=None):
         if ok(L): return L, len(seen)
     return None, len(seen)
 
-STRATS = [("full sweep", "full"), ("binary search", "binary"), ("start at logit lens", "lens"), ("start at highest peak", "peak")]
+STRATS = [("full sweep", "full"), ("binary search", "binary"), ("start at logit lens", "lens"), ("start at highest peak", "peak"),
+          ("peak jumps + bisection", "jump"), ("binary search from earliest peak", "pruned")]
 if __name__ == "__main__":
     sig = pd.read_csv(f"{DATA}/events_v2/signals_v2.csv"); rows = []
     for M in MODELS:
         S = sig[sig.model == M]
         for t in S.task.unique():
             s_ = S[S.task == t].sort_values("layer"); NL = len(s_); lo, hi = int(round(NL * EARLY)), NL - 1
-            l1 = peaks(s_["shape"].values, 3)[0]; a0 = next((L for L in range(NL) if s_.a_lin.values[L] > 0.1), hi)
+            pk3 = peaks(s_["shape"].values, 3); l1 = pk3[0]; a0 = next((L for L in range(NL) if s_.a_lin.values[L] > 0.1), hi)
             T = tests(M, t, NL); ny = T.pop("_ny", np.nan)
             for ev, f in T.items():
                 truth, _ = search(f, lo, hi, "full")
                 if truth is None: continue
                 for name, mode in STRATS:
-                    L, n = search(f, lo, hi, "anchor" if mode in ("lens", "peak") else mode, start={"lens": a0, "peak": l1}.get(mode))
+                    L, n = search(f, lo, hi, "anchor" if mode in ("lens", "peak") else mode, start={"lens": a0, "peak": l1, "jump": l1}.get(mode), cands=pk3)
                     rows.append(dict(model=SHORT[M], task=t, event=ev, strategy=name, span=hi - lo + 1, tests=n, correct=L == truth,
                                      interventions=n * (ny if ev.startswith("3") else 1)))
     R = pd.DataFrame(rows); R.to_csv(f"{DATA}/rebuttal/search_cost.csv", index=False)

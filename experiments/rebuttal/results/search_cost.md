@@ -11,6 +11,8 @@ Layers tested (mean) and share of pairs where the strategy returns the full-swee
 | binary search | 5.8 | 1.00 |
 | start at logit lens | 4.1 | 1.00 |
 | start at highest peak | 3.7 | 1.00 |
+| peak jumps + bisection | 4.4 | 1.00 |
+| binary search from earliest peak | 5.3 | 0.96 |
 
 Peak start cheaper than logit-lens start in 0.40 of pairs, dearer in 0.28.
 
@@ -22,6 +24,8 @@ Peak start cheaper than logit-lens start in 0.40 of pairs, dearer in 0.28.
 | binary search | 5.8 | 1.00 |
 | start at logit lens | 3.8 | 1.00 |
 | start at highest peak | 3.9 | 1.00 |
+| peak jumps + bisection | 4.8 | 1.00 |
+| binary search from earliest peak | 5.4 | 1.00 |
 
 Peak start cheaper than logit-lens start in 0.41 of pairs, dearer in 0.34.
 
@@ -33,5 +37,7 @@ Peak start cheaper than logit-lens start in 0.41 of pairs, dearer in 0.34.
 | binary search | 5.8 | 1.00 | 60 |
 | start at logit lens | 3.4 | 1.00 | 36 |
 | start at highest peak | 4.6 | 1.00 | 46 |
+| peak jumps + bisection | 5.0 | 1.00 | 51 |
+| binary search from earliest peak | 5.4 | 1.00 | 55 |
 
 Peak start cheaper than logit-lens start in 0.26 of pairs, dearer in 0.47.

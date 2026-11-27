@@ -3,679 +3,1019 @@ Qwen-7B,capital2hop,1 handoff,full sweep,21,21,True,21
 Qwen-7B,capital2hop,1 handoff,binary search,21,5,True,5
 Qwen-7B,capital2hop,1 handoff,start at logit lens,21,2,True,2
 Qwen-7B,capital2hop,1 handoff,start at highest peak,21,7,True,7
+Qwen-7B,capital2hop,1 handoff,peak jumps + bisection,21,5,True,5
+Qwen-7B,capital2hop,1 handoff,binary search from earliest peak,21,5,True,5
 Qwen-7B,capital2hop,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,capital2hop,2 onset (α=1),binary search,21,5,True,5
 Qwen-7B,capital2hop,2 onset (α=1),start at logit lens,21,2,True,2
 Qwen-7B,capital2hop,2 onset (α=1),start at highest peak,21,7,True,7
+Qwen-7B,capital2hop,2 onset (α=1),peak jumps + bisection,21,5,True,5
+Qwen-7B,capital2hop,2 onset (α=1),binary search from earliest peak,21,5,True,5
 Qwen-7B,capital2hop,3 transfer (T ≥ .5),full sweep,21,21,True,126
 Qwen-7B,capital2hop,3 transfer (T ≥ .5),binary search,21,5,True,30
 Qwen-7B,capital2hop,3 transfer (T ≥ .5),start at logit lens,21,2,True,12
 Qwen-7B,capital2hop,3 transfer (T ≥ .5),start at highest peak,21,7,True,42
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),peak jumps + bisection,21,5,True,30
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),binary search from earliest peak,21,5,True,30
 Qwen-7B,city,1 handoff,full sweep,21,21,True,21
 Qwen-7B,city,1 handoff,binary search,21,5,True,5
 Qwen-7B,city,1 handoff,start at logit lens,21,4,True,4
 Qwen-7B,city,1 handoff,start at highest peak,21,3,True,3
+Qwen-7B,city,1 handoff,peak jumps + bisection,21,3,True,3
+Qwen-7B,city,1 handoff,binary search from earliest peak,21,5,True,5
 Qwen-7B,city,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,city,2 onset (α=1),binary search,21,5,True,5
 Qwen-7B,city,2 onset (α=1),start at logit lens,21,3,True,3
 Qwen-7B,city,2 onset (α=1),start at highest peak,21,4,True,4
+Qwen-7B,city,2 onset (α=1),peak jumps + bisection,21,4,True,4
+Qwen-7B,city,2 onset (α=1),binary search from earliest peak,21,5,True,5
 Qwen-7B,city,3 transfer (T ≥ .5),full sweep,21,21,True,126
 Qwen-7B,city,3 transfer (T ≥ .5),binary search,21,5,True,30
 Qwen-7B,city,3 transfer (T ≥ .5),start at logit lens,21,3,True,18
 Qwen-7B,city,3 transfer (T ≥ .5),start at highest peak,21,4,True,24
+Qwen-7B,city,3 transfer (T ≥ .5),peak jumps + bisection,21,4,True,24
+Qwen-7B,city,3 transfer (T ≥ .5),binary search from earliest peak,21,5,True,30
 Qwen-7B,color,1 handoff,full sweep,21,21,True,21
 Qwen-7B,color,1 handoff,binary search,21,5,True,5
 Qwen-7B,color,1 handoff,start at logit lens,21,3,True,3
 Qwen-7B,color,1 handoff,start at highest peak,21,5,True,5
+Qwen-7B,color,1 handoff,peak jumps + bisection,21,4,True,4
+Qwen-7B,color,1 handoff,binary search from earliest peak,21,5,True,5
 Qwen-7B,color,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,color,2 onset (α=1),binary search,21,5,True,5
 Qwen-7B,color,2 onset (α=1),start at logit lens,21,2,True,2
 Qwen-7B,color,2 onset (α=1),start at highest peak,21,4,True,4
+Qwen-7B,color,2 onset (α=1),peak jumps + bisection,21,3,True,3
+Qwen-7B,color,2 onset (α=1),binary search from earliest peak,21,5,True,5
 Qwen-7B,color,3 transfer (T ≥ .5),full sweep,21,21,True,105
 Qwen-7B,color,3 transfer (T ≥ .5),binary search,21,5,True,25
 Qwen-7B,color,3 transfer (T ≥ .5),start at logit lens,21,2,True,10
 Qwen-7B,color,3 transfer (T ≥ .5),start at highest peak,21,4,True,20
+Qwen-7B,color,3 transfer (T ≥ .5),peak jumps + bisection,21,3,True,15
+Qwen-7B,color,3 transfer (T ≥ .5),binary search from earliest peak,21,5,True,25
 Qwen-7B,continent,1 handoff,full sweep,21,21,True,21
 Qwen-7B,continent,1 handoff,binary search,21,5,True,5
 Qwen-7B,continent,1 handoff,start at logit lens,21,2,True,2
 Qwen-7B,continent,1 handoff,start at highest peak,21,2,True,2
+Qwen-7B,continent,1 handoff,peak jumps + bisection,21,4,True,4
+Qwen-7B,continent,1 handoff,binary search from earliest peak,21,5,True,5
 Qwen-7B,continent,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,continent,2 onset (α=1),binary search,21,5,True,5
 Qwen-7B,continent,2 onset (α=1),start at logit lens,21,2,True,2
 Qwen-7B,continent,2 onset (α=1),start at highest peak,21,2,True,2
+Qwen-7B,continent,2 onset (α=1),peak jumps + bisection,21,4,True,4
+Qwen-7B,continent,2 onset (α=1),binary search from earliest peak,21,5,True,5
 Qwen-7B,continent,3 transfer (T ≥ .5),full sweep,21,21,True,126
 Qwen-7B,continent,3 transfer (T ≥ .5),binary search,21,5,True,30
 Qwen-7B,continent,3 transfer (T ≥ .5),start at logit lens,21,2,True,12
 Qwen-7B,continent,3 transfer (T ≥ .5),start at highest peak,21,2,True,12
+Qwen-7B,continent,3 transfer (T ≥ .5),peak jumps + bisection,21,4,True,24
+Qwen-7B,continent,3 transfer (T ≥ .5),binary search from earliest peak,21,5,True,30
 Qwen-7B,ctxcolor,1 handoff,full sweep,21,21,True,21
 Qwen-7B,ctxcolor,1 handoff,binary search,21,5,True,5
 Qwen-7B,ctxcolor,1 handoff,start at logit lens,21,3,True,3
 Qwen-7B,ctxcolor,1 handoff,start at highest peak,21,3,True,3
+Qwen-7B,ctxcolor,1 handoff,peak jumps + bisection,21,3,True,3
+Qwen-7B,ctxcolor,1 handoff,binary search from earliest peak,21,5,True,5
 Qwen-7B,ctxcolor,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,ctxcolor,2 onset (α=1),binary search,21,6,True,6
 Qwen-7B,ctxcolor,2 onset (α=1),start at logit lens,21,2,True,2
 Qwen-7B,ctxcolor,2 onset (α=1),start at highest peak,21,5,True,5
+Qwen-7B,ctxcolor,2 onset (α=1),peak jumps + bisection,21,6,True,6
+Qwen-7B,ctxcolor,2 onset (α=1),binary search from earliest peak,21,5,True,5
 Qwen-7B,ctxcolor,3 transfer (T ≥ .5),full sweep,21,21,True,105
 Qwen-7B,ctxcolor,3 transfer (T ≥ .5),binary search,21,5,True,25
 Qwen-7B,ctxcolor,3 transfer (T ≥ .5),start at logit lens,21,2,True,10
 Qwen-7B,ctxcolor,3 transfer (T ≥ .5),start at highest peak,21,4,True,20
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),peak jumps + bisection,21,5,True,25
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),binary search from earliest peak,21,5,True,25
 Qwen-7B,emotion,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,emotion,2 onset (α=1),binary search,21,6,True,6
 Qwen-7B,emotion,2 onset (α=1),start at logit lens,21,6,True,6
 Qwen-7B,emotion,2 onset (α=1),start at highest peak,21,5,True,5
+Qwen-7B,emotion,2 onset (α=1),peak jumps + bisection,21,4,True,4
+Qwen-7B,emotion,2 onset (α=1),binary search from earliest peak,21,5,True,5
 Qwen-7B,emotion,3 transfer (T ≥ .5),full sweep,21,21,True,147
 Qwen-7B,emotion,3 transfer (T ≥ .5),binary search,21,5,True,35
 Qwen-7B,emotion,3 transfer (T ≥ .5),start at logit lens,21,4,True,28
 Qwen-7B,emotion,3 transfer (T ≥ .5),start at highest peak,21,3,True,21
+Qwen-7B,emotion,3 transfer (T ≥ .5),peak jumps + bisection,21,4,True,28
+Qwen-7B,emotion,3 transfer (T ≥ .5),binary search from earliest peak,21,5,True,35
 Qwen-7B,hour,1 handoff,full sweep,21,21,True,21
 Qwen-7B,hour,1 handoff,binary search,21,5,True,5
 Qwen-7B,hour,1 handoff,start at logit lens,21,3,True,3
 Qwen-7B,hour,1 handoff,start at highest peak,21,3,True,3
+Qwen-7B,hour,1 handoff,peak jumps + bisection,21,4,True,4
+Qwen-7B,hour,1 handoff,binary search from earliest peak,21,5,True,5
 Qwen-7B,hour,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,hour,2 onset (α=1),binary search,21,6,True,6
 Qwen-7B,hour,2 onset (α=1),start at logit lens,21,2,True,2
 Qwen-7B,hour,2 onset (α=1),start at highest peak,21,2,True,2
+Qwen-7B,hour,2 onset (α=1),peak jumps + bisection,21,4,True,4
+Qwen-7B,hour,2 onset (α=1),binary search from earliest peak,21,6,True,6
 Qwen-7B,hour,3 transfer (T ≥ .5),full sweep,21,21,True,63
 Qwen-7B,hour,3 transfer (T ≥ .5),binary search,21,6,True,18
 Qwen-7B,hour,3 transfer (T ≥ .5),start at logit lens,21,2,True,6
 Qwen-7B,hour,3 transfer (T ≥ .5),start at highest peak,21,2,True,6
+Qwen-7B,hour,3 transfer (T ≥ .5),peak jumps + bisection,21,4,True,12
+Qwen-7B,hour,3 transfer (T ≥ .5),binary search from earliest peak,21,6,True,18
 Qwen-7B,letter,1 handoff,full sweep,21,21,True,21
 Qwen-7B,letter,1 handoff,binary search,21,5,True,5
 Qwen-7B,letter,1 handoff,start at logit lens,21,4,True,4
 Qwen-7B,letter,1 handoff,start at highest peak,21,3,True,3
+Qwen-7B,letter,1 handoff,peak jumps + bisection,21,6,True,6
+Qwen-7B,letter,1 handoff,binary search from earliest peak,21,5,True,5
 Qwen-7B,letter,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,letter,2 onset (α=1),binary search,21,6,True,6
 Qwen-7B,letter,2 onset (α=1),start at logit lens,21,3,True,3
 Qwen-7B,letter,2 onset (α=1),start at highest peak,21,2,True,2
+Qwen-7B,letter,2 onset (α=1),peak jumps + bisection,21,6,True,6
+Qwen-7B,letter,2 onset (α=1),binary search from earliest peak,21,5,True,5
 Qwen-7B,letter,3 transfer (T ≥ .5),full sweep,21,21,True,84
 Qwen-7B,letter,3 transfer (T ≥ .5),binary search,21,6,True,24
 Qwen-7B,letter,3 transfer (T ≥ .5),start at logit lens,21,2,True,8
 Qwen-7B,letter,3 transfer (T ≥ .5),start at highest peak,21,2,True,8
+Qwen-7B,letter,3 transfer (T ≥ .5),peak jumps + bisection,21,4,True,16
+Qwen-7B,letter,3 transfer (T ≥ .5),binary search from earliest peak,21,5,True,20
 Qwen-7B,month,1 handoff,full sweep,21,21,True,21
 Qwen-7B,month,1 handoff,binary search,21,6,True,6
 Qwen-7B,month,1 handoff,start at logit lens,21,2,True,2
 Qwen-7B,month,1 handoff,start at highest peak,21,2,True,2
+Qwen-7B,month,1 handoff,peak jumps + bisection,21,6,True,6
+Qwen-7B,month,1 handoff,binary search from earliest peak,21,5,True,5
 Qwen-7B,month,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,month,2 onset (α=1),binary search,21,6,True,6
 Qwen-7B,month,2 onset (α=1),start at logit lens,21,2,True,2
 Qwen-7B,month,2 onset (α=1),start at highest peak,21,2,True,2
+Qwen-7B,month,2 onset (α=1),peak jumps + bisection,21,6,True,6
+Qwen-7B,month,2 onset (α=1),binary search from earliest peak,21,5,True,5
 Qwen-7B,month,3 transfer (T ≥ .5),full sweep,21,21,True,105
 Qwen-7B,month,3 transfer (T ≥ .5),binary search,21,6,True,30
 Qwen-7B,month,3 transfer (T ≥ .5),start at logit lens,21,2,True,10
 Qwen-7B,month,3 transfer (T ≥ .5),start at highest peak,21,2,True,10
+Qwen-7B,month,3 transfer (T ≥ .5),peak jumps + bisection,21,6,True,30
+Qwen-7B,month,3 transfer (T ≥ .5),binary search from earliest peak,21,5,True,25
 Qwen-7B,weekday,1 handoff,full sweep,21,21,True,21
 Qwen-7B,weekday,1 handoff,binary search,21,6,True,6
 Qwen-7B,weekday,1 handoff,start at logit lens,21,2,True,2
 Qwen-7B,weekday,1 handoff,start at highest peak,21,2,True,2
+Qwen-7B,weekday,1 handoff,peak jumps + bisection,21,5,True,5
+Qwen-7B,weekday,1 handoff,binary search from earliest peak,21,5,True,5
 Qwen-7B,weekday,2 onset (α=1),full sweep,21,21,True,21
 Qwen-7B,weekday,2 onset (α=1),binary search,21,6,True,6
 Qwen-7B,weekday,2 onset (α=1),start at logit lens,21,2,True,2
 Qwen-7B,weekday,2 onset (α=1),start at highest peak,21,2,True,2
+Qwen-7B,weekday,2 onset (α=1),peak jumps + bisection,21,5,True,5
+Qwen-7B,weekday,2 onset (α=1),binary search from earliest peak,21,5,True,5
 Qwen-7B,weekday,3 transfer (T ≥ .5),full sweep,21,21,True,105
 Qwen-7B,weekday,3 transfer (T ≥ .5),binary search,21,6,True,30
 Qwen-7B,weekday,3 transfer (T ≥ .5),start at logit lens,21,2,True,10
 Qwen-7B,weekday,3 transfer (T ≥ .5),start at highest peak,21,2,True,10
+Qwen-7B,weekday,3 transfer (T ≥ .5),peak jumps + bisection,21,5,True,25
+Qwen-7B,weekday,3 transfer (T ≥ .5),binary search from earliest peak,21,5,True,25
 Llama-8B,capital2hop,1 handoff,full sweep,24,24,True,24
 Llama-8B,capital2hop,1 handoff,binary search,24,5,True,5
 Llama-8B,capital2hop,1 handoff,start at logit lens,24,2,True,2
 Llama-8B,capital2hop,1 handoff,start at highest peak,24,2,True,2
+Llama-8B,capital2hop,1 handoff,peak jumps + bisection,24,3,True,3
+Llama-8B,capital2hop,1 handoff,binary search from earliest peak,24,5,True,5
 Llama-8B,capital2hop,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,capital2hop,2 onset (α=1),binary search,24,6,True,6
 Llama-8B,capital2hop,2 onset (α=1),start at logit lens,24,2,True,2
 Llama-8B,capital2hop,2 onset (α=1),start at highest peak,24,2,True,2
+Llama-8B,capital2hop,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Llama-8B,capital2hop,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Llama-8B,capital2hop,3 transfer (T ≥ .5),full sweep,24,24,True,288
 Llama-8B,capital2hop,3 transfer (T ≥ .5),binary search,24,6,True,72
 Llama-8B,capital2hop,3 transfer (T ≥ .5),start at logit lens,24,2,True,24
 Llama-8B,capital2hop,3 transfer (T ≥ .5),start at highest peak,24,2,True,24
+Llama-8B,capital2hop,3 transfer (T ≥ .5),peak jumps + bisection,24,4,True,48
+Llama-8B,capital2hop,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,60
 Llama-8B,city,1 handoff,full sweep,24,24,True,24
 Llama-8B,city,1 handoff,binary search,24,6,True,6
 Llama-8B,city,1 handoff,start at logit lens,24,4,True,4
 Llama-8B,city,1 handoff,start at highest peak,24,2,True,2
+Llama-8B,city,1 handoff,peak jumps + bisection,24,3,True,3
+Llama-8B,city,1 handoff,binary search from earliest peak,24,5,True,5
 Llama-8B,city,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,city,2 onset (α=1),binary search,24,6,True,6
 Llama-8B,city,2 onset (α=1),start at logit lens,24,2,True,2
 Llama-8B,city,2 onset (α=1),start at highest peak,24,4,True,4
+Llama-8B,city,2 onset (α=1),peak jumps + bisection,24,5,True,5
+Llama-8B,city,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Llama-8B,city,3 transfer (T ≥ .5),full sweep,24,24,True,360
 Llama-8B,city,3 transfer (T ≥ .5),binary search,24,6,True,90
 Llama-8B,city,3 transfer (T ≥ .5),start at logit lens,24,2,True,30
 Llama-8B,city,3 transfer (T ≥ .5),start at highest peak,24,4,True,60
+Llama-8B,city,3 transfer (T ≥ .5),peak jumps + bisection,24,5,True,75
+Llama-8B,city,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,75
 Llama-8B,color,1 handoff,full sweep,24,24,True,24
 Llama-8B,color,1 handoff,binary search,24,5,True,5
 Llama-8B,color,1 handoff,start at logit lens,24,7,True,7
 Llama-8B,color,1 handoff,start at highest peak,24,3,True,3
+Llama-8B,color,1 handoff,peak jumps + bisection,24,5,True,5
+Llama-8B,color,1 handoff,binary search from earliest peak,24,5,True,5
 Llama-8B,color,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,color,2 onset (α=1),binary search,24,6,True,6
 Llama-8B,color,2 onset (α=1),start at logit lens,24,3,True,3
 Llama-8B,color,2 onset (α=1),start at highest peak,24,7,True,7
+Llama-8B,color,2 onset (α=1),peak jumps + bisection,24,5,True,5
+Llama-8B,color,2 onset (α=1),binary search from earliest peak,24,6,True,6
 Llama-8B,color,3 transfer (T ≥ .5),full sweep,24,24,True,240
 Llama-8B,color,3 transfer (T ≥ .5),binary search,24,6,True,60
 Llama-8B,color,3 transfer (T ≥ .5),start at logit lens,24,3,True,30
 Llama-8B,color,3 transfer (T ≥ .5),start at highest peak,24,7,True,70
+Llama-8B,color,3 transfer (T ≥ .5),peak jumps + bisection,24,5,True,50
+Llama-8B,color,3 transfer (T ≥ .5),binary search from earliest peak,24,6,True,60
 Llama-8B,continent,1 handoff,full sweep,24,24,True,24
 Llama-8B,continent,1 handoff,binary search,24,6,True,6
 Llama-8B,continent,1 handoff,start at logit lens,24,2,True,2
 Llama-8B,continent,1 handoff,start at highest peak,24,4,True,4
+Llama-8B,continent,1 handoff,peak jumps + bisection,24,4,True,4
+Llama-8B,continent,1 handoff,binary search from earliest peak,24,5,True,5
 Llama-8B,continent,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,continent,2 onset (α=1),binary search,24,6,True,6
 Llama-8B,continent,2 onset (α=1),start at logit lens,24,2,True,2
 Llama-8B,continent,2 onset (α=1),start at highest peak,24,4,True,4
+Llama-8B,continent,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Llama-8B,continent,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Llama-8B,continent,3 transfer (T ≥ .5),full sweep,24,24,True,360
 Llama-8B,continent,3 transfer (T ≥ .5),binary search,24,6,True,90
 Llama-8B,continent,3 transfer (T ≥ .5),start at logit lens,24,2,True,30
 Llama-8B,continent,3 transfer (T ≥ .5),start at highest peak,24,4,True,60
+Llama-8B,continent,3 transfer (T ≥ .5),peak jumps + bisection,24,4,True,60
+Llama-8B,continent,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,75
 Llama-8B,ctxcolor,1 handoff,full sweep,24,24,True,24
 Llama-8B,ctxcolor,1 handoff,binary search,24,5,True,5
 Llama-8B,ctxcolor,1 handoff,start at logit lens,24,5,True,5
 Llama-8B,ctxcolor,1 handoff,start at highest peak,24,5,True,5
+Llama-8B,ctxcolor,1 handoff,peak jumps + bisection,24,4,True,4
+Llama-8B,ctxcolor,1 handoff,binary search from earliest peak,24,5,True,5
 Llama-8B,ctxcolor,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,ctxcolor,2 onset (α=1),binary search,24,6,True,6
 Llama-8B,ctxcolor,2 onset (α=1),start at logit lens,24,4,True,4
 Llama-8B,ctxcolor,2 onset (α=1),start at highest peak,24,6,True,6
+Llama-8B,ctxcolor,2 onset (α=1),peak jumps + bisection,24,7,True,7
+Llama-8B,ctxcolor,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Llama-8B,ctxcolor,3 transfer (T ≥ .5),full sweep,24,24,True,240
 Llama-8B,ctxcolor,3 transfer (T ≥ .5),binary search,24,6,True,60
 Llama-8B,ctxcolor,3 transfer (T ≥ .5),start at logit lens,24,4,True,40
 Llama-8B,ctxcolor,3 transfer (T ≥ .5),start at highest peak,24,6,True,60
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),peak jumps + bisection,24,7,True,70
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,50
 Llama-8B,emotion,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,emotion,2 onset (α=1),binary search,24,5,True,5
 Llama-8B,emotion,2 onset (α=1),start at logit lens,24,6,True,6
 Llama-8B,emotion,2 onset (α=1),start at highest peak,24,4,True,4
+Llama-8B,emotion,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Llama-8B,emotion,2 onset (α=1),binary search from earliest peak,24,6,True,6
 Llama-8B,emotion,3 transfer (T ≥ .5),full sweep,24,24,True,240
 Llama-8B,emotion,3 transfer (T ≥ .5),binary search,24,6,True,60
 Llama-8B,emotion,3 transfer (T ≥ .5),start at logit lens,24,2,True,20
 Llama-8B,emotion,3 transfer (T ≥ .5),start at highest peak,24,8,True,80
+Llama-8B,emotion,3 transfer (T ≥ .5),peak jumps + bisection,24,4,True,40
+Llama-8B,emotion,3 transfer (T ≥ .5),binary search from earliest peak,24,6,True,60
 Llama-8B,hour,1 handoff,full sweep,24,24,True,24
 Llama-8B,hour,1 handoff,binary search,24,5,True,5
 Llama-8B,hour,1 handoff,start at logit lens,24,8,True,8
 Llama-8B,hour,1 handoff,start at highest peak,24,2,True,2
+Llama-8B,hour,1 handoff,peak jumps + bisection,24,3,True,3
+Llama-8B,hour,1 handoff,binary search from earliest peak,24,5,True,5
 Llama-8B,hour,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,hour,2 onset (α=1),binary search,24,6,True,6
 Llama-8B,hour,2 onset (α=1),start at logit lens,24,6,True,6
 Llama-8B,hour,2 onset (α=1),start at highest peak,24,3,True,3
+Llama-8B,hour,2 onset (α=1),peak jumps + bisection,24,5,True,5
+Llama-8B,hour,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Llama-8B,hour,3 transfer (T ≥ .5),full sweep,24,24,True,240
 Llama-8B,hour,3 transfer (T ≥ .5),binary search,24,6,True,60
 Llama-8B,hour,3 transfer (T ≥ .5),start at logit lens,24,3,True,30
 Llama-8B,hour,3 transfer (T ≥ .5),start at highest peak,24,6,True,60
+Llama-8B,hour,3 transfer (T ≥ .5),peak jumps + bisection,24,5,True,50
+Llama-8B,hour,3 transfer (T ≥ .5),binary search from earliest peak,24,6,True,60
 Llama-8B,letter,1 handoff,full sweep,24,24,True,24
 Llama-8B,letter,1 handoff,binary search,24,6,True,6
 Llama-8B,letter,1 handoff,start at logit lens,24,8,True,8
 Llama-8B,letter,1 handoff,start at highest peak,24,2,True,2
+Llama-8B,letter,1 handoff,peak jumps + bisection,24,3,True,3
+Llama-8B,letter,1 handoff,binary search from earliest peak,24,5,True,5
 Llama-8B,letter,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,letter,2 onset (α=1),binary search,24,6,True,6
 Llama-8B,letter,2 onset (α=1),start at logit lens,24,8,True,8
 Llama-8B,letter,2 onset (α=1),start at highest peak,24,2,True,2
+Llama-8B,letter,2 onset (α=1),peak jumps + bisection,24,3,True,3
+Llama-8B,letter,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Llama-8B,letter,3 transfer (T ≥ .5),full sweep,24,24,True,144
 Llama-8B,letter,3 transfer (T ≥ .5),binary search,24,6,True,36
 Llama-8B,letter,3 transfer (T ≥ .5),start at logit lens,24,3,True,18
 Llama-8B,letter,3 transfer (T ≥ .5),start at highest peak,24,9,True,54
+Llama-8B,letter,3 transfer (T ≥ .5),peak jumps + bisection,24,7,True,42
+Llama-8B,letter,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,30
 Llama-8B,month,1 handoff,full sweep,24,24,True,24
 Llama-8B,month,1 handoff,binary search,24,6,True,6
 Llama-8B,month,1 handoff,start at logit lens,24,3,True,3
 Llama-8B,month,1 handoff,start at highest peak,24,2,True,2
+Llama-8B,month,1 handoff,peak jumps + bisection,24,3,True,3
+Llama-8B,month,1 handoff,binary search from earliest peak,24,5,True,5
 Llama-8B,month,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,month,2 onset (α=1),binary search,24,6,True,6
 Llama-8B,month,2 onset (α=1),start at logit lens,24,2,True,2
 Llama-8B,month,2 onset (α=1),start at highest peak,24,3,True,3
+Llama-8B,month,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Llama-8B,month,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Llama-8B,month,3 transfer (T ≥ .5),full sweep,24,24,True,240
 Llama-8B,month,3 transfer (T ≥ .5),binary search,24,6,True,60
 Llama-8B,month,3 transfer (T ≥ .5),start at logit lens,24,3,True,30
 Llama-8B,month,3 transfer (T ≥ .5),start at highest peak,24,4,True,40
+Llama-8B,month,3 transfer (T ≥ .5),peak jumps + bisection,24,4,True,40
+Llama-8B,month,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,50
 Llama-8B,weekday,1 handoff,full sweep,24,24,True,24
 Llama-8B,weekday,1 handoff,binary search,24,6,True,6
 Llama-8B,weekday,1 handoff,start at logit lens,24,2,True,2
 Llama-8B,weekday,1 handoff,start at highest peak,24,2,True,2
+Llama-8B,weekday,1 handoff,peak jumps + bisection,24,4,True,4
+Llama-8B,weekday,1 handoff,binary search from earliest peak,24,5,True,5
 Llama-8B,weekday,2 onset (α=1),full sweep,24,24,True,24
 Llama-8B,weekday,2 onset (α=1),binary search,24,6,True,6
 Llama-8B,weekday,2 onset (α=1),start at logit lens,24,4,True,4
 Llama-8B,weekday,2 onset (α=1),start at highest peak,24,5,True,5
+Llama-8B,weekday,2 onset (α=1),peak jumps + bisection,24,5,True,5
+Llama-8B,weekday,2 onset (α=1),binary search from earliest peak,24,6,True,6
 Llama-8B,weekday,3 transfer (T ≥ .5),full sweep,24,24,True,192
 Llama-8B,weekday,3 transfer (T ≥ .5),binary search,24,5,True,40
 Llama-8B,weekday,3 transfer (T ≥ .5),start at logit lens,24,5,True,40
 Llama-8B,weekday,3 transfer (T ≥ .5),start at highest peak,24,6,True,48
+Llama-8B,weekday,3 transfer (T ≥ .5),peak jumps + bisection,24,5,True,40
+Llama-8B,weekday,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,40
 Mistral-7B,capital2hop,1 handoff,full sweep,24,24,True,24
 Mistral-7B,capital2hop,1 handoff,binary search,24,6,True,6
 Mistral-7B,capital2hop,1 handoff,start at logit lens,24,2,True,2
 Mistral-7B,capital2hop,1 handoff,start at highest peak,24,2,True,2
+Mistral-7B,capital2hop,1 handoff,peak jumps + bisection,24,4,True,4
+Mistral-7B,capital2hop,1 handoff,binary search from earliest peak,24,5,True,5
 Mistral-7B,capital2hop,2 onset (α=1),full sweep,24,24,True,24
 Mistral-7B,capital2hop,2 onset (α=1),binary search,24,6,True,6
 Mistral-7B,capital2hop,2 onset (α=1),start at logit lens,24,2,True,2
 Mistral-7B,capital2hop,2 onset (α=1),start at highest peak,24,2,True,2
+Mistral-7B,capital2hop,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Mistral-7B,capital2hop,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Mistral-7B,capital2hop,3 transfer (T ≥ .5),full sweep,24,24,True,312
 Mistral-7B,capital2hop,3 transfer (T ≥ .5),binary search,24,6,True,78
 Mistral-7B,capital2hop,3 transfer (T ≥ .5),start at logit lens,24,2,True,26
 Mistral-7B,capital2hop,3 transfer (T ≥ .5),start at highest peak,24,2,True,26
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),peak jumps + bisection,24,4,True,52
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,65
 Mistral-7B,city,1 handoff,full sweep,24,24,True,24
 Mistral-7B,city,1 handoff,binary search,24,6,True,6
 Mistral-7B,city,1 handoff,start at logit lens,24,2,True,2
 Mistral-7B,city,1 handoff,start at highest peak,24,4,True,4
+Mistral-7B,city,1 handoff,peak jumps + bisection,24,4,True,4
+Mistral-7B,city,1 handoff,binary search from earliest peak,24,5,True,5
 Mistral-7B,city,2 onset (α=1),full sweep,24,24,True,24
 Mistral-7B,city,2 onset (α=1),binary search,24,6,True,6
 Mistral-7B,city,2 onset (α=1),start at logit lens,24,2,True,2
 Mistral-7B,city,2 onset (α=1),start at highest peak,24,4,True,4
+Mistral-7B,city,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Mistral-7B,city,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Mistral-7B,city,3 transfer (T ≥ .5),full sweep,24,24,True,312
 Mistral-7B,city,3 transfer (T ≥ .5),binary search,24,6,True,78
 Mistral-7B,city,3 transfer (T ≥ .5),start at logit lens,24,2,True,26
 Mistral-7B,city,3 transfer (T ≥ .5),start at highest peak,24,4,True,52
+Mistral-7B,city,3 transfer (T ≥ .5),peak jumps + bisection,24,4,True,52
+Mistral-7B,city,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,65
 Mistral-7B,color,1 handoff,full sweep,24,24,True,24
 Mistral-7B,color,1 handoff,binary search,24,6,True,6
 Mistral-7B,color,1 handoff,start at logit lens,24,3,True,3
 Mistral-7B,color,1 handoff,start at highest peak,24,3,True,3
+Mistral-7B,color,1 handoff,peak jumps + bisection,24,4,True,4
+Mistral-7B,color,1 handoff,binary search from earliest peak,24,5,True,5
 Mistral-7B,color,2 onset (α=1),full sweep,24,24,True,24
 Mistral-7B,color,2 onset (α=1),binary search,24,5,True,5
 Mistral-7B,color,2 onset (α=1),start at logit lens,24,2,True,2
 Mistral-7B,color,2 onset (α=1),start at highest peak,24,5,True,5
+Mistral-7B,color,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Mistral-7B,color,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Mistral-7B,color,3 transfer (T ≥ .5),full sweep,24,24,True,192
 Mistral-7B,color,3 transfer (T ≥ .5),binary search,24,6,True,48
 Mistral-7B,color,3 transfer (T ≥ .5),start at logit lens,24,4,True,32
 Mistral-7B,color,3 transfer (T ≥ .5),start at highest peak,24,7,True,56
+Mistral-7B,color,3 transfer (T ≥ .5),peak jumps + bisection,24,5,True,40
+Mistral-7B,color,3 transfer (T ≥ .5),binary search from earliest peak,24,6,True,48
 Mistral-7B,continent,1 handoff,full sweep,24,24,True,24
 Mistral-7B,continent,1 handoff,binary search,24,6,True,6
 Mistral-7B,continent,1 handoff,start at logit lens,24,2,True,2
 Mistral-7B,continent,1 handoff,start at highest peak,24,2,True,2
+Mistral-7B,continent,1 handoff,peak jumps + bisection,24,4,True,4
+Mistral-7B,continent,1 handoff,binary search from earliest peak,24,5,True,5
 Mistral-7B,continent,2 onset (α=1),full sweep,24,24,True,24
 Mistral-7B,continent,2 onset (α=1),binary search,24,5,True,5
 Mistral-7B,continent,2 onset (α=1),start at logit lens,24,2,True,2
 Mistral-7B,continent,2 onset (α=1),start at highest peak,24,2,True,2
+Mistral-7B,continent,2 onset (α=1),peak jumps + bisection,24,5,True,5
+Mistral-7B,continent,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Mistral-7B,continent,3 transfer (T ≥ .5),full sweep,24,24,True,240
 Mistral-7B,continent,3 transfer (T ≥ .5),binary search,24,6,True,60
 Mistral-7B,continent,3 transfer (T ≥ .5),start at logit lens,24,2,True,20
 Mistral-7B,continent,3 transfer (T ≥ .5),start at highest peak,24,2,True,20
+Mistral-7B,continent,3 transfer (T ≥ .5),peak jumps + bisection,24,4,True,40
+Mistral-7B,continent,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,50
 Mistral-7B,ctxcolor,1 handoff,full sweep,24,24,True,24
 Mistral-7B,ctxcolor,1 handoff,binary search,24,6,True,6
 Mistral-7B,ctxcolor,1 handoff,start at logit lens,24,7,True,7
 Mistral-7B,ctxcolor,1 handoff,start at highest peak,24,6,True,6
+Mistral-7B,ctxcolor,1 handoff,peak jumps + bisection,24,4,True,4
+Mistral-7B,ctxcolor,1 handoff,binary search from earliest peak,24,6,True,6
 Mistral-7B,ctxcolor,2 onset (α=1),full sweep,24,24,True,24
 Mistral-7B,ctxcolor,2 onset (α=1),binary search,24,5,True,5
 Mistral-7B,ctxcolor,2 onset (α=1),start at logit lens,24,3,True,3
 Mistral-7B,ctxcolor,2 onset (α=1),start at highest peak,24,2,True,2
+Mistral-7B,ctxcolor,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Mistral-7B,ctxcolor,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Mistral-7B,ctxcolor,3 transfer (T ≥ .5),full sweep,24,24,True,288
 Mistral-7B,ctxcolor,3 transfer (T ≥ .5),binary search,24,5,True,60
 Mistral-7B,ctxcolor,3 transfer (T ≥ .5),start at logit lens,24,3,True,36
 Mistral-7B,ctxcolor,3 transfer (T ≥ .5),start at highest peak,24,2,True,24
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),peak jumps + bisection,24,4,True,48
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,60
 Mistral-7B,emotion,2 onset (α=1),full sweep,24,24,True,24
 Mistral-7B,emotion,2 onset (α=1),binary search,24,5,True,5
 Mistral-7B,emotion,2 onset (α=1),start at logit lens,24,2,True,2
 Mistral-7B,emotion,2 onset (α=1),start at highest peak,24,7,True,7
+Mistral-7B,emotion,2 onset (α=1),peak jumps + bisection,24,6,True,6
+Mistral-7B,emotion,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Mistral-7B,emotion,3 transfer (T ≥ .5),full sweep,24,24,True,288
 Mistral-7B,emotion,3 transfer (T ≥ .5),binary search,24,6,True,72
 Mistral-7B,emotion,3 transfer (T ≥ .5),start at logit lens,24,3,True,36
 Mistral-7B,emotion,3 transfer (T ≥ .5),start at highest peak,24,8,True,96
+Mistral-7B,emotion,3 transfer (T ≥ .5),peak jumps + bisection,24,6,True,72
+Mistral-7B,emotion,3 transfer (T ≥ .5),binary search from earliest peak,24,6,True,72
 Mistral-7B,letter,1 handoff,full sweep,24,24,True,24
 Mistral-7B,letter,1 handoff,binary search,24,6,True,6
 Mistral-7B,letter,1 handoff,start at logit lens,24,9,True,9
 Mistral-7B,letter,1 handoff,start at highest peak,24,2,True,2
+Mistral-7B,letter,1 handoff,peak jumps + bisection,24,5,True,5
+Mistral-7B,letter,1 handoff,binary search from earliest peak,24,5,True,5
 Mistral-7B,letter,2 onset (α=1),full sweep,24,24,True,24
 Mistral-7B,letter,2 onset (α=1),binary search,24,6,True,6
 Mistral-7B,letter,2 onset (α=1),start at logit lens,24,9,True,9
 Mistral-7B,letter,2 onset (α=1),start at highest peak,24,2,True,2
+Mistral-7B,letter,2 onset (α=1),peak jumps + bisection,24,5,True,5
+Mistral-7B,letter,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Mistral-7B,letter,3 transfer (T ≥ .5),full sweep,24,24,True,144
 Mistral-7B,letter,3 transfer (T ≥ .5),binary search,24,6,True,36
 Mistral-7B,letter,3 transfer (T ≥ .5),start at logit lens,24,2,True,12
 Mistral-7B,letter,3 transfer (T ≥ .5),start at highest peak,24,9,True,54
+Mistral-7B,letter,3 transfer (T ≥ .5),peak jumps + bisection,24,6,True,36
+Mistral-7B,letter,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,30
 Mistral-7B,month,1 handoff,full sweep,24,24,True,24
 Mistral-7B,month,1 handoff,binary search,24,5,True,5
 Mistral-7B,month,1 handoff,start at logit lens,24,2,True,2
 Mistral-7B,month,1 handoff,start at highest peak,24,3,True,3
+Mistral-7B,month,1 handoff,peak jumps + bisection,24,4,True,4
+Mistral-7B,month,1 handoff,binary search from earliest peak,24,5,True,5
 Mistral-7B,month,2 onset (α=1),full sweep,24,24,True,24
 Mistral-7B,month,2 onset (α=1),binary search,24,6,True,6
 Mistral-7B,month,2 onset (α=1),start at logit lens,24,4,True,4
 Mistral-7B,month,2 onset (α=1),start at highest peak,24,2,True,2
+Mistral-7B,month,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Mistral-7B,month,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Mistral-7B,month,3 transfer (T ≥ .5),full sweep,24,24,True,168
 Mistral-7B,month,3 transfer (T ≥ .5),binary search,24,6,True,42
 Mistral-7B,month,3 transfer (T ≥ .5),start at logit lens,24,6,True,42
 Mistral-7B,month,3 transfer (T ≥ .5),start at highest peak,24,4,True,28
+Mistral-7B,month,3 transfer (T ≥ .5),peak jumps + bisection,24,4,True,28
+Mistral-7B,month,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,35
 Mistral-7B,weekday,1 handoff,full sweep,24,24,True,24
 Mistral-7B,weekday,1 handoff,binary search,24,6,True,6
 Mistral-7B,weekday,1 handoff,start at logit lens,24,2,True,2
 Mistral-7B,weekday,1 handoff,start at highest peak,24,2,True,2
+Mistral-7B,weekday,1 handoff,peak jumps + bisection,24,4,True,4
+Mistral-7B,weekday,1 handoff,binary search from earliest peak,24,5,True,5
 Mistral-7B,weekday,2 onset (α=1),full sweep,24,24,True,24
 Mistral-7B,weekday,2 onset (α=1),binary search,24,6,True,6
 Mistral-7B,weekday,2 onset (α=1),start at logit lens,24,3,True,3
 Mistral-7B,weekday,2 onset (α=1),start at highest peak,24,2,True,2
+Mistral-7B,weekday,2 onset (α=1),peak jumps + bisection,24,4,True,4
+Mistral-7B,weekday,2 onset (α=1),binary search from earliest peak,24,5,True,5
 Mistral-7B,weekday,3 transfer (T ≥ .5),full sweep,24,24,True,144
 Mistral-7B,weekday,3 transfer (T ≥ .5),binary search,24,5,True,30
 Mistral-7B,weekday,3 transfer (T ≥ .5),start at logit lens,24,7,True,42
 Mistral-7B,weekday,3 transfer (T ≥ .5),start at highest peak,24,6,True,36
+Mistral-7B,weekday,3 transfer (T ≥ .5),peak jumps + bisection,24,5,True,30
+Mistral-7B,weekday,3 transfer (T ≥ .5),binary search from earliest peak,24,5,True,30
 Gemma-9B,capital2hop,1 handoff,full sweep,32,32,True,32
 Gemma-9B,capital2hop,1 handoff,binary search,32,6,True,6
 Gemma-9B,capital2hop,1 handoff,start at logit lens,32,7,True,7
 Gemma-9B,capital2hop,1 handoff,start at highest peak,32,2,True,2
+Gemma-9B,capital2hop,1 handoff,peak jumps + bisection,32,5,True,5
+Gemma-9B,capital2hop,1 handoff,binary search from earliest peak,32,6,True,6
 Gemma-9B,capital2hop,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,capital2hop,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,capital2hop,2 onset (α=1),start at logit lens,32,7,True,7
 Gemma-9B,capital2hop,2 onset (α=1),start at highest peak,32,2,True,2
+Gemma-9B,capital2hop,2 onset (α=1),peak jumps + bisection,32,5,True,5
+Gemma-9B,capital2hop,2 onset (α=1),binary search from earliest peak,32,6,True,6
 Gemma-9B,capital2hop,3 transfer (T ≥ .5),full sweep,32,32,True,416
 Gemma-9B,capital2hop,3 transfer (T ≥ .5),binary search,32,6,True,78
 Gemma-9B,capital2hop,3 transfer (T ≥ .5),start at logit lens,32,7,True,91
 Gemma-9B,capital2hop,3 transfer (T ≥ .5),start at highest peak,32,2,True,26
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),peak jumps + bisection,32,5,True,65
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),binary search from earliest peak,32,6,True,78
 Gemma-9B,city,1 handoff,full sweep,32,32,True,32
 Gemma-9B,city,1 handoff,binary search,32,6,True,6
 Gemma-9B,city,1 handoff,start at logit lens,32,7,True,7
 Gemma-9B,city,1 handoff,start at highest peak,32,2,True,2
+Gemma-9B,city,1 handoff,peak jumps + bisection,32,5,True,5
+Gemma-9B,city,1 handoff,binary search from earliest peak,32,6,True,6
 Gemma-9B,city,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,city,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,city,2 onset (α=1),start at logit lens,32,4,True,4
 Gemma-9B,city,2 onset (α=1),start at highest peak,32,4,True,4
+Gemma-9B,city,2 onset (α=1),peak jumps + bisection,32,4,True,4
+Gemma-9B,city,2 onset (α=1),binary search from earliest peak,32,6,True,6
 Gemma-9B,city,3 transfer (T ≥ .5),full sweep,32,32,True,416
 Gemma-9B,city,3 transfer (T ≥ .5),binary search,32,6,True,78
 Gemma-9B,city,3 transfer (T ≥ .5),start at logit lens,32,7,True,91
 Gemma-9B,city,3 transfer (T ≥ .5),start at highest peak,32,2,True,26
+Gemma-9B,city,3 transfer (T ≥ .5),peak jumps + bisection,32,5,True,65
+Gemma-9B,city,3 transfer (T ≥ .5),binary search from earliest peak,32,6,True,78
 Gemma-9B,color,1 handoff,full sweep,32,32,True,32
 Gemma-9B,color,1 handoff,binary search,32,6,True,6
 Gemma-9B,color,1 handoff,start at logit lens,32,3,True,3
 Gemma-9B,color,1 handoff,start at highest peak,32,5,True,5
+Gemma-9B,color,1 handoff,peak jumps + bisection,32,5,True,5
+Gemma-9B,color,1 handoff,binary search from earliest peak,32,4,False,4
 Gemma-9B,color,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,color,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,color,2 onset (α=1),start at logit lens,32,3,True,3
 Gemma-9B,color,2 onset (α=1),start at highest peak,32,2,True,2
+Gemma-9B,color,2 onset (α=1),peak jumps + bisection,32,6,True,6
+Gemma-9B,color,2 onset (α=1),binary search from earliest peak,32,5,True,5
 Gemma-9B,color,3 transfer (T ≥ .5),full sweep,32,32,True,288
 Gemma-9B,color,3 transfer (T ≥ .5),binary search,32,6,True,54
 Gemma-9B,color,3 transfer (T ≥ .5),start at logit lens,32,3,True,27
 Gemma-9B,color,3 transfer (T ≥ .5),start at highest peak,32,2,True,18
+Gemma-9B,color,3 transfer (T ≥ .5),peak jumps + bisection,32,6,True,54
+Gemma-9B,color,3 transfer (T ≥ .5),binary search from earliest peak,32,5,True,45
 Gemma-9B,continent,1 handoff,full sweep,32,32,True,32
 Gemma-9B,continent,1 handoff,binary search,32,6,True,6
 Gemma-9B,continent,1 handoff,start at logit lens,32,7,True,7
 Gemma-9B,continent,1 handoff,start at highest peak,32,2,True,2
+Gemma-9B,continent,1 handoff,peak jumps + bisection,32,5,True,5
+Gemma-9B,continent,1 handoff,binary search from earliest peak,32,6,True,6
 Gemma-9B,continent,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,continent,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,continent,2 onset (α=1),start at logit lens,32,7,True,7
 Gemma-9B,continent,2 onset (α=1),start at highest peak,32,2,True,2
+Gemma-9B,continent,2 onset (α=1),peak jumps + bisection,32,5,True,5
+Gemma-9B,continent,2 onset (α=1),binary search from earliest peak,32,6,True,6
 Gemma-9B,continent,3 transfer (T ≥ .5),full sweep,32,32,True,416
 Gemma-9B,continent,3 transfer (T ≥ .5),binary search,32,6,True,78
 Gemma-9B,continent,3 transfer (T ≥ .5),start at logit lens,32,7,True,91
 Gemma-9B,continent,3 transfer (T ≥ .5),start at highest peak,32,2,True,26
+Gemma-9B,continent,3 transfer (T ≥ .5),peak jumps + bisection,32,5,True,65
+Gemma-9B,continent,3 transfer (T ≥ .5),binary search from earliest peak,32,6,True,78
 Gemma-9B,ctxcolor,1 handoff,full sweep,32,32,True,32
 Gemma-9B,ctxcolor,1 handoff,binary search,32,6,True,6
 Gemma-9B,ctxcolor,1 handoff,start at logit lens,32,3,True,3
 Gemma-9B,ctxcolor,1 handoff,start at highest peak,32,15,True,15
+Gemma-9B,ctxcolor,1 handoff,peak jumps + bisection,32,7,True,7
+Gemma-9B,ctxcolor,1 handoff,binary search from earliest peak,32,5,True,5
 Gemma-9B,ctxcolor,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,ctxcolor,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,ctxcolor,2 onset (α=1),start at logit lens,32,2,True,2
 Gemma-9B,ctxcolor,2 onset (α=1),start at highest peak,32,16,True,16
+Gemma-9B,ctxcolor,2 onset (α=1),peak jumps + bisection,32,7,True,7
+Gemma-9B,ctxcolor,2 onset (α=1),binary search from earliest peak,32,6,True,6
 Gemma-9B,ctxcolor,3 transfer (T ≥ .5),full sweep,32,32,True,384
 Gemma-9B,ctxcolor,3 transfer (T ≥ .5),binary search,32,6,True,72
 Gemma-9B,ctxcolor,3 transfer (T ≥ .5),start at logit lens,32,2,True,24
 Gemma-9B,ctxcolor,3 transfer (T ≥ .5),start at highest peak,32,16,True,192
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),peak jumps + bisection,32,7,True,84
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),binary search from earliest peak,32,6,True,72
 Gemma-9B,emotion,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,emotion,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,emotion,2 onset (α=1),start at logit lens,32,6,True,6
 Gemma-9B,emotion,2 onset (α=1),start at highest peak,32,6,True,6
+Gemma-9B,emotion,2 onset (α=1),peak jumps + bisection,32,6,True,6
+Gemma-9B,emotion,2 onset (α=1),binary search from earliest peak,32,6,True,6
 Gemma-9B,hour,1 handoff,full sweep,32,32,True,32
 Gemma-9B,hour,1 handoff,binary search,32,6,True,6
 Gemma-9B,hour,1 handoff,start at logit lens,32,7,True,7
 Gemma-9B,hour,1 handoff,start at highest peak,32,6,True,6
+Gemma-9B,hour,1 handoff,peak jumps + bisection,32,4,True,4
+Gemma-9B,hour,1 handoff,binary search from earliest peak,32,5,True,5
 Gemma-9B,hour,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,hour,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,hour,2 onset (α=1),start at logit lens,32,3,True,3
 Gemma-9B,hour,2 onset (α=1),start at highest peak,32,2,True,2
+Gemma-9B,hour,2 onset (α=1),peak jumps + bisection,32,3,True,3
+Gemma-9B,hour,2 onset (α=1),binary search from earliest peak,32,5,True,5
 Gemma-9B,hour,3 transfer (T ≥ .5),full sweep,32,32,True,256
 Gemma-9B,hour,3 transfer (T ≥ .5),binary search,32,6,True,48
 Gemma-9B,hour,3 transfer (T ≥ .5),start at logit lens,32,3,True,24
 Gemma-9B,hour,3 transfer (T ≥ .5),start at highest peak,32,2,True,16
+Gemma-9B,hour,3 transfer (T ≥ .5),peak jumps + bisection,32,3,True,24
+Gemma-9B,hour,3 transfer (T ≥ .5),binary search from earliest peak,32,5,True,40
 Gemma-9B,letter,1 handoff,full sweep,32,32,True,32
 Gemma-9B,letter,1 handoff,binary search,32,6,True,6
 Gemma-9B,letter,1 handoff,start at logit lens,32,7,True,7
 Gemma-9B,letter,1 handoff,start at highest peak,32,3,True,3
+Gemma-9B,letter,1 handoff,peak jumps + bisection,32,5,True,5
+Gemma-9B,letter,1 handoff,binary search from earliest peak,32,6,True,6
 Gemma-9B,letter,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,letter,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,letter,2 onset (α=1),start at logit lens,32,6,True,6
 Gemma-9B,letter,2 onset (α=1),start at highest peak,32,4,True,4
+Gemma-9B,letter,2 onset (α=1),peak jumps + bisection,32,5,True,5
+Gemma-9B,letter,2 onset (α=1),binary search from earliest peak,32,6,True,6
 Gemma-9B,letter,3 transfer (T ≥ .5),full sweep,32,32,True,256
 Gemma-9B,letter,3 transfer (T ≥ .5),binary search,32,6,True,48
 Gemma-9B,letter,3 transfer (T ≥ .5),start at logit lens,32,2,True,16
 Gemma-9B,letter,3 transfer (T ≥ .5),start at highest peak,32,9,True,72
+Gemma-9B,letter,3 transfer (T ≥ .5),peak jumps + bisection,32,6,True,48
+Gemma-9B,letter,3 transfer (T ≥ .5),binary search from earliest peak,32,5,True,40
 Gemma-9B,month,1 handoff,full sweep,32,32,True,32
 Gemma-9B,month,1 handoff,binary search,32,6,True,6
 Gemma-9B,month,1 handoff,start at logit lens,32,3,True,3
 Gemma-9B,month,1 handoff,start at highest peak,32,6,True,6
+Gemma-9B,month,1 handoff,peak jumps + bisection,32,6,True,6
+Gemma-9B,month,1 handoff,binary search from earliest peak,32,4,False,4
 Gemma-9B,month,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,month,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,month,2 onset (α=1),start at logit lens,32,3,True,3
 Gemma-9B,month,2 onset (α=1),start at highest peak,32,3,True,3
+Gemma-9B,month,2 onset (α=1),peak jumps + bisection,32,3,True,3
+Gemma-9B,month,2 onset (α=1),binary search from earliest peak,32,5,True,5
 Gemma-9B,month,3 transfer (T ≥ .5),full sweep,32,32,True,256
 Gemma-9B,month,3 transfer (T ≥ .5),binary search,32,6,True,48
 Gemma-9B,month,3 transfer (T ≥ .5),start at logit lens,32,3,True,24
 Gemma-9B,month,3 transfer (T ≥ .5),start at highest peak,32,3,True,24
+Gemma-9B,month,3 transfer (T ≥ .5),peak jumps + bisection,32,3,True,24
+Gemma-9B,month,3 transfer (T ≥ .5),binary search from earliest peak,32,5,True,40
 Gemma-9B,weekday,1 handoff,full sweep,32,32,True,32
 Gemma-9B,weekday,1 handoff,binary search,32,6,True,6
 Gemma-9B,weekday,1 handoff,start at logit lens,32,2,True,2
 Gemma-9B,weekday,1 handoff,start at highest peak,32,7,True,7
+Gemma-9B,weekday,1 handoff,peak jumps + bisection,32,4,True,4
+Gemma-9B,weekday,1 handoff,binary search from earliest peak,32,6,True,6
 Gemma-9B,weekday,2 onset (α=1),full sweep,32,32,True,32
 Gemma-9B,weekday,2 onset (α=1),binary search,32,6,True,6
 Gemma-9B,weekday,2 onset (α=1),start at logit lens,32,6,True,6
 Gemma-9B,weekday,2 onset (α=1),start at highest peak,32,3,True,3
+Gemma-9B,weekday,2 onset (α=1),peak jumps + bisection,32,5,True,5
+Gemma-9B,weekday,2 onset (α=1),binary search from earliest peak,32,5,True,5
 Gemma-9B,weekday,3 transfer (T ≥ .5),full sweep,32,32,True,256
 Gemma-9B,weekday,3 transfer (T ≥ .5),binary search,32,6,True,48
 Gemma-9B,weekday,3 transfer (T ≥ .5),start at logit lens,32,5,True,40
 Gemma-9B,weekday,3 transfer (T ≥ .5),start at highest peak,32,4,True,32
+Gemma-9B,weekday,3 transfer (T ≥ .5),peak jumps + bisection,32,4,True,32
+Gemma-9B,weekday,3 transfer (T ≥ .5),binary search from earliest peak,32,6,True,48
 Qwen-14B,capital2hop,1 handoff,full sweep,36,36,True,36
 Qwen-14B,capital2hop,1 handoff,binary search,36,6,True,6
 Qwen-14B,capital2hop,1 handoff,start at logit lens,36,3,True,3
 Qwen-14B,capital2hop,1 handoff,start at highest peak,36,2,True,2
+Qwen-14B,capital2hop,1 handoff,peak jumps + bisection,36,3,True,3
+Qwen-14B,capital2hop,1 handoff,binary search from earliest peak,36,5,True,5
 Qwen-14B,capital2hop,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,capital2hop,2 onset (α=1),binary search,36,6,True,6
 Qwen-14B,capital2hop,2 onset (α=1),start at logit lens,36,3,True,3
 Qwen-14B,capital2hop,2 onset (α=1),start at highest peak,36,2,True,2
+Qwen-14B,capital2hop,2 onset (α=1),peak jumps + bisection,36,3,True,3
+Qwen-14B,capital2hop,2 onset (α=1),binary search from earliest peak,36,5,True,5
 Qwen-14B,capital2hop,3 transfer (T ≥ .5),full sweep,36,36,True,468
 Qwen-14B,capital2hop,3 transfer (T ≥ .5),binary search,36,6,True,78
 Qwen-14B,capital2hop,3 transfer (T ≥ .5),start at logit lens,36,2,True,26
 Qwen-14B,capital2hop,3 transfer (T ≥ .5),start at highest peak,36,4,True,52
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),peak jumps + bisection,36,7,True,91
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),binary search from earliest peak,36,5,True,65
 Qwen-14B,city,1 handoff,full sweep,36,36,True,36
 Qwen-14B,city,1 handoff,binary search,36,6,True,6
 Qwen-14B,city,1 handoff,start at logit lens,36,4,True,4
 Qwen-14B,city,1 handoff,start at highest peak,36,4,True,4
+Qwen-14B,city,1 handoff,peak jumps + bisection,36,3,True,3
+Qwen-14B,city,1 handoff,binary search from earliest peak,36,6,True,6
 Qwen-14B,city,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,city,2 onset (α=1),binary search,36,6,True,6
 Qwen-14B,city,2 onset (α=1),start at logit lens,36,2,True,2
 Qwen-14B,city,2 onset (α=1),start at highest peak,36,2,True,2
+Qwen-14B,city,2 onset (α=1),peak jumps + bisection,36,5,True,5
+Qwen-14B,city,2 onset (α=1),binary search from earliest peak,36,5,True,5
 Qwen-14B,city,3 transfer (T ≥ .5),full sweep,36,36,True,468
 Qwen-14B,city,3 transfer (T ≥ .5),binary search,36,6,True,78
 Qwen-14B,city,3 transfer (T ≥ .5),start at logit lens,36,2,True,26
 Qwen-14B,city,3 transfer (T ≥ .5),start at highest peak,36,2,True,26
+Qwen-14B,city,3 transfer (T ≥ .5),peak jumps + bisection,36,4,True,52
+Qwen-14B,city,3 transfer (T ≥ .5),binary search from earliest peak,36,6,True,78
 Qwen-14B,color,1 handoff,full sweep,36,36,True,36
 Qwen-14B,color,1 handoff,binary search,36,6,True,6
 Qwen-14B,color,1 handoff,start at logit lens,36,6,True,6
 Qwen-14B,color,1 handoff,start at highest peak,36,9,True,9
+Qwen-14B,color,1 handoff,peak jumps + bisection,36,6,True,6
+Qwen-14B,color,1 handoff,binary search from earliest peak,36,6,True,6
 Qwen-14B,color,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,color,2 onset (α=1),binary search,36,6,True,6
 Qwen-14B,color,2 onset (α=1),start at logit lens,36,5,True,5
 Qwen-14B,color,2 onset (α=1),start at highest peak,36,8,True,8
+Qwen-14B,color,2 onset (α=1),peak jumps + bisection,36,6,True,6
+Qwen-14B,color,2 onset (α=1),binary search from earliest peak,36,5,True,5
 Qwen-14B,color,3 transfer (T ≥ .5),full sweep,36,36,True,360
 Qwen-14B,color,3 transfer (T ≥ .5),binary search,36,6,True,60
 Qwen-14B,color,3 transfer (T ≥ .5),start at logit lens,36,6,True,60
 Qwen-14B,color,3 transfer (T ≥ .5),start at highest peak,36,9,True,90
+Qwen-14B,color,3 transfer (T ≥ .5),peak jumps + bisection,36,6,True,60
+Qwen-14B,color,3 transfer (T ≥ .5),binary search from earliest peak,36,6,True,60
 Qwen-14B,continent,1 handoff,full sweep,36,36,True,36
 Qwen-14B,continent,1 handoff,binary search,36,6,True,6
 Qwen-14B,continent,1 handoff,start at logit lens,36,3,True,3
 Qwen-14B,continent,1 handoff,start at highest peak,36,2,True,2
+Qwen-14B,continent,1 handoff,peak jumps + bisection,36,3,True,3
+Qwen-14B,continent,1 handoff,binary search from earliest peak,36,6,True,6
 Qwen-14B,continent,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,continent,2 onset (α=1),binary search,36,6,True,6
 Qwen-14B,continent,2 onset (α=1),start at logit lens,36,4,True,4
 Qwen-14B,continent,2 onset (α=1),start at highest peak,36,2,True,2
+Qwen-14B,continent,2 onset (α=1),peak jumps + bisection,36,5,True,5
+Qwen-14B,continent,2 onset (α=1),binary search from earliest peak,36,6,True,6
 Qwen-14B,continent,3 transfer (T ≥ .5),full sweep,36,36,True,468
 Qwen-14B,continent,3 transfer (T ≥ .5),binary search,36,6,True,78
 Qwen-14B,continent,3 transfer (T ≥ .5),start at logit lens,36,2,True,26
 Qwen-14B,continent,3 transfer (T ≥ .5),start at highest peak,36,4,True,52
+Qwen-14B,continent,3 transfer (T ≥ .5),peak jumps + bisection,36,6,True,78
+Qwen-14B,continent,3 transfer (T ≥ .5),binary search from earliest peak,36,6,True,78
 Qwen-14B,ctxcolor,1 handoff,full sweep,36,36,True,36
 Qwen-14B,ctxcolor,1 handoff,binary search,36,6,True,6
 Qwen-14B,ctxcolor,1 handoff,start at logit lens,36,3,True,3
 Qwen-14B,ctxcolor,1 handoff,start at highest peak,36,7,True,7
+Qwen-14B,ctxcolor,1 handoff,peak jumps + bisection,36,6,True,6
+Qwen-14B,ctxcolor,1 handoff,binary search from earliest peak,36,6,True,6
 Qwen-14B,ctxcolor,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,ctxcolor,2 onset (α=1),binary search,36,6,True,6
 Qwen-14B,ctxcolor,2 onset (α=1),start at logit lens,36,2,True,2
 Qwen-14B,ctxcolor,2 onset (α=1),start at highest peak,36,9,True,9
+Qwen-14B,ctxcolor,2 onset (α=1),peak jumps + bisection,36,7,True,7
+Qwen-14B,ctxcolor,2 onset (α=1),binary search from earliest peak,36,6,True,6
 Qwen-14B,ctxcolor,3 transfer (T ≥ .5),full sweep,36,36,True,432
 Qwen-14B,ctxcolor,3 transfer (T ≥ .5),binary search,36,6,True,72
 Qwen-14B,ctxcolor,3 transfer (T ≥ .5),start at logit lens,36,2,True,24
 Qwen-14B,ctxcolor,3 transfer (T ≥ .5),start at highest peak,36,8,True,96
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),peak jumps + bisection,36,6,True,72
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),binary search from earliest peak,36,5,True,60
 Qwen-14B,emotion,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,emotion,2 onset (α=1),binary search,36,7,True,7
 Qwen-14B,emotion,2 onset (α=1),start at logit lens,36,12,True,12
 Qwen-14B,emotion,2 onset (α=1),start at highest peak,36,4,True,4
+Qwen-14B,emotion,2 onset (α=1),peak jumps + bisection,36,6,True,6
+Qwen-14B,emotion,2 onset (α=1),binary search from earliest peak,36,6,True,6
 Qwen-14B,emotion,3 transfer (T ≥ .5),full sweep,36,36,True,540
 Qwen-14B,emotion,3 transfer (T ≥ .5),binary search,36,6,True,90
 Qwen-14B,emotion,3 transfer (T ≥ .5),start at logit lens,36,10,True,150
 Qwen-14B,emotion,3 transfer (T ≥ .5),start at highest peak,36,6,True,90
+Qwen-14B,emotion,3 transfer (T ≥ .5),peak jumps + bisection,36,6,True,90
+Qwen-14B,emotion,3 transfer (T ≥ .5),binary search from earliest peak,36,6,True,90
 Qwen-14B,hour,1 handoff,full sweep,36,36,True,36
 Qwen-14B,hour,1 handoff,binary search,36,6,True,6
 Qwen-14B,hour,1 handoff,start at logit lens,36,5,True,5
 Qwen-14B,hour,1 handoff,start at highest peak,36,3,True,3
+Qwen-14B,hour,1 handoff,peak jumps + bisection,36,5,True,5
+Qwen-14B,hour,1 handoff,binary search from earliest peak,36,5,True,5
 Qwen-14B,hour,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,hour,2 onset (α=1),binary search,36,6,True,6
 Qwen-14B,hour,2 onset (α=1),start at logit lens,36,3,True,3
 Qwen-14B,hour,2 onset (α=1),start at highest peak,36,2,True,2
+Qwen-14B,hour,2 onset (α=1),peak jumps + bisection,36,3,True,3
+Qwen-14B,hour,2 onset (α=1),binary search from earliest peak,36,5,True,5
 Qwen-14B,hour,3 transfer (T ≥ .5),full sweep,36,36,True,288
 Qwen-14B,hour,3 transfer (T ≥ .5),binary search,36,6,True,48
 Qwen-14B,hour,3 transfer (T ≥ .5),start at logit lens,36,4,True,32
 Qwen-14B,hour,3 transfer (T ≥ .5),start at highest peak,36,2,True,16
+Qwen-14B,hour,3 transfer (T ≥ .5),peak jumps + bisection,36,5,True,40
+Qwen-14B,hour,3 transfer (T ≥ .5),binary search from earliest peak,36,5,True,40
 Qwen-14B,letter,1 handoff,full sweep,36,36,True,36
 Qwen-14B,letter,1 handoff,binary search,36,6,True,6
 Qwen-14B,letter,1 handoff,start at logit lens,36,5,True,5
 Qwen-14B,letter,1 handoff,start at highest peak,36,3,True,3
+Qwen-14B,letter,1 handoff,peak jumps + bisection,36,5,True,5
+Qwen-14B,letter,1 handoff,binary search from earliest peak,36,5,True,5
 Qwen-14B,letter,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,letter,2 onset (α=1),binary search,36,6,True,6
 Qwen-14B,letter,2 onset (α=1),start at logit lens,36,4,True,4
 Qwen-14B,letter,2 onset (α=1),start at highest peak,36,2,True,2
+Qwen-14B,letter,2 onset (α=1),peak jumps + bisection,36,5,True,5
+Qwen-14B,letter,2 onset (α=1),binary search from earliest peak,36,5,True,5
 Qwen-14B,letter,3 transfer (T ≥ .5),full sweep,36,36,True,288
 Qwen-14B,letter,3 transfer (T ≥ .5),binary search,36,7,True,56
 Qwen-14B,letter,3 transfer (T ≥ .5),start at logit lens,36,2,True,16
 Qwen-14B,letter,3 transfer (T ≥ .5),start at highest peak,36,4,True,32
+Qwen-14B,letter,3 transfer (T ≥ .5),peak jumps + bisection,36,4,True,32
+Qwen-14B,letter,3 transfer (T ≥ .5),binary search from earliest peak,36,5,True,40
 Qwen-14B,month,1 handoff,full sweep,36,36,True,36
 Qwen-14B,month,1 handoff,binary search,36,6,True,6
 Qwen-14B,month,1 handoff,start at logit lens,36,3,True,3
 Qwen-14B,month,1 handoff,start at highest peak,36,3,True,3
+Qwen-14B,month,1 handoff,peak jumps + bisection,36,6,True,6
+Qwen-14B,month,1 handoff,binary search from earliest peak,36,4,True,4
 Qwen-14B,month,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,month,2 onset (α=1),binary search,36,6,True,6
 Qwen-14B,month,2 onset (α=1),start at logit lens,36,5,True,5
 Qwen-14B,month,2 onset (α=1),start at highest peak,36,2,True,2
+Qwen-14B,month,2 onset (α=1),peak jumps + bisection,36,3,True,3
+Qwen-14B,month,2 onset (α=1),binary search from earliest peak,36,5,True,5
 Qwen-14B,month,3 transfer (T ≥ .5),full sweep,36,36,True,324
 Qwen-14B,month,3 transfer (T ≥ .5),binary search,36,6,True,54
 Qwen-14B,month,3 transfer (T ≥ .5),start at logit lens,36,4,True,36
 Qwen-14B,month,3 transfer (T ≥ .5),start at highest peak,36,2,True,18
+Qwen-14B,month,3 transfer (T ≥ .5),peak jumps + bisection,36,6,True,54
+Qwen-14B,month,3 transfer (T ≥ .5),binary search from earliest peak,36,5,True,45
 Qwen-14B,weekday,1 handoff,full sweep,36,36,True,36
 Qwen-14B,weekday,1 handoff,binary search,36,6,True,6
 Qwen-14B,weekday,1 handoff,start at logit lens,36,2,True,2
 Qwen-14B,weekday,1 handoff,start at highest peak,36,3,True,3
+Qwen-14B,weekday,1 handoff,peak jumps + bisection,36,5,True,5
+Qwen-14B,weekday,1 handoff,binary search from earliest peak,36,5,True,5
 Qwen-14B,weekday,2 onset (α=1),full sweep,36,36,True,36
 Qwen-14B,weekday,2 onset (α=1),binary search,36,6,True,6
 Qwen-14B,weekday,2 onset (α=1),start at logit lens,36,2,True,2
 Qwen-14B,weekday,2 onset (α=1),start at highest peak,36,2,True,2
+Qwen-14B,weekday,2 onset (α=1),peak jumps + bisection,36,5,True,5
+Qwen-14B,weekday,2 onset (α=1),binary search from earliest peak,36,5,True,5
 Qwen-14B,weekday,3 transfer (T ≥ .5),full sweep,36,36,True,324
 Qwen-14B,weekday,3 transfer (T ≥ .5),binary search,36,6,True,54
 Qwen-14B,weekday,3 transfer (T ≥ .5),start at logit lens,36,2,True,18
 Qwen-14B,weekday,3 transfer (T ≥ .5),start at highest peak,36,2,True,18
+Qwen-14B,weekday,3 transfer (T ≥ .5),peak jumps + bisection,36,5,True,45
+Qwen-14B,weekday,3 transfer (T ≥ .5),binary search from earliest peak,36,5,True,45
 Phi-4,capital2hop,1 handoff,full sweep,30,30,True,30
 Phi-4,capital2hop,1 handoff,binary search,30,6,True,6
 Phi-4,capital2hop,1 handoff,start at logit lens,30,2,True,2
 Phi-4,capital2hop,1 handoff,start at highest peak,30,2,True,2
+Phi-4,capital2hop,1 handoff,peak jumps + bisection,30,5,True,5
+Phi-4,capital2hop,1 handoff,binary search from earliest peak,30,6,True,6
 Phi-4,capital2hop,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,capital2hop,2 onset (α=1),binary search,30,6,True,6
 Phi-4,capital2hop,2 onset (α=1),start at logit lens,30,2,True,2
 Phi-4,capital2hop,2 onset (α=1),start at highest peak,30,2,True,2
+Phi-4,capital2hop,2 onset (α=1),peak jumps + bisection,30,5,True,5
+Phi-4,capital2hop,2 onset (α=1),binary search from earliest peak,30,6,True,6
 Phi-4,capital2hop,3 transfer (T ≥ .5),full sweep,30,30,True,540
 Phi-4,capital2hop,3 transfer (T ≥ .5),binary search,30,6,True,108
 Phi-4,capital2hop,3 transfer (T ≥ .5),start at logit lens,30,2,True,36
 Phi-4,capital2hop,3 transfer (T ≥ .5),start at highest peak,30,2,True,36
+Phi-4,capital2hop,3 transfer (T ≥ .5),peak jumps + bisection,30,5,True,90
+Phi-4,capital2hop,3 transfer (T ≥ .5),binary search from earliest peak,30,6,True,108
 Phi-4,city,1 handoff,full sweep,30,30,True,30
 Phi-4,city,1 handoff,binary search,30,6,True,6
 Phi-4,city,1 handoff,start at logit lens,30,2,True,2
 Phi-4,city,1 handoff,start at highest peak,30,2,True,2
+Phi-4,city,1 handoff,peak jumps + bisection,30,5,True,5
+Phi-4,city,1 handoff,binary search from earliest peak,30,6,True,6
 Phi-4,city,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,city,2 onset (α=1),binary search,30,6,True,6
 Phi-4,city,2 onset (α=1),start at logit lens,30,2,True,2
 Phi-4,city,2 onset (α=1),start at highest peak,30,2,True,2
+Phi-4,city,2 onset (α=1),peak jumps + bisection,30,5,True,5
+Phi-4,city,2 onset (α=1),binary search from earliest peak,30,6,True,6
 Phi-4,city,3 transfer (T ≥ .5),full sweep,30,30,True,540
 Phi-4,city,3 transfer (T ≥ .5),binary search,30,6,True,108
 Phi-4,city,3 transfer (T ≥ .5),start at logit lens,30,2,True,36
 Phi-4,city,3 transfer (T ≥ .5),start at highest peak,30,2,True,36
+Phi-4,city,3 transfer (T ≥ .5),peak jumps + bisection,30,5,True,90
+Phi-4,city,3 transfer (T ≥ .5),binary search from earliest peak,30,6,True,108
 Phi-4,color,1 handoff,full sweep,30,30,True,30
 Phi-4,color,1 handoff,binary search,30,6,True,6
 Phi-4,color,1 handoff,start at logit lens,30,3,True,3
 Phi-4,color,1 handoff,start at highest peak,30,8,True,8
+Phi-4,color,1 handoff,peak jumps + bisection,30,5,True,5
+Phi-4,color,1 handoff,binary search from earliest peak,30,6,True,6
 Phi-4,color,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,color,2 onset (α=1),binary search,30,5,True,5
 Phi-4,color,2 onset (α=1),start at logit lens,30,4,True,4
 Phi-4,color,2 onset (α=1),start at highest peak,30,9,True,9
+Phi-4,color,2 onset (α=1),peak jumps + bisection,30,7,True,7
+Phi-4,color,2 onset (α=1),binary search from earliest peak,30,6,True,6
 Phi-4,color,3 transfer (T ≥ .5),full sweep,30,30,True,390
 Phi-4,color,3 transfer (T ≥ .5),binary search,30,6,True,78
 Phi-4,color,3 transfer (T ≥ .5),start at logit lens,30,3,True,39
 Phi-4,color,3 transfer (T ≥ .5),start at highest peak,30,8,True,104
+Phi-4,color,3 transfer (T ≥ .5),peak jumps + bisection,30,5,True,65
+Phi-4,color,3 transfer (T ≥ .5),binary search from earliest peak,30,6,True,78
 Phi-4,continent,1 handoff,full sweep,30,30,True,30
 Phi-4,continent,1 handoff,binary search,30,6,True,6
 Phi-4,continent,1 handoff,start at logit lens,30,2,True,2
 Phi-4,continent,1 handoff,start at highest peak,30,2,True,2
+Phi-4,continent,1 handoff,peak jumps + bisection,30,4,True,4
+Phi-4,continent,1 handoff,binary search from earliest peak,30,6,True,6
 Phi-4,continent,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,continent,2 onset (α=1),binary search,30,6,True,6
 Phi-4,continent,2 onset (α=1),start at logit lens,30,2,True,2
 Phi-4,continent,2 onset (α=1),start at highest peak,30,2,True,2
+Phi-4,continent,2 onset (α=1),peak jumps + bisection,30,4,True,4
+Phi-4,continent,2 onset (α=1),binary search from earliest peak,30,6,True,6
 Phi-4,continent,3 transfer (T ≥ .5),full sweep,30,30,True,540
 Phi-4,continent,3 transfer (T ≥ .5),binary search,30,6,True,108
 Phi-4,continent,3 transfer (T ≥ .5),start at logit lens,30,2,True,36
 Phi-4,continent,3 transfer (T ≥ .5),start at highest peak,30,2,True,36
+Phi-4,continent,3 transfer (T ≥ .5),peak jumps + bisection,30,4,True,72
+Phi-4,continent,3 transfer (T ≥ .5),binary search from earliest peak,30,6,True,108
 Phi-4,ctxcolor,1 handoff,full sweep,30,30,True,30
 Phi-4,ctxcolor,1 handoff,binary search,30,6,True,6
 Phi-4,ctxcolor,1 handoff,start at logit lens,30,3,True,3
 Phi-4,ctxcolor,1 handoff,start at highest peak,30,5,True,5
+Phi-4,ctxcolor,1 handoff,peak jumps + bisection,30,4,True,4
+Phi-4,ctxcolor,1 handoff,binary search from earliest peak,30,5,True,5
 Phi-4,ctxcolor,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,ctxcolor,2 onset (α=1),binary search,30,6,True,6
 Phi-4,ctxcolor,2 onset (α=1),start at logit lens,30,2,True,2
 Phi-4,ctxcolor,2 onset (α=1),start at highest peak,30,6,True,6
+Phi-4,ctxcolor,2 onset (α=1),peak jumps + bisection,30,5,True,5
+Phi-4,ctxcolor,2 onset (α=1),binary search from earliest peak,30,6,True,6
 Phi-4,ctxcolor,3 transfer (T ≥ .5),full sweep,30,30,True,420
 Phi-4,ctxcolor,3 transfer (T ≥ .5),binary search,30,5,True,70
 Phi-4,ctxcolor,3 transfer (T ≥ .5),start at logit lens,30,4,True,56
 Phi-4,ctxcolor,3 transfer (T ≥ .5),start at highest peak,30,4,True,56
+Phi-4,ctxcolor,3 transfer (T ≥ .5),peak jumps + bisection,30,5,True,70
+Phi-4,ctxcolor,3 transfer (T ≥ .5),binary search from earliest peak,30,6,True,84
 Phi-4,emotion,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,emotion,2 onset (α=1),binary search,30,6,True,6
 Phi-4,emotion,2 onset (α=1),start at logit lens,30,12,True,12
 Phi-4,emotion,2 onset (α=1),start at highest peak,30,2,True,2
+Phi-4,emotion,2 onset (α=1),peak jumps + bisection,30,5,True,5
+Phi-4,emotion,2 onset (α=1),binary search from earliest peak,30,6,True,6
 Phi-4,emotion,3 transfer (T ≥ .5),full sweep,30,30,True,480
 Phi-4,emotion,3 transfer (T ≥ .5),binary search,30,6,True,96
 Phi-4,emotion,3 transfer (T ≥ .5),start at logit lens,30,14,True,224
 Phi-4,emotion,3 transfer (T ≥ .5),start at highest peak,30,4,True,64
+Phi-4,emotion,3 transfer (T ≥ .5),peak jumps + bisection,30,6,True,96
+Phi-4,emotion,3 transfer (T ≥ .5),binary search from earliest peak,30,6,True,96
 Phi-4,hour,1 handoff,full sweep,30,30,True,30
 Phi-4,hour,1 handoff,binary search,30,6,True,6
 Phi-4,hour,1 handoff,start at logit lens,30,9,True,9
 Phi-4,hour,1 handoff,start at highest peak,30,2,True,2
+Phi-4,hour,1 handoff,peak jumps + bisection,30,5,True,5
+Phi-4,hour,1 handoff,binary search from earliest peak,30,5,True,5
 Phi-4,hour,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,hour,2 onset (α=1),binary search,30,6,True,6
 Phi-4,hour,2 onset (α=1),start at logit lens,30,4,True,4
 Phi-4,hour,2 onset (α=1),start at highest peak,30,6,True,6
+Phi-4,hour,2 onset (α=1),peak jumps + bisection,30,5,True,5
+Phi-4,hour,2 onset (α=1),binary search from earliest peak,30,5,True,5
 Phi-4,hour,3 transfer (T ≥ .5),full sweep,30,30,True,300
 Phi-4,hour,3 transfer (T ≥ .5),binary search,30,6,True,60
 Phi-4,hour,3 transfer (T ≥ .5),start at logit lens,30,5,True,50
 Phi-4,hour,3 transfer (T ≥ .5),start at highest peak,30,5,True,50
+Phi-4,hour,3 transfer (T ≥ .5),peak jumps + bisection,30,5,True,50
+Phi-4,hour,3 transfer (T ≥ .5),binary search from earliest peak,30,5,True,50
 Phi-4,letter,1 handoff,full sweep,30,30,True,30
 Phi-4,letter,1 handoff,binary search,30,6,True,6
 Phi-4,letter,1 handoff,start at logit lens,30,12,True,12
 Phi-4,letter,1 handoff,start at highest peak,30,3,True,3
+Phi-4,letter,1 handoff,peak jumps + bisection,30,4,True,4
+Phi-4,letter,1 handoff,binary search from earliest peak,30,6,True,6
 Phi-4,letter,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,letter,2 onset (α=1),binary search,30,6,True,6
 Phi-4,letter,2 onset (α=1),start at logit lens,30,8,True,8
 Phi-4,letter,2 onset (α=1),start at highest peak,30,7,True,7
+Phi-4,letter,2 onset (α=1),peak jumps + bisection,30,6,True,6
+Phi-4,letter,2 onset (α=1),binary search from earliest peak,30,5,True,5
 Phi-4,letter,3 transfer (T ≥ .5),full sweep,30,30,True,300
 Phi-4,letter,3 transfer (T ≥ .5),binary search,30,6,True,60
 Phi-4,letter,3 transfer (T ≥ .5),start at logit lens,30,2,True,20
 Phi-4,letter,3 transfer (T ≥ .5),start at highest peak,30,13,True,130
+Phi-4,letter,3 transfer (T ≥ .5),peak jumps + bisection,30,7,True,70
+Phi-4,letter,3 transfer (T ≥ .5),binary search from earliest peak,30,5,True,50
 Phi-4,month,1 handoff,full sweep,30,30,True,30
 Phi-4,month,1 handoff,binary search,30,6,True,6
 Phi-4,month,1 handoff,start at logit lens,30,4,True,4
 Phi-4,month,1 handoff,start at highest peak,30,5,True,5
+Phi-4,month,1 handoff,peak jumps + bisection,30,5,True,5
+Phi-4,month,1 handoff,binary search from earliest peak,30,6,True,6
 Phi-4,month,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,month,2 onset (α=1),binary search,30,6,True,6
 Phi-4,month,2 onset (α=1),start at logit lens,30,3,True,3
 Phi-4,month,2 onset (α=1),start at highest peak,30,2,True,2
+Phi-4,month,2 onset (α=1),peak jumps + bisection,30,5,True,5
+Phi-4,month,2 onset (α=1),binary search from earliest peak,30,6,True,6
 Phi-4,month,3 transfer (T ≥ .5),full sweep,30,30,True,390
 Phi-4,month,3 transfer (T ≥ .5),binary search,30,6,True,78
 Phi-4,month,3 transfer (T ≥ .5),start at logit lens,30,3,True,39
 Phi-4,month,3 transfer (T ≥ .5),start at highest peak,30,2,True,26
+Phi-4,month,3 transfer (T ≥ .5),peak jumps + bisection,30,5,True,65
+Phi-4,month,3 transfer (T ≥ .5),binary search from earliest peak,30,6,True,78
 Phi-4,weekday,1 handoff,full sweep,30,30,True,30
 Phi-4,weekday,1 handoff,binary search,30,6,True,6
 Phi-4,weekday,1 handoff,start at logit lens,30,4,True,4
 Phi-4,weekday,1 handoff,start at highest peak,30,3,True,3
+Phi-4,weekday,1 handoff,peak jumps + bisection,30,3,True,3
+Phi-4,weekday,1 handoff,binary search from earliest peak,30,6,True,6
 Phi-4,weekday,2 onset (α=1),full sweep,30,30,True,30
 Phi-4,weekday,2 onset (α=1),binary search,30,6,True,6
 Phi-4,weekday,2 onset (α=1),start at logit lens,30,5,True,5
 Phi-4,weekday,2 onset (α=1),start at highest peak,30,9,True,9
+Phi-4,weekday,2 onset (α=1),peak jumps + bisection,30,8,True,8
+Phi-4,weekday,2 onset (α=1),binary search from earliest peak,30,6,True,6
 Phi-4,weekday,3 transfer (T ≥ .5),full sweep,30,30,True,300
 Phi-4,weekday,3 transfer (T ≥ .5),binary search,30,6,True,60
 Phi-4,weekday,3 transfer (T ≥ .5),start at logit lens,30,5,True,50
 Phi-4,weekday,3 transfer (T ≥ .5),start at highest peak,30,9,True,90
+Phi-4,weekday,3 transfer (T ≥ .5),peak jumps + bisection,30,8,True,80
+Phi-4,weekday,3 transfer (T ≥ .5),binary search from earliest peak,30,6,True,60
