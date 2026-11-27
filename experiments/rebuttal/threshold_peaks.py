@@ -19,8 +19,8 @@ SHORT = dict(zip(MODELS, ["Qwen-7B", "Llama-8B", "Mistral-7B", "Gemma-9B", "Qwen
 BTYPES = ["probe", "patch", "steer", "handoff", "onset1", "onset8", "transfer"]
 RULES = [("top3", None), ("argmax", None), ("mad", 2.0), ("mad", 3.0), ("mad", 4.0), ("mad", 5.0), ("fold", 2.0), ("fold", 3.0), ("fold", 4.0)]
 
-def rise(v, thr):
-    d = np.diff(np.asarray(v, float)); d[~np.isfinite(d)] = -np.inf; i = int(np.argmax(d))
+def rise(v, thr):  # largest one-layer rise within the late layers (from round(0.25 L)), as in Table 1
+    d = np.diff(np.asarray(v, float)); d[~np.isfinite(d)] = -np.inf; d[:max(0, int(round(len(v) * EARLY)) - 1)] = -np.inf; i = int(np.argmax(d))
     return i + 1 if d[i] >= thr else None
 
 def transfer_rise(M, t):

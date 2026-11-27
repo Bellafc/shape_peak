@@ -31,8 +31,8 @@ def peaks(x, peakr=None):
     pk = [L for L in range(max(1, lo), NL) if np.isfinite(x[L]) and x[L] >= np.nanmax(x[max(1, L - 1):L + 2]) and x[L] >= peakr * med]
     return sorted(pk, key=lambda L: -x[L])[:3]
 
-def rise(v, thr):
-    d = np.diff(np.asarray(v, float)); d[~np.isfinite(d)] = -np.inf; i = int(np.argmax(d))
+def rise(v, thr):  # largest one-layer rise within the late layers (from round(0.25 L)), as in Table 1
+    d = np.diff(np.asarray(v, float)); d[~np.isfinite(d)] = -np.inf; d[:max(0, int(round(len(v) * EARLY)) - 1)] = -np.inf; i = int(np.argmax(d))
     return i + 1 if d[i] >= thr else None
 
 def transfer_rise(t):
