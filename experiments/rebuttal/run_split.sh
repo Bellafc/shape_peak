@@ -10,7 +10,7 @@ set -euo pipefail
 cd "$(dirname "$0")/../.."
 ROOT=$(pwd); R=$ROOT/data/split; mkdir -p $R/A $R/B $R/logs
 export HF_HOME=${HF_HOME:-/workspace/hf}
-MODELS=${MODELS:-"qwen:Qwen2.5-7B-Instruct:Qwen/Qwen2.5-7B-Instruct llama:Llama-3.1-8B-Instruct:unsloth/Llama-3.1-8B-Instruct mistral:Mistral-7B-Instruct-v0.3:mistralai/Mistral-7B-Instruct-v0.3 gemma:Gemma-2-9B-it:unsloth/gemma-2-9b-it qwen:Qwen2.5-14B-Instruct:Qwen/Qwen2.5-14B-Instruct phi:Phi-4-14B:microsoft/phi-4"}
+MODELS=${MODELS:-"qwen:Qwen2.5-7B-Instruct:Qwen/Qwen2.5-7B-Instruct llama:Llama-3.1-8B-Instruct:unsloth/Llama-3.1-8B-Instruct mistral:Mistral-7B-Instruct-v0.3:unsloth/mistral-7b-instruct-v0.3 gemma:Gemma-2-9B-it:unsloth/gemma-2-9b-it qwen:Qwen2.5-14B-Instruct:Qwen/Qwen2.5-14B-Instruct phi:Phi-4-14B:microsoft/phi-4"}
 TASKS=${TASKS:-"weekday month city continent"}
 ARITH=" weekday month hour letter "
 
