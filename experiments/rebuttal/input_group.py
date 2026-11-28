@@ -26,16 +26,18 @@ for f in sorted(glob.glob(f"{D}/*.pt")):
     H = a["H"].float(); ans, src = np.asarray(a["ans"]), np.asarray(a["src"])
     X, B = load(M); bnd = list(B[t].values()); NL = H.shape[1]; lo = int(round(NL * EARLY))
     C = {"answer": curve(H, ans), "input": curve(H, src)}
-    row = [SHORT.get(M, M), t, len(bnd)]
+    row = [SHORT.get(M, M), t, len(bnd)]; pair = []
     for g, x in C.items():
+        cells = []
         for k in (1, 3):
             pk = peaks(x, k); d = [dist(y, pk) for y in bnd]; res[g][k] += d
             sh = []
             for _ in range(2000):
                 z = rng.integers(0, NL - lo); s = [lo + (q - lo + z) % (NL - lo) for q in pk]; sh.append([dist(y, s) for y in bnd])
-            shift[g][k].append(np.array(sh))
-        row.append(" ".join(map(str, peaks(x, 3))))
-    per.append(row)
+            sh = np.array(sh); shift[g][k].append(sh); d = np.array(d)
+            cells += [f"{np.mean(d == 0):.2f} ({np.mean(d <= 1):.2f})", f"{np.mean(sh == 0):.2f} ({np.mean(sh <= 1):.2f})"]
+        row.append(" ".join(map(str, peaks(x, 3)))); pair.append([SHORT.get(M, M), t, len(bnd), g] + cells)
+    per.append(row); pairs = globals().setdefault("pairs", []); pairs += pair
 L = ["# Grouping by the input instead of the answer\n", "| model | task | boundaries | top-3 peaks, answer-grouped | top-3 peaks, input-grouped |", "|---|---|---|---|---|"]
 L += [f"| {' | '.join(map(str, r))} |" for r in per]
 L += ["\nExactly on a peak (within ±1); shift = circularly shifted peaks of the same grouping.\n", "| grouping | Top-1 | Shift top-1 | Top-3 | Shift top-3 |", "|---|---|---|---|---|"]
@@ -45,4 +47,6 @@ for g in ("answer", "input"):
         d = np.array(res[g][k]); s = np.concatenate(shift[g][k], axis=1)
         cells += [f"{np.mean(d == 0):.2f} ({np.mean(d <= 1):.2f})", f"{np.mean(s == 0):.2f} ({np.mean(s <= 1):.2f})"]
     L.append(f"| {g} | " + " | ".join(cells) + " |")
+L += ["\n## Per model and task\n", "| model | task | n | grouping | Top-1 | Shift top-1 | Top-3 | Shift top-3 |", "|---|---|---|---|---|---|---|---|"]
+L += [f"| {' | '.join(map(str, r))} |" for r in pairs]
 open(f"{D}/input_group.md", "w").write("\n".join(L) + "\n"); print("\n".join(L))
