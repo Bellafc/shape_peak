@@ -1,0 +1,189 @@
+model,task,event,strategy,tests,correct
+Gemma-9B,city,handoff,Full sweep,32,True
+Gemma-9B,city,handoff,Binary search,5,True
+Gemma-9B,city,handoff,Peaks of half A (disjoint),2,True
+Gemma-9B,city,handoff,Peaks of half B (same prompts),2,True
+Gemma-9B,city,onset (α=1),Full sweep,32,True
+Gemma-9B,city,onset (α=1),Binary search,5,True
+Gemma-9B,city,onset (α=1),Peaks of half A (disjoint),3,False
+Gemma-9B,city,onset (α=1),Peaks of half B (same prompts),3,False
+Gemma-9B,continent,handoff,Full sweep,32,True
+Gemma-9B,continent,handoff,Binary search,5,True
+Gemma-9B,continent,handoff,Peaks of half A (disjoint),2,True
+Gemma-9B,continent,handoff,Peaks of half B (same prompts),2,True
+Gemma-9B,continent,onset (α=1),Full sweep,32,True
+Gemma-9B,continent,onset (α=1),Binary search,5,True
+Gemma-9B,continent,onset (α=1),Peaks of half A (disjoint),2,True
+Gemma-9B,continent,onset (α=1),Peaks of half B (same prompts),2,True
+Gemma-9B,month,handoff,Full sweep,32,True
+Gemma-9B,month,handoff,Binary search,5,True
+Gemma-9B,month,handoff,Peaks of half A (disjoint),4,True
+Gemma-9B,month,handoff,Peaks of half B (same prompts),4,True
+Gemma-9B,month,onset (α=1),Full sweep,32,True
+Gemma-9B,month,onset (α=1),Binary search,5,True
+Gemma-9B,month,onset (α=1),Peaks of half A (disjoint),6,True
+Gemma-9B,month,onset (α=1),Peaks of half B (same prompts),5,True
+Gemma-9B,weekday,handoff,Full sweep,32,True
+Gemma-9B,weekday,handoff,Binary search,5,True
+Gemma-9B,weekday,handoff,Peaks of half A (disjoint),3,True
+Gemma-9B,weekday,handoff,Peaks of half B (same prompts),3,True
+Gemma-9B,weekday,onset (α=1),Full sweep,32,True
+Gemma-9B,weekday,onset (α=1),Binary search,5,True
+Gemma-9B,weekday,onset (α=1),Peaks of half A (disjoint),4,True
+Gemma-9B,weekday,onset (α=1),Peaks of half B (same prompts),3,True
+Llama-8B,city,handoff,Full sweep,24,True
+Llama-8B,city,handoff,Binary search,5,True
+Llama-8B,city,handoff,Peaks of half A (disjoint),3,True
+Llama-8B,city,handoff,Peaks of half B (same prompts),3,True
+Llama-8B,city,onset (α=1),Full sweep,24,True
+Llama-8B,city,onset (α=1),Binary search,5,True
+Llama-8B,city,onset (α=1),Peaks of half A (disjoint),3,True
+Llama-8B,city,onset (α=1),Peaks of half B (same prompts),3,True
+Llama-8B,continent,handoff,Full sweep,24,True
+Llama-8B,continent,handoff,Binary search,5,True
+Llama-8B,continent,handoff,Peaks of half A (disjoint),4,True
+Llama-8B,continent,handoff,Peaks of half B (same prompts),4,True
+Llama-8B,continent,onset (α=1),Full sweep,24,True
+Llama-8B,continent,onset (α=1),Binary search,4,True
+Llama-8B,continent,onset (α=1),Peaks of half A (disjoint),4,True
+Llama-8B,continent,onset (α=1),Peaks of half B (same prompts),3,True
+Llama-8B,month,handoff,Full sweep,24,True
+Llama-8B,month,handoff,Binary search,5,True
+Llama-8B,month,handoff,Peaks of half A (disjoint),2,True
+Llama-8B,month,handoff,Peaks of half B (same prompts),2,True
+Llama-8B,month,onset (α=1),Full sweep,24,True
+Llama-8B,month,onset (α=1),Binary search,5,True
+Llama-8B,month,onset (α=1),Peaks of half A (disjoint),3,True
+Llama-8B,month,onset (α=1),Peaks of half B (same prompts),3,True
+Llama-8B,weekday,handoff,Full sweep,24,True
+Llama-8B,weekday,handoff,Binary search,5,True
+Llama-8B,weekday,handoff,Peaks of half A (disjoint),3,True
+Llama-8B,weekday,handoff,Peaks of half B (same prompts),2,True
+Llama-8B,weekday,onset (α=1),Full sweep,24,True
+Llama-8B,weekday,onset (α=1),Binary search,4,True
+Llama-8B,weekday,onset (α=1),Peaks of half A (disjoint),6,True
+Llama-8B,weekday,onset (α=1),Peaks of half B (same prompts),6,True
+Mistral-7B,city,handoff,Full sweep,24,True
+Mistral-7B,city,handoff,Binary search,5,True
+Mistral-7B,city,handoff,Peaks of half A (disjoint),3,True
+Mistral-7B,city,handoff,Peaks of half B (same prompts),7,True
+Mistral-7B,continent,handoff,Full sweep,24,True
+Mistral-7B,continent,handoff,Binary search,5,True
+Mistral-7B,continent,handoff,Peaks of half A (disjoint),2,True
+Mistral-7B,continent,handoff,Peaks of half B (same prompts),2,True
+Mistral-7B,continent,onset (α=1),Full sweep,24,True
+Mistral-7B,continent,onset (α=1),Binary search,5,True
+Mistral-7B,continent,onset (α=1),Peaks of half A (disjoint),3,True
+Mistral-7B,continent,onset (α=1),Peaks of half B (same prompts),3,True
+Mistral-7B,month,handoff,Full sweep,24,True
+Mistral-7B,month,handoff,Binary search,5,True
+Mistral-7B,month,handoff,Peaks of half A (disjoint),4,True
+Mistral-7B,month,handoff,Peaks of half B (same prompts),4,True
+Mistral-7B,month,onset (α=1),Full sweep,24,True
+Mistral-7B,month,onset (α=1),Binary search,4,True
+Mistral-7B,month,onset (α=1),Peaks of half A (disjoint),6,True
+Mistral-7B,month,onset (α=1),Peaks of half B (same prompts),6,True
+Mistral-7B,weekday,handoff,Full sweep,24,True
+Mistral-7B,weekday,handoff,Binary search,5,True
+Mistral-7B,weekday,handoff,Peaks of half A (disjoint),2,True
+Mistral-7B,weekday,handoff,Peaks of half B (same prompts),2,True
+Mistral-7B,weekday,onset (α=1),Full sweep,24,True
+Mistral-7B,weekday,onset (α=1),Binary search,5,True
+Mistral-7B,weekday,onset (α=1),Peaks of half A (disjoint),7,True
+Mistral-7B,weekday,onset (α=1),Peaks of half B (same prompts),7,True
+Phi-4,city,handoff,Full sweep,30,True
+Phi-4,city,handoff,Binary search,5,True
+Phi-4,city,handoff,Peaks of half A (disjoint),2,True
+Phi-4,city,handoff,Peaks of half B (same prompts),2,True
+Phi-4,city,onset (α=1),Full sweep,30,True
+Phi-4,city,onset (α=1),Binary search,5,True
+Phi-4,city,onset (α=1),Peaks of half A (disjoint),2,True
+Phi-4,city,onset (α=1),Peaks of half B (same prompts),2,True
+Phi-4,continent,handoff,Full sweep,30,True
+Phi-4,continent,handoff,Binary search,5,True
+Phi-4,continent,handoff,Peaks of half A (disjoint),3,True
+Phi-4,continent,handoff,Peaks of half B (same prompts),2,True
+Phi-4,continent,onset (α=1),Full sweep,30,True
+Phi-4,continent,onset (α=1),Binary search,5,True
+Phi-4,continent,onset (α=1),Peaks of half A (disjoint),3,True
+Phi-4,continent,onset (α=1),Peaks of half B (same prompts),2,True
+Phi-4,month,handoff,Full sweep,30,True
+Phi-4,month,handoff,Binary search,5,True
+Phi-4,month,handoff,Peaks of half A (disjoint),3,True
+Phi-4,month,handoff,Peaks of half B (same prompts),4,True
+Phi-4,month,onset (α=1),Full sweep,30,True
+Phi-4,month,onset (α=1),Binary search,5,True
+Phi-4,month,onset (α=1),Peaks of half A (disjoint),8,True
+Phi-4,month,onset (α=1),Peaks of half B (same prompts),4,True
+Phi-4,weekday,handoff,Full sweep,30,True
+Phi-4,weekday,handoff,Binary search,5,True
+Phi-4,weekday,handoff,Peaks of half A (disjoint),5,True
+Phi-4,weekday,handoff,Peaks of half B (same prompts),5,True
+Phi-4,weekday,onset (α=1),Full sweep,30,True
+Phi-4,weekday,onset (α=1),Binary search,5,True
+Phi-4,weekday,onset (α=1),Peaks of half A (disjoint),7,True
+Phi-4,weekday,onset (α=1),Peaks of half B (same prompts),7,True
+Qwen-14B,city,handoff,Full sweep,36,True
+Qwen-14B,city,handoff,Binary search,5,True
+Qwen-14B,city,handoff,Peaks of half A (disjoint),4,True
+Qwen-14B,city,handoff,Peaks of half B (same prompts),5,True
+Qwen-14B,city,onset (α=1),Full sweep,36,True
+Qwen-14B,city,onset (α=1),Binary search,5,True
+Qwen-14B,city,onset (α=1),Peaks of half A (disjoint),2,True
+Qwen-14B,city,onset (α=1),Peaks of half B (same prompts),4,True
+Qwen-14B,continent,handoff,Full sweep,36,True
+Qwen-14B,continent,handoff,Binary search,5,True
+Qwen-14B,continent,handoff,Peaks of half A (disjoint),4,True
+Qwen-14B,continent,handoff,Peaks of half B (same prompts),2,True
+Qwen-14B,continent,onset (α=1),Full sweep,36,True
+Qwen-14B,continent,onset (α=1),Binary search,5,True
+Qwen-14B,continent,onset (α=1),Peaks of half A (disjoint),5,True
+Qwen-14B,continent,onset (α=1),Peaks of half B (same prompts),3,True
+Qwen-14B,month,handoff,Full sweep,36,True
+Qwen-14B,month,handoff,Binary search,5,True
+Qwen-14B,month,handoff,Peaks of half A (disjoint),4,True
+Qwen-14B,month,handoff,Peaks of half B (same prompts),3,True
+Qwen-14B,month,onset (α=1),Full sweep,36,True
+Qwen-14B,month,onset (α=1),Binary search,6,True
+Qwen-14B,month,onset (α=1),Peaks of half A (disjoint),2,True
+Qwen-14B,month,onset (α=1),Peaks of half B (same prompts),2,True
+Qwen-14B,weekday,handoff,Full sweep,36,True
+Qwen-14B,weekday,handoff,Binary search,5,True
+Qwen-14B,weekday,handoff,Peaks of half A (disjoint),3,True
+Qwen-14B,weekday,handoff,Peaks of half B (same prompts),3,True
+Qwen-14B,weekday,onset (α=1),Full sweep,36,True
+Qwen-14B,weekday,onset (α=1),Binary search,6,True
+Qwen-14B,weekday,onset (α=1),Peaks of half A (disjoint),2,True
+Qwen-14B,weekday,onset (α=1),Peaks of half B (same prompts),2,True
+Qwen-7B,city,handoff,Full sweep,21,True
+Qwen-7B,city,handoff,Binary search,5,True
+Qwen-7B,city,handoff,Peaks of half A (disjoint),3,True
+Qwen-7B,city,handoff,Peaks of half B (same prompts),3,True
+Qwen-7B,city,onset (α=1),Full sweep,21,True
+Qwen-7B,city,onset (α=1),Binary search,5,True
+Qwen-7B,city,onset (α=1),Peaks of half A (disjoint),3,True
+Qwen-7B,city,onset (α=1),Peaks of half B (same prompts),4,True
+Qwen-7B,continent,handoff,Full sweep,21,True
+Qwen-7B,continent,handoff,Binary search,5,True
+Qwen-7B,continent,handoff,Peaks of half A (disjoint),3,True
+Qwen-7B,continent,handoff,Peaks of half B (same prompts),2,True
+Qwen-7B,continent,onset (α=1),Full sweep,21,True
+Qwen-7B,continent,onset (α=1),Binary search,5,True
+Qwen-7B,continent,onset (α=1),Peaks of half A (disjoint),3,True
+Qwen-7B,continent,onset (α=1),Peaks of half B (same prompts),2,True
+Qwen-7B,month,handoff,Full sweep,21,True
+Qwen-7B,month,handoff,Binary search,4,True
+Qwen-7B,month,handoff,Peaks of half A (disjoint),2,True
+Qwen-7B,month,handoff,Peaks of half B (same prompts),2,True
+Qwen-7B,month,onset (α=1),Full sweep,21,True
+Qwen-7B,month,onset (α=1),Binary search,4,True
+Qwen-7B,month,onset (α=1),Peaks of half A (disjoint),2,True
+Qwen-7B,month,onset (α=1),Peaks of half B (same prompts),2,True
+Qwen-7B,weekday,handoff,Full sweep,21,True
+Qwen-7B,weekday,handoff,Binary search,4,True
+Qwen-7B,weekday,handoff,Peaks of half A (disjoint),3,True
+Qwen-7B,weekday,handoff,Peaks of half B (same prompts),3,True
+Qwen-7B,weekday,onset (α=1),Full sweep,21,True
+Qwen-7B,weekday,onset (α=1),Binary search,4,True
+Qwen-7B,weekday,onset (α=1),Peaks of half A (disjoint),3,True
+Qwen-7B,weekday,onset (α=1),Peaks of half B (same prompts),3,True

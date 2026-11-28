@@ -1,0 +1,78 @@
+SPLIT_RUN_START
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+torchaudio 2.4.1+cu124 requires torch==2.4.1, but you have torch 2.15.0 which is incompatible.
+torchvision 0.19.1+cu124 requires torch==2.4.1, but you have torch 2.15.0 which is incompatible.
+
+[notice] A new release of pip is available: 24.2 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip
+torch 2.15.0+cu132 transformers 4.57.6 cuda True
+##### Qwen2.5-7B-Instruct
+skip Qwen2.5-7B-Instruct (all steps done)
+##### Llama-3.1-8B-Instruct
+skip Llama-3.1-8B-Instruct (all steps done)
+##### Mistral-7B-Instruct-v0.3
+skip Mistral-7B-Instruct-v0.3 (all steps done)
+##### Gemma-2-9B-it
+Fetching 11 files:   0%|          | 0/11 [00:00<?, ?it/s]Fetching 11 files: 100%|██████████| 11/11 [00:00<00:00, 1550.47it/s]
+skip Gemma-2-9B-it_weekday.actsA.log
+skip Gemma-2-9B-it_weekday.actsB.log
+skip Gemma-2-9B-it_weekday.patch.log
+skip Gemma-2-9B-it_weekday.steer.log
+skip Gemma-2-9B-it_month.actsA.log
+skip Gemma-2-9B-it_month.actsB.log
+skip Gemma-2-9B-it_month.patch.log
+skip Gemma-2-9B-it_month.steer.log
+skip Gemma-2-9B-it_city.actsA.log
+skip Gemma-2-9B-it_city.actsB.log
+ok   Gemma-2-9B-it_city.patch.log done
+ok   Gemma-2-9B-it_continent.actsA.log done continent: N=72 layers=42 classes=6 first-token acc=1.000 sub=True
+ok   Gemma-2-9B-it_continent.actsB.log done continent: N=72 layers=42 classes=6 first-token acc=1.000 sub=True
+ok   Gemma-2-9B-it_continent.patch.log done
+##### Qwen2.5-14B-Instruct
+prune models--unsloth--gemma-2-9b-it
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files:  53%|█████▎    | 8/15 [00:09<00:08,  1.21s/it]Fetching 15 files: 100%|██████████| 15/15 [00:16<00:00,  1.09s/it]
+ok   Qwen2.5-14B-Instruct_weekday.actsA.log done weekday: N=63 layers=48 classes=7 first-token acc=1.000 sub=True
+ok   Qwen2.5-14B-Instruct_weekday.actsB.log done weekday: N=63 layers=48 classes=7 first-token acc=0.905 sub=True
+ok   Qwen2.5-14B-Instruct_weekday.patch.log done
+ok   Qwen2.5-14B-Instruct_weekday.steer.log done
+ok   Qwen2.5-14B-Instruct_month.actsA.log done month: N=108 layers=48 classes=12 first-token acc=1.000 sub=True
+ok   Qwen2.5-14B-Instruct_month.actsB.log done month: N=108 layers=48 classes=12 first-token acc=0.991 sub=True
+ok   Qwen2.5-14B-Instruct_month.patch.log done
+ok   Qwen2.5-14B-Instruct_month.steer.log done
+ok   Qwen2.5-14B-Instruct_city.actsA.log done city: N=108 layers=48 classes=12 first-token acc=0.991 sub=True
+ok   Qwen2.5-14B-Instruct_city.actsB.log done city: N=108 layers=48 classes=12 first-token acc=0.991 sub=True
+ok   Qwen2.5-14B-Instruct_city.patch.log done
+ok   Qwen2.5-14B-Instruct_continent.actsA.log done continent: N=72 layers=48 classes=6 first-token acc=1.000 sub=True
+ok   Qwen2.5-14B-Instruct_continent.actsB.log done continent: N=72 layers=48 classes=6 first-token acc=1.000 sub=True
+ok   Qwen2.5-14B-Instruct_continent.patch.log done
+# Peaks and boundaries from disjoint prompt halves
+
+20 model-task pairs, 79 boundaries measured on half B. Cells: on a peak (within ±1). Null: circular shift.
+
+| peaks from | on peak | within ±1 | null | p |
+|---|---|---|---|---|
+| half A (disjoint) | 0.65 | **0.91** | 0.32 | 0.0001 |
+| half B (same prompts) | 0.58 | **0.90** | 0.32 | 0.0001 |
+
+Top-3 peaks of half A within ±1 of a peak of half B: 0.78.
+
+## By boundary
+
+| boundary | n | half A ±1 | half B ±1 |
+|---|---|---|---|
+| handoff | 20 | 1.00 | 0.95 |
+| onset | 19 | 0.74 | 0.79 |
+| patching | 20 | 1.00 | 0.95 |
+| steering | 20 | 0.90 | 0.90 |
+
+## By model
+
+| model | n | half A ±1 | half B ±1 |
+|---|---|---|---|
+| Gemma-9B | 16 | 0.88 | 0.94 |
+| Llama-8B | 16 | 0.94 | 0.94 |
+| Mistral-7B | 15 | 0.73 | 0.60 |
+| Qwen-14B | 16 | 1.00 | 1.00 |
+| Qwen-7B | 16 | 1.00 | 1.00 |
+Results in /workspace/shape_peak/data/split/split_report.md
+EXIT 0

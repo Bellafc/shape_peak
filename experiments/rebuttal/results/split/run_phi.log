@@ -1,0 +1,53 @@
+SPLIT_PHI_START
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+torchaudio 2.4.1+cu124 requires torch==2.4.1, but you have torch 2.15.0 which is incompatible.
+torchvision 0.19.1+cu124 requires torch==2.4.1, but you have torch 2.15.0 which is incompatible.
+
+[notice] A new release of pip is available: 24.2 -> 26.3
+[notice] To update, run: python -m pip install --upgrade pip
+torch 2.15.0+cu132 transformers 4.57.6 cuda True
+##### Phi-4-14B
+prune models--Qwen--Qwen2.5-7B-Instruct
+prune models--unsloth--Llama-3.1-8B-Instruct
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files:  53%|█████▎    | 8/15 [00:00<00:00, 21.12it/s]Fetching 15 files: 100%|██████████| 15/15 [00:17<00:00,  1.16s/it]
+ok   Phi-4-14B_weekday.actsA.log done weekday: N=63 layers=40 classes=7 first-token acc=0.937 sub=True
+ok   Phi-4-14B_weekday.actsB.log done weekday: N=63 layers=40 classes=7 first-token acc=0.968 sub=True
+ok   Phi-4-14B_weekday.patch.log done
+ok   Phi-4-14B_weekday.steer.log done
+ok   Phi-4-14B_month.actsA.log done month: N=108 layers=40 classes=12 first-token acc=0.935 sub=True
+ok   Phi-4-14B_month.actsB.log done month: N=108 layers=40 classes=12 first-token acc=1.000 sub=True
+ok   Phi-4-14B_month.patch.log done
+ok   Phi-4-14B_month.steer.log done
+ok   Phi-4-14B_city.actsA.log done city: N=108 layers=40 classes=12 first-token acc=1.000 sub=True
+ok   Phi-4-14B_city.actsB.log done city: N=108 layers=40 classes=12 first-token acc=0.954 sub=True
+ok   Phi-4-14B_city.patch.log done
+ok   Phi-4-14B_continent.actsA.log done continent: N=72 layers=40 classes=6 first-token acc=1.000 sub=True
+ok   Phi-4-14B_continent.actsB.log done continent: N=72 layers=40 classes=6 first-token acc=1.000 sub=True
+ok   Phi-4-14B_continent.patch.log done
+# Peaks and boundaries from disjoint prompt halves
+
+4 model-task pairs, 16 boundaries measured on half B. Cells: on a peak (within ±1). Null: circular shift.
+
+| peaks from | on peak | within ±1 | null | p |
+|---|---|---|---|---|
+| half A (disjoint) | 0.62 | **0.62** | 0.27 | 0.0781 |
+| half B (same prompts) | 0.62 | **0.75** | 0.28 | 0.0325 |
+
+Top-3 peaks of half A within ±1 of a peak of half B: 0.75.
+
+## By boundary
+
+| boundary | n | half A ±1 | half B ±1 |
+|---|---|---|---|
+| handoff | 4 | 0.75 | 0.75 |
+| onset | 4 | 0.50 | 0.75 |
+| patching | 4 | 0.75 | 0.75 |
+| steering | 4 | 0.50 | 0.75 |
+
+## By model
+
+| model | n | half A ±1 | half B ±1 |
+|---|---|---|---|
+| Phi-4 | 16 | 0.62 | 0.75 |
+Results in /workspace/shape_peak/data/split/split_report.md
+EXIT 0
