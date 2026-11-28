@@ -1,0 +1,145 @@
+model,pilot,cond,event,strategy,tests,correct
+Llama-8B,arith,ops1_long,handoff,Full sweep,24,True
+Llama-8B,arith,ops1_long,handoff,Binary search,5,True
+Llama-8B,arith,ops1_long,handoff,"Peaks (optimal tree, fixed prior)",2,True
+Llama-8B,arith,ops1_long,onset (α=1),Full sweep,24,True
+Llama-8B,arith,ops1_long,onset (α=1),Binary search,5,True
+Llama-8B,arith,ops1_long,onset (α=1),"Peaks (optimal tree, fixed prior)",3,True
+Llama-8B,arith,ops1_short,handoff,Full sweep,24,True
+Llama-8B,arith,ops1_short,handoff,Binary search,5,True
+Llama-8B,arith,ops1_short,handoff,"Peaks (optimal tree, fixed prior)",4,True
+Llama-8B,arith,ops1_short,onset (α=1),Full sweep,24,True
+Llama-8B,arith,ops1_short,onset (α=1),Binary search,5,True
+Llama-8B,arith,ops1_short,onset (α=1),"Peaks (optimal tree, fixed prior)",2,True
+Llama-8B,arith,ops2_long,handoff,Full sweep,24,True
+Llama-8B,arith,ops2_long,handoff,Binary search,5,True
+Llama-8B,arith,ops2_long,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Llama-8B,arith,ops2_long,onset (α=1),Full sweep,24,True
+Llama-8B,arith,ops2_long,onset (α=1),Binary search,4,True
+Llama-8B,arith,ops2_long,onset (α=1),"Peaks (optimal tree, fixed prior)",8,True
+Llama-8B,arith,ops2_short,handoff,Full sweep,24,True
+Llama-8B,arith,ops2_short,handoff,Binary search,5,True
+Llama-8B,arith,ops2_short,handoff,"Peaks (optimal tree, fixed prior)",4,True
+Llama-8B,arith,ops2_short,onset (α=1),Full sweep,24,True
+Llama-8B,arith,ops2_short,onset (α=1),Binary search,4,True
+Llama-8B,arith,ops2_short,onset (α=1),"Peaks (optimal tree, fixed prior)",4,True
+Llama-8B,arith,ops3_long,handoff,Full sweep,24,True
+Llama-8B,arith,ops3_long,handoff,Binary search,5,True
+Llama-8B,arith,ops3_long,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Llama-8B,arith,ops3_long,onset (α=1),Full sweep,24,True
+Llama-8B,arith,ops3_long,onset (α=1),Binary search,5,False
+Llama-8B,arith,ops3_long,onset (α=1),"Peaks (optimal tree, fixed prior)",3,True
+Llama-8B,arith,ops3_short,handoff,Full sweep,24,True
+Llama-8B,arith,ops3_short,handoff,Binary search,5,True
+Llama-8B,arith,ops3_short,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Llama-8B,arith,ops3_short,onset (α=1),Full sweep,24,True
+Llama-8B,arith,ops3_short,onset (α=1),Binary search,5,True
+Llama-8B,arith,ops3_short,onset (α=1),"Peaks (optimal tree, fixed prior)",8,True
+Llama-8B,kin,hop2,handoff,Full sweep,24,True
+Llama-8B,kin,hop2,handoff,Binary search,4,True
+Llama-8B,kin,hop2,handoff,"Peaks (optimal tree, fixed prior)",2,True
+Llama-8B,kin,hop2,onset (α=1),Full sweep,24,True
+Llama-8B,kin,hop2,onset (α=1),Binary search,4,True
+Llama-8B,kin,hop2,onset (α=1),"Peaks (optimal tree, fixed prior)",2,True
+Llama-8B,kin,hop3,handoff,Full sweep,24,True
+Llama-8B,kin,hop3,handoff,Binary search,4,True
+Llama-8B,kin,hop3,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Llama-8B,kin,hop3,onset (α=1),Full sweep,24,True
+Llama-8B,kin,hop3,onset (α=1),Binary search,4,True
+Llama-8B,kin,hop3,onset (α=1),"Peaks (optimal tree, fixed prior)",3,True
+Phi-4,arith,ops1_long,handoff,Full sweep,30,True
+Phi-4,arith,ops1_long,handoff,Binary search,5,True
+Phi-4,arith,ops1_long,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Phi-4,arith,ops1_long,onset (α=1),Full sweep,30,True
+Phi-4,arith,ops1_long,onset (α=1),Binary search,5,True
+Phi-4,arith,ops1_long,onset (α=1),"Peaks (optimal tree, fixed prior)",4,True
+Phi-4,arith,ops1_short,handoff,Full sweep,30,True
+Phi-4,arith,ops1_short,handoff,Binary search,5,True
+Phi-4,arith,ops1_short,handoff,"Peaks (optimal tree, fixed prior)",2,True
+Phi-4,arith,ops1_short,onset (α=1),Full sweep,30,True
+Phi-4,arith,ops1_short,onset (α=1),Binary search,5,True
+Phi-4,arith,ops1_short,onset (α=1),"Peaks (optimal tree, fixed prior)",7,True
+Phi-4,arith,ops2_long,handoff,Full sweep,30,True
+Phi-4,arith,ops2_long,handoff,Binary search,5,True
+Phi-4,arith,ops2_long,handoff,"Peaks (optimal tree, fixed prior)",5,True
+Phi-4,arith,ops2_long,onset (α=1),Full sweep,30,True
+Phi-4,arith,ops2_long,onset (α=1),Binary search,5,True
+Phi-4,arith,ops2_long,onset (α=1),"Peaks (optimal tree, fixed prior)",9,True
+Phi-4,arith,ops2_short,handoff,Full sweep,30,True
+Phi-4,arith,ops2_short,handoff,Binary search,5,True
+Phi-4,arith,ops2_short,handoff,"Peaks (optimal tree, fixed prior)",4,True
+Phi-4,arith,ops2_short,onset (α=1),Full sweep,30,True
+Phi-4,arith,ops2_short,onset (α=1),Binary search,5,True
+Phi-4,arith,ops2_short,onset (α=1),"Peaks (optimal tree, fixed prior)",8,True
+Phi-4,arith,ops3_long,handoff,Full sweep,30,True
+Phi-4,arith,ops3_long,handoff,Binary search,5,True
+Phi-4,arith,ops3_long,handoff,"Peaks (optimal tree, fixed prior)",7,True
+Phi-4,arith,ops3_long,onset (α=1),Full sweep,30,True
+Phi-4,arith,ops3_long,onset (α=1),Binary search,5,True
+Phi-4,arith,ops3_long,onset (α=1),"Peaks (optimal tree, fixed prior)",5,True
+Phi-4,arith,ops3_short,handoff,Full sweep,30,True
+Phi-4,arith,ops3_short,handoff,Binary search,5,True
+Phi-4,arith,ops3_short,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Phi-4,arith,ops3_short,onset (α=1),Full sweep,30,True
+Phi-4,arith,ops3_short,onset (α=1),Binary search,5,True
+Phi-4,arith,ops3_short,onset (α=1),"Peaks (optimal tree, fixed prior)",4,True
+Phi-4,kin,hop2,handoff,Full sweep,30,True
+Phi-4,kin,hop2,handoff,Binary search,5,True
+Phi-4,kin,hop2,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Phi-4,kin,hop2,onset (α=1),Full sweep,30,True
+Phi-4,kin,hop2,onset (α=1),Binary search,5,True
+Phi-4,kin,hop2,onset (α=1),"Peaks (optimal tree, fixed prior)",3,True
+Phi-4,kin,hop3,handoff,Full sweep,30,True
+Phi-4,kin,hop3,handoff,Binary search,5,True
+Phi-4,kin,hop3,handoff,"Peaks (optimal tree, fixed prior)",4,True
+Phi-4,kin,hop3,onset (α=1),Full sweep,30,True
+Phi-4,kin,hop3,onset (α=1),Binary search,5,True
+Phi-4,kin,hop3,onset (α=1),"Peaks (optimal tree, fixed prior)",2,True
+Qwen-7B,arith,ops1_long,handoff,Full sweep,21,True
+Qwen-7B,arith,ops1_long,handoff,Binary search,5,True
+Qwen-7B,arith,ops1_long,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Qwen-7B,arith,ops1_long,onset (α=1),Full sweep,21,True
+Qwen-7B,arith,ops1_long,onset (α=1),Binary search,4,True
+Qwen-7B,arith,ops1_long,onset (α=1),"Peaks (optimal tree, fixed prior)",3,True
+Qwen-7B,arith,ops1_short,handoff,Full sweep,21,True
+Qwen-7B,arith,ops1_short,handoff,Binary search,5,True
+Qwen-7B,arith,ops1_short,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Qwen-7B,arith,ops1_short,onset (α=1),Full sweep,21,True
+Qwen-7B,arith,ops1_short,onset (α=1),Binary search,4,True
+Qwen-7B,arith,ops1_short,onset (α=1),"Peaks (optimal tree, fixed prior)",3,True
+Qwen-7B,arith,ops2_long,handoff,Full sweep,21,True
+Qwen-7B,arith,ops2_long,handoff,Binary search,5,True
+Qwen-7B,arith,ops2_long,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Qwen-7B,arith,ops2_long,onset (α=1),Full sweep,21,True
+Qwen-7B,arith,ops2_long,onset (α=1),Binary search,5,True
+Qwen-7B,arith,ops2_long,onset (α=1),"Peaks (optimal tree, fixed prior)",4,True
+Qwen-7B,arith,ops2_short,handoff,Full sweep,21,True
+Qwen-7B,arith,ops2_short,handoff,Binary search,5,True
+Qwen-7B,arith,ops2_short,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Qwen-7B,arith,ops2_short,onset (α=1),Full sweep,21,True
+Qwen-7B,arith,ops2_short,onset (α=1),Binary search,5,True
+Qwen-7B,arith,ops2_short,onset (α=1),"Peaks (optimal tree, fixed prior)",3,True
+Qwen-7B,arith,ops3_long,handoff,Full sweep,21,True
+Qwen-7B,arith,ops3_long,handoff,Binary search,5,True
+Qwen-7B,arith,ops3_long,handoff,"Peaks (optimal tree, fixed prior)",3,True
+Qwen-7B,arith,ops3_long,onset (α=1),Full sweep,21,True
+Qwen-7B,arith,ops3_long,onset (α=1),Binary search,5,True
+Qwen-7B,arith,ops3_long,onset (α=1),"Peaks (optimal tree, fixed prior)",5,True
+Qwen-7B,arith,ops3_short,handoff,Full sweep,21,True
+Qwen-7B,arith,ops3_short,handoff,Binary search,5,True
+Qwen-7B,arith,ops3_short,handoff,"Peaks (optimal tree, fixed prior)",4,True
+Qwen-7B,arith,ops3_short,onset (α=1),Full sweep,21,True
+Qwen-7B,arith,ops3_short,onset (α=1),Binary search,5,True
+Qwen-7B,arith,ops3_short,onset (α=1),"Peaks (optimal tree, fixed prior)",6,True
+Qwen-7B,kin,hop2,handoff,Full sweep,21,True
+Qwen-7B,kin,hop2,handoff,Binary search,4,True
+Qwen-7B,kin,hop2,handoff,"Peaks (optimal tree, fixed prior)",4,True
+Qwen-7B,kin,hop2,onset (α=1),Full sweep,21,True
+Qwen-7B,kin,hop2,onset (α=1),Binary search,5,True
+Qwen-7B,kin,hop2,onset (α=1),"Peaks (optimal tree, fixed prior)",6,True
+Qwen-7B,kin,hop3,handoff,Full sweep,21,True
+Qwen-7B,kin,hop3,handoff,Binary search,4,True
+Qwen-7B,kin,hop3,handoff,"Peaks (optimal tree, fixed prior)",4,True
+Qwen-7B,kin,hop3,onset (α=1),Full sweep,21,True
+Qwen-7B,kin,hop3,onset (α=1),Binary search,4,True
+Qwen-7B,kin,hop3,onset (α=1),"Peaks (optimal tree, fixed prior)",5,True
