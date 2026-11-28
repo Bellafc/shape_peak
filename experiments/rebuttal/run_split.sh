@@ -28,6 +28,9 @@ step() {  # step <done-file> <log> <cmd...>: run once, keep the log, stop on fai
 for spec in $MODELS; do
   IFS=: read -r FAM NAME MODEL <<< "$spec"
   echo "##### $NAME"
+  if [ -f $R/logs/${NAME}.model.ok ] || [ $(ls $R/A/rebuttal/metrics/${NAME}_*.csv $R/B/rebuttal/metrics/${NAME}_*.csv 2>/dev/null | wc -l) -ge $(( 2 * $(wc -w <<< "$TASKS") )) ]; then
+    echo "skip $NAME (all steps done)"; continue
+  fi
   keep="models--${MODEL//\//--}"
   for d in "$HF_HOME"/hub/models--*; do
     if [ -e "$d" ] && [ "$(basename "$d")" != "$keep" ]; then echo "prune $(basename "$d")"; rm -rf "$d"; fi
@@ -45,7 +48,7 @@ for spec in $MODELS; do
   done
   # shape curves from the stored activations (CPU), then drop the activations to save disk
   for h in A B; do SHAPE_DATA=$R/$h python experiments/rebuttal/alt_metrics.py $R/$h/rebuttal/acts/${NAME}_*.pt > $R/logs/${NAME}_metrics_$h.log 2>&1; done
-  rm -f $R/A/rebuttal/acts/${NAME}_*.pt $R/B/rebuttal/acts/${NAME}_*.pt
+  rm -f $R/A/rebuttal/acts/${NAME}_*.pt $R/B/rebuttal/acts/${NAME}_*.pt; touch $R/logs/${NAME}.model.ok
 done
 SHAPE_DATA=$ROOT/data python experiments/rebuttal/split_eval.py | tee $R/split_eval.log
 echo "Results in $R/split_report.md"
