@@ -98,10 +98,10 @@ if __name__ == "__main__":
                 truth = search(f, lo, hi, "full")[0]
                 if truth is not None: cases.append(dict(M=M, t=t, ev=ev, f=f, lo=lo, hi=hi, pk=pk, a0=a0, truth=truth))
     # learned offsets, leave one model out
-    def learn(ev, M_out, with_lens):
+    def learn(ev, M_out, with_lens, t_out=None):
         cnt = {k: {d: 0.0 for d in OFF} for k in (0, 1, 2, "lens")}
         for c in cases:
-            if c["ev"] != ev or c["M"] == M_out: continue
+            if c["ev"] != ev or c["M"] == M_out or c["t"] == t_out: continue
             anc = [(p, r) for r, p in enumerate(c["pk"])] + ([(c["a0"], "lens")] if with_lens else [])
             for a, k in anc:
                 d = c["truth"] - a
@@ -126,6 +126,10 @@ if __name__ == "__main__":
         res["optimal tree, prior (learned)"] = optimal(Probe(f, lo, hi), prior(lo, hi, [(p, r) for r, p in enumerate(pk)], learn(c["ev"], c["M"], False)))
         res["optimal tree, prior (learned) + logit lens"] = optimal(Probe(f, lo, hi), prior(lo, hi, [(p, r) for r, p in enumerate(pk)] + [(c["a0"], "lens")], learn(c["ev"], c["M"], True)))
         res["optimal tree, logit lens only (learned)"] = optimal(Probe(f, lo, hi), prior(lo, hi, [(c["a0"], "lens")], learn(c["ev"], c["M"], True)))
+        P3 = [(p, r) for r, p in enumerate(pk)]; LZ = [(c["a0"], "lens")]
+        res["optimal tree, peaks, learned without this model and this task"] = optimal(Probe(f, lo, hi), prior(lo, hi, P3, learn(c["ev"], c["M"], False, c["t"])))
+        res["optimal tree, logit lens, learned without this model and this task"] = optimal(Probe(f, lo, hi), prior(lo, hi, LZ, learn(c["ev"], c["M"], True, c["t"])))
+        res["optimal tree, logit lens only (fixed)"] = optimal(Probe(f, lo, hi), prior(lo, hi, LZ, {"lens": {-1: .25, 0: .5, 1: .25}}))
         res["floor: boundary known in advance"] = optimal(Probe(f, lo, hi), {c["truth"]: 1.0})
         for k, (L, n) in res.items(): rows.append(dict(model=SHORT[c["M"]], task=c["t"], event=c["ev"], strategy=k, tests=n, correct=L == c["truth"]))
     R = pd.DataFrame(rows); R.to_csv(f"{DATA}/rebuttal/peak_search.csv", index=False)

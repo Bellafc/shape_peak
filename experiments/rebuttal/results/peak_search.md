@@ -13,4 +13,7 @@
 | optimal tree, prior (learned) | 3.72 | 3.78 | 3.84 | 3.78 | 1.00 |
 | optimal tree, prior (learned) + logit lens | 3.34 | 3.53 | 3.38 | 3.41 | 1.00 |
 | optimal tree, logit lens only (learned) | 4.06 | 4.12 | 3.57 | 3.91 | 1.00 |
+| optimal tree, peaks, learned without this model and this task | 3.83 | 3.73 | 3.91 | 3.82 | 1.00 |
+| optimal tree, logit lens, learned without this model and this task | 4.06 | 4.19 | 3.62 | 3.95 | 1.00 |
+| optimal tree, logit lens only (fixed) | 4.17 | 4.08 | 3.71 | 3.99 | 1.00 |
 | floor: boundary known in advance | 2.00 | 2.00 | 2.00 | 2.00 | 1.00 |
