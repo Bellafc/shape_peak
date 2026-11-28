@@ -35,3 +35,10 @@ boundary, circular-shift null with 10,000 draws). Output: `rebuttal_results/` (u
 
 Per layer: Procrustes shape change, identity probe, patching of the user message / all answer positions / the last position,
 α = 1 centroid-difference steering. Boundaries and peaks as in the paper; `pilot_report.md` tests them with the circular-shift null.
+
+## Disjoint prompt halves (peaks vs causal boundaries)
+
+`run_split.sh` (GPU) and `split_eval.py` (CPU): each task's prompts are split into two disjoint halves (`SUB=1`: offsets 1, 3, 5 or
+the first half of each class's cues; `SUB=2`: offsets 2, 4, 6 or the second half). Peaks come from half A; handoff, patching and
+steering boundaries are measured on half B with the paper's own scripts (`04_handoff/handoff_patch.py`, `steer_handoff.py`).
+Six models x four tasks (weekday, month, city, continent).

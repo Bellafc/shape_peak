@@ -55,13 +55,14 @@ def chat_(q):
 def chat(q):  # Llama 2：[/INST] 後模型先吐一個單獨的「▁」再吐答案；把空格放進提示，答案位置的下一個 token 才是答案本身
     p = chat_(q); return p + " " if p.endswith("[/INST]") else p
 MARK = "⁣QQ⁣"
-SUB = bool(os.environ.get("SUB"))  # 小樣本驗證用（預設關閉，與原協議相同）
+SUB = os.environ.get("SUB", "") not in ("", "0")  # 小樣本驗證用（預設關閉，與原協議相同）
+HALF_B = os.environ.get("SUB") == "2"  # SUB=2：取另一半（與 SUB=1 不重疊），用於峰值與因果邊界的分半檢驗
 rows = []
 NEWCON = CON in NEWCONS
 for t, tp in enumerate(T if NEWCON else []):  # 新概念：src = 線索編號、k = 類內線索序號（配對時保證不同線索），沒有繞回
     for i in range(n):
         for j, cue in enumerate(CUES[ITEMS[i]]):
-            if SUB and j >= (len(CUES[ITEMS[i]]) + 1) // 2: continue  # 小樣本：每類只用前一半線索
+            if SUB and (j < (len(CUES[ITEMS[i]]) + 1) // 2) == HALF_B: continue  # 小樣本：SUB=1 每類前一半線索，SUB=2 後一半
             off = tp.format(x=MARK).index(MARK); q = tp.format(x=cue); q = q[0].upper() + q[1:]; p = chat(q); s = p.rindex(q) + off
             enc = tok(p, add_special_tokens=False, return_offsets_mapping=True)
             cpos = [jj for jj, (a, b) in enumerate(enc["offset_mapping"]) if a < s + len(cue) and b > s][-1]
@@ -69,7 +70,7 @@ for t, tp in enumerate(T if NEWCON else []):  # 新概念：src = 線索編號�
 for t, tp in enumerate([] if NEWCON else T):
     for i in range(n):
         for k in range(1, 7):
-            if SUB and k % 2 == 0: continue  # 小樣本：只用 k = 1, 3, 5
+            if SUB and (k % 2 == 1) == HALF_B: continue  # 小樣本：SUB=1 用 k = 1, 3, 5，SUB=2 用 k = 2, 4, 6
             off = tp.format(k=kd(k), x=MARK).index(MARK); q = tp.format(k=kd(k), x=ITEMS[i]); p = chat(q); s = p.rindex(q) + off
             enc = tok(p, add_special_tokens=False, return_offsets_mapping=True)
             cpos = [j for j, (a, b) in enumerate(enc["offset_mapping"]) if a < s + len(ITEMS[i]) and b > s][-1]
