@@ -1,0 +1,2041 @@
+model,task,event,strategy,tests,correct
+Qwen-7B,capital2hop,1 handoff,walk from λ1,7,True
+Qwen-7B,capital2hop,1 handoff,walk from logit lens,2,True
+Qwen-7B,capital2hop,1 handoff,binary search,5,True
+Qwen-7B,capital2hop,1 handoff,peak pairs,4,True
+Qwen-7B,capital2hop,1 handoff,prior search (fixed),4,True
+Qwen-7B,capital2hop,1 handoff,prior search (learned),4,True
+Qwen-7B,capital2hop,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-7B,capital2hop,1 handoff,"optimal tree, prior (fixed)",4,True
+Qwen-7B,capital2hop,1 handoff,"optimal tree, prior (learned)",5,True
+Qwen-7B,capital2hop,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,capital2hop,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,capital2hop,1 handoff,floor: boundary known in advance,2,True
+Qwen-7B,capital2hop,2 onset (α=1),walk from λ1,7,True
+Qwen-7B,capital2hop,2 onset (α=1),walk from logit lens,2,True
+Qwen-7B,capital2hop,2 onset (α=1),binary search,5,True
+Qwen-7B,capital2hop,2 onset (α=1),peak pairs,4,True
+Qwen-7B,capital2hop,2 onset (α=1),prior search (fixed),4,True
+Qwen-7B,capital2hop,2 onset (α=1),prior search (learned),4,True
+Qwen-7B,capital2hop,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-7B,capital2hop,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Qwen-7B,capital2hop,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Qwen-7B,capital2hop,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,capital2hop,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,capital2hop,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),walk from λ1,7,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),binary search,5,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),peak pairs,4,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),prior search (fixed),4,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),prior search (learned),4,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",4,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,capital2hop,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-7B,city,1 handoff,walk from λ1,3,True
+Qwen-7B,city,1 handoff,walk from logit lens,4,True
+Qwen-7B,city,1 handoff,binary search,5,True
+Qwen-7B,city,1 handoff,peak pairs,3,True
+Qwen-7B,city,1 handoff,prior search (fixed),2,True
+Qwen-7B,city,1 handoff,prior search (learned),3,True
+Qwen-7B,city,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-7B,city,1 handoff,"optimal tree, prior (fixed)",3,True
+Qwen-7B,city,1 handoff,"optimal tree, prior (learned)",3,True
+Qwen-7B,city,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,city,1 handoff,"optimal tree, logit lens only (learned)",3,True
+Qwen-7B,city,1 handoff,floor: boundary known in advance,2,True
+Qwen-7B,city,2 onset (α=1),walk from λ1,4,True
+Qwen-7B,city,2 onset (α=1),walk from logit lens,3,True
+Qwen-7B,city,2 onset (α=1),binary search,5,True
+Qwen-7B,city,2 onset (α=1),peak pairs,4,True
+Qwen-7B,city,2 onset (α=1),prior search (fixed),3,True
+Qwen-7B,city,2 onset (α=1),prior search (learned),3,True
+Qwen-7B,city,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-7B,city,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Qwen-7B,city,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Qwen-7B,city,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,city,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Qwen-7B,city,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,city,3 transfer (T ≥ .5),walk from λ1,4,True
+Qwen-7B,city,3 transfer (T ≥ .5),walk from logit lens,3,True
+Qwen-7B,city,3 transfer (T ≥ .5),binary search,5,True
+Qwen-7B,city,3 transfer (T ≥ .5),peak pairs,4,True
+Qwen-7B,city,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-7B,city,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-7B,city,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-7B,city,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Qwen-7B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Qwen-7B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,city,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Qwen-7B,city,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-7B,color,1 handoff,walk from λ1,5,True
+Qwen-7B,color,1 handoff,walk from logit lens,3,True
+Qwen-7B,color,1 handoff,binary search,5,True
+Qwen-7B,color,1 handoff,peak pairs,4,True
+Qwen-7B,color,1 handoff,prior search (fixed),3,True
+Qwen-7B,color,1 handoff,prior search (learned),4,True
+Qwen-7B,color,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-7B,color,1 handoff,"optimal tree, prior (fixed)",3,True
+Qwen-7B,color,1 handoff,"optimal tree, prior (learned)",4,True
+Qwen-7B,color,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,color,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,color,1 handoff,floor: boundary known in advance,2,True
+Qwen-7B,color,2 onset (α=1),walk from λ1,4,True
+Qwen-7B,color,2 onset (α=1),walk from logit lens,2,True
+Qwen-7B,color,2 onset (α=1),binary search,5,True
+Qwen-7B,color,2 onset (α=1),peak pairs,4,True
+Qwen-7B,color,2 onset (α=1),prior search (fixed),3,True
+Qwen-7B,color,2 onset (α=1),prior search (learned),4,True
+Qwen-7B,color,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-7B,color,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Qwen-7B,color,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Qwen-7B,color,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,color,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,color,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,color,3 transfer (T ≥ .5),walk from λ1,4,True
+Qwen-7B,color,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-7B,color,3 transfer (T ≥ .5),binary search,5,True
+Qwen-7B,color,3 transfer (T ≥ .5),peak pairs,4,True
+Qwen-7B,color,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-7B,color,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-7B,color,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-7B,color,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Qwen-7B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Qwen-7B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,color,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,color,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-7B,continent,1 handoff,walk from λ1,2,True
+Qwen-7B,continent,1 handoff,walk from logit lens,2,True
+Qwen-7B,continent,1 handoff,binary search,5,True
+Qwen-7B,continent,1 handoff,peak pairs,2,True
+Qwen-7B,continent,1 handoff,prior search (fixed),3,True
+Qwen-7B,continent,1 handoff,prior search (learned),3,True
+Qwen-7B,continent,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-7B,continent,1 handoff,"optimal tree, prior (fixed)",2,True
+Qwen-7B,continent,1 handoff,"optimal tree, prior (learned)",3,True
+Qwen-7B,continent,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,continent,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,continent,1 handoff,floor: boundary known in advance,2,True
+Qwen-7B,continent,2 onset (α=1),walk from λ1,2,True
+Qwen-7B,continent,2 onset (α=1),walk from logit lens,2,True
+Qwen-7B,continent,2 onset (α=1),binary search,5,True
+Qwen-7B,continent,2 onset (α=1),peak pairs,2,True
+Qwen-7B,continent,2 onset (α=1),prior search (fixed),3,True
+Qwen-7B,continent,2 onset (α=1),prior search (learned),3,True
+Qwen-7B,continent,2 onset (α=1),prior search (learned) + logit lens,2,True
+Qwen-7B,continent,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Qwen-7B,continent,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Qwen-7B,continent,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,continent,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,continent,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,continent,3 transfer (T ≥ .5),walk from λ1,2,True
+Qwen-7B,continent,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-7B,continent,3 transfer (T ≥ .5),binary search,5,True
+Qwen-7B,continent,3 transfer (T ≥ .5),peak pairs,2,True
+Qwen-7B,continent,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-7B,continent,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-7B,continent,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Qwen-7B,continent,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Qwen-7B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Qwen-7B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,continent,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,continent,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-7B,ctxcolor,1 handoff,walk from λ1,3,True
+Qwen-7B,ctxcolor,1 handoff,walk from logit lens,3,True
+Qwen-7B,ctxcolor,1 handoff,binary search,5,True
+Qwen-7B,ctxcolor,1 handoff,peak pairs,3,True
+Qwen-7B,ctxcolor,1 handoff,prior search (fixed),3,True
+Qwen-7B,ctxcolor,1 handoff,prior search (learned),4,True
+Qwen-7B,ctxcolor,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-7B,ctxcolor,1 handoff,"optimal tree, prior (fixed)",3,True
+Qwen-7B,ctxcolor,1 handoff,"optimal tree, prior (learned)",4,True
+Qwen-7B,ctxcolor,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,ctxcolor,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,ctxcolor,1 handoff,floor: boundary known in advance,2,True
+Qwen-7B,ctxcolor,2 onset (α=1),walk from λ1,5,True
+Qwen-7B,ctxcolor,2 onset (α=1),walk from logit lens,2,True
+Qwen-7B,ctxcolor,2 onset (α=1),binary search,4,True
+Qwen-7B,ctxcolor,2 onset (α=1),peak pairs,5,True
+Qwen-7B,ctxcolor,2 onset (α=1),prior search (fixed),6,True
+Qwen-7B,ctxcolor,2 onset (α=1),prior search (learned),4,True
+Qwen-7B,ctxcolor,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-7B,ctxcolor,2 onset (α=1),"optimal tree, prior (fixed)",6,True
+Qwen-7B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Qwen-7B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,ctxcolor,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,ctxcolor,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),walk from λ1,4,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),binary search,5,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),peak pairs,4,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),prior search (fixed),4,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",4,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,ctxcolor,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-7B,emotion,2 onset (α=1),walk from λ1,5,True
+Qwen-7B,emotion,2 onset (α=1),walk from logit lens,6,True
+Qwen-7B,emotion,2 onset (α=1),binary search,4,True
+Qwen-7B,emotion,2 onset (α=1),peak pairs,5,True
+Qwen-7B,emotion,2 onset (α=1),prior search (fixed),4,True
+Qwen-7B,emotion,2 onset (α=1),prior search (learned),5,True
+Qwen-7B,emotion,2 onset (α=1),prior search (learned) + logit lens,5,True
+Qwen-7B,emotion,2 onset (α=1),"optimal tree, prior (fixed)",5,True
+Qwen-7B,emotion,2 onset (α=1),"optimal tree, prior (learned)",5,True
+Qwen-7B,emotion,2 onset (α=1),"optimal tree, prior (learned) + logit lens",6,True
+Qwen-7B,emotion,2 onset (α=1),"optimal tree, logit lens only (learned)",9,True
+Qwen-7B,emotion,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),walk from λ1,3,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),walk from logit lens,4,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),binary search,5,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),peak pairs,6,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),prior search (fixed),4,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),prior search (learned),5,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",4,True
+Qwen-7B,emotion,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-7B,hour,1 handoff,walk from λ1,3,True
+Qwen-7B,hour,1 handoff,walk from logit lens,3,True
+Qwen-7B,hour,1 handoff,binary search,5,True
+Qwen-7B,hour,1 handoff,peak pairs,5,True
+Qwen-7B,hour,1 handoff,prior search (fixed),3,True
+Qwen-7B,hour,1 handoff,prior search (learned),3,True
+Qwen-7B,hour,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-7B,hour,1 handoff,"optimal tree, prior (fixed)",3,True
+Qwen-7B,hour,1 handoff,"optimal tree, prior (learned)",4,True
+Qwen-7B,hour,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Qwen-7B,hour,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,hour,1 handoff,floor: boundary known in advance,2,True
+Qwen-7B,hour,2 onset (α=1),walk from λ1,2,True
+Qwen-7B,hour,2 onset (α=1),walk from logit lens,2,True
+Qwen-7B,hour,2 onset (α=1),binary search,4,True
+Qwen-7B,hour,2 onset (α=1),peak pairs,2,True
+Qwen-7B,hour,2 onset (α=1),prior search (fixed),3,True
+Qwen-7B,hour,2 onset (α=1),prior search (learned),2,True
+Qwen-7B,hour,2 onset (α=1),prior search (learned) + logit lens,2,True
+Qwen-7B,hour,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Qwen-7B,hour,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Qwen-7B,hour,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,hour,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,hour,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,hour,3 transfer (T ≥ .5),walk from λ1,2,True
+Qwen-7B,hour,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-7B,hour,3 transfer (T ≥ .5),binary search,4,True
+Qwen-7B,hour,3 transfer (T ≥ .5),peak pairs,2,True
+Qwen-7B,hour,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-7B,hour,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-7B,hour,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Qwen-7B,hour,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Qwen-7B,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned)",2,True
+Qwen-7B,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,hour,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,hour,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-7B,letter,1 handoff,walk from λ1,3,True
+Qwen-7B,letter,1 handoff,walk from logit lens,4,True
+Qwen-7B,letter,1 handoff,binary search,5,True
+Qwen-7B,letter,1 handoff,peak pairs,6,True
+Qwen-7B,letter,1 handoff,prior search (fixed),4,True
+Qwen-7B,letter,1 handoff,prior search (learned),4,True
+Qwen-7B,letter,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-7B,letter,1 handoff,"optimal tree, prior (fixed)",4,True
+Qwen-7B,letter,1 handoff,"optimal tree, prior (learned)",4,True
+Qwen-7B,letter,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Qwen-7B,letter,1 handoff,"optimal tree, logit lens only (learned)",3,True
+Qwen-7B,letter,1 handoff,floor: boundary known in advance,2,True
+Qwen-7B,letter,2 onset (α=1),walk from λ1,2,True
+Qwen-7B,letter,2 onset (α=1),walk from logit lens,3,True
+Qwen-7B,letter,2 onset (α=1),binary search,4,True
+Qwen-7B,letter,2 onset (α=1),peak pairs,2,True
+Qwen-7B,letter,2 onset (α=1),prior search (fixed),2,True
+Qwen-7B,letter,2 onset (α=1),prior search (learned),3,True
+Qwen-7B,letter,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-7B,letter,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Qwen-7B,letter,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Qwen-7B,letter,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,letter,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Qwen-7B,letter,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,letter,3 transfer (T ≥ .5),walk from λ1,2,True
+Qwen-7B,letter,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-7B,letter,3 transfer (T ≥ .5),binary search,5,True
+Qwen-7B,letter,3 transfer (T ≥ .5),peak pairs,4,True
+Qwen-7B,letter,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-7B,letter,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-7B,letter,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-7B,letter,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Qwen-7B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Qwen-7B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,letter,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,letter,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-7B,month,1 handoff,walk from λ1,2,True
+Qwen-7B,month,1 handoff,walk from logit lens,2,True
+Qwen-7B,month,1 handoff,binary search,4,True
+Qwen-7B,month,1 handoff,peak pairs,2,True
+Qwen-7B,month,1 handoff,prior search (fixed),2,True
+Qwen-7B,month,1 handoff,prior search (learned),3,True
+Qwen-7B,month,1 handoff,prior search (learned) + logit lens,2,True
+Qwen-7B,month,1 handoff,"optimal tree, prior (fixed)",2,True
+Qwen-7B,month,1 handoff,"optimal tree, prior (learned)",2,True
+Qwen-7B,month,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,month,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,month,1 handoff,floor: boundary known in advance,2,True
+Qwen-7B,month,2 onset (α=1),walk from λ1,2,True
+Qwen-7B,month,2 onset (α=1),walk from logit lens,2,True
+Qwen-7B,month,2 onset (α=1),binary search,4,True
+Qwen-7B,month,2 onset (α=1),peak pairs,2,True
+Qwen-7B,month,2 onset (α=1),prior search (fixed),2,True
+Qwen-7B,month,2 onset (α=1),prior search (learned),3,True
+Qwen-7B,month,2 onset (α=1),prior search (learned) + logit lens,2,True
+Qwen-7B,month,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Qwen-7B,month,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Qwen-7B,month,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,month,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,month,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,month,3 transfer (T ≥ .5),walk from λ1,2,True
+Qwen-7B,month,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-7B,month,3 transfer (T ≥ .5),binary search,4,True
+Qwen-7B,month,3 transfer (T ≥ .5),peak pairs,2,True
+Qwen-7B,month,3 transfer (T ≥ .5),prior search (fixed),2,True
+Qwen-7B,month,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-7B,month,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Qwen-7B,month,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Qwen-7B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned)",2,True
+Qwen-7B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,month,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,month,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-7B,weekday,1 handoff,walk from λ1,2,True
+Qwen-7B,weekday,1 handoff,walk from logit lens,2,True
+Qwen-7B,weekday,1 handoff,binary search,4,True
+Qwen-7B,weekday,1 handoff,peak pairs,2,True
+Qwen-7B,weekday,1 handoff,prior search (fixed),3,True
+Qwen-7B,weekday,1 handoff,prior search (learned),3,True
+Qwen-7B,weekday,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-7B,weekday,1 handoff,"optimal tree, prior (fixed)",3,True
+Qwen-7B,weekday,1 handoff,"optimal tree, prior (learned)",3,True
+Qwen-7B,weekday,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,weekday,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,weekday,1 handoff,floor: boundary known in advance,2,True
+Qwen-7B,weekday,2 onset (α=1),walk from λ1,2,True
+Qwen-7B,weekday,2 onset (α=1),walk from logit lens,2,True
+Qwen-7B,weekday,2 onset (α=1),binary search,4,True
+Qwen-7B,weekday,2 onset (α=1),peak pairs,2,True
+Qwen-7B,weekday,2 onset (α=1),prior search (fixed),3,True
+Qwen-7B,weekday,2 onset (α=1),prior search (learned),3,True
+Qwen-7B,weekday,2 onset (α=1),prior search (learned) + logit lens,2,True
+Qwen-7B,weekday,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Qwen-7B,weekday,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Qwen-7B,weekday,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,weekday,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,weekday,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),walk from λ1,2,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),binary search,4,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),peak pairs,2,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-7B,weekday,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,capital2hop,1 handoff,walk from λ1,2,True
+Llama-8B,capital2hop,1 handoff,walk from logit lens,2,True
+Llama-8B,capital2hop,1 handoff,binary search,5,True
+Llama-8B,capital2hop,1 handoff,peak pairs,2,True
+Llama-8B,capital2hop,1 handoff,prior search (fixed),2,True
+Llama-8B,capital2hop,1 handoff,prior search (learned),2,True
+Llama-8B,capital2hop,1 handoff,prior search (learned) + logit lens,3,True
+Llama-8B,capital2hop,1 handoff,"optimal tree, prior (fixed)",2,True
+Llama-8B,capital2hop,1 handoff,"optimal tree, prior (learned)",2,True
+Llama-8B,capital2hop,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Llama-8B,capital2hop,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Llama-8B,capital2hop,1 handoff,floor: boundary known in advance,2,True
+Llama-8B,capital2hop,2 onset (α=1),walk from λ1,2,True
+Llama-8B,capital2hop,2 onset (α=1),walk from logit lens,2,True
+Llama-8B,capital2hop,2 onset (α=1),binary search,4,True
+Llama-8B,capital2hop,2 onset (α=1),peak pairs,4,True
+Llama-8B,capital2hop,2 onset (α=1),prior search (fixed),4,True
+Llama-8B,capital2hop,2 onset (α=1),prior search (learned),3,True
+Llama-8B,capital2hop,2 onset (α=1),prior search (learned) + logit lens,2,True
+Llama-8B,capital2hop,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Llama-8B,capital2hop,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Llama-8B,capital2hop,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Llama-8B,capital2hop,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Llama-8B,capital2hop,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),walk from λ1,2,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),walk from logit lens,2,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),binary search,4,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),peak pairs,4,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),prior search (fixed),4,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),prior search (learned),3,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",4,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Llama-8B,capital2hop,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,city,1 handoff,walk from λ1,2,True
+Llama-8B,city,1 handoff,walk from logit lens,4,True
+Llama-8B,city,1 handoff,binary search,5,True
+Llama-8B,city,1 handoff,peak pairs,3,True
+Llama-8B,city,1 handoff,prior search (fixed),2,True
+Llama-8B,city,1 handoff,prior search (learned),3,True
+Llama-8B,city,1 handoff,prior search (learned) + logit lens,3,True
+Llama-8B,city,1 handoff,"optimal tree, prior (fixed)",3,True
+Llama-8B,city,1 handoff,"optimal tree, prior (learned)",4,True
+Llama-8B,city,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Llama-8B,city,1 handoff,"optimal tree, logit lens only (learned)",3,True
+Llama-8B,city,1 handoff,floor: boundary known in advance,2,True
+Llama-8B,city,2 onset (α=1),walk from λ1,4,True
+Llama-8B,city,2 onset (α=1),walk from logit lens,2,True
+Llama-8B,city,2 onset (α=1),binary search,4,True
+Llama-8B,city,2 onset (α=1),peak pairs,5,True
+Llama-8B,city,2 onset (α=1),prior search (fixed),3,True
+Llama-8B,city,2 onset (α=1),prior search (learned),4,True
+Llama-8B,city,2 onset (α=1),prior search (learned) + logit lens,3,True
+Llama-8B,city,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Llama-8B,city,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Llama-8B,city,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Llama-8B,city,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Llama-8B,city,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,city,3 transfer (T ≥ .5),walk from λ1,4,True
+Llama-8B,city,3 transfer (T ≥ .5),walk from logit lens,2,True
+Llama-8B,city,3 transfer (T ≥ .5),binary search,4,True
+Llama-8B,city,3 transfer (T ≥ .5),peak pairs,5,True
+Llama-8B,city,3 transfer (T ≥ .5),prior search (fixed),3,True
+Llama-8B,city,3 transfer (T ≥ .5),prior search (learned),3,True
+Llama-8B,city,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Llama-8B,city,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",4,True
+Llama-8B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Llama-8B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Llama-8B,city,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Llama-8B,city,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,color,1 handoff,walk from λ1,3,True
+Llama-8B,color,1 handoff,walk from logit lens,7,True
+Llama-8B,color,1 handoff,binary search,5,True
+Llama-8B,color,1 handoff,peak pairs,6,True
+Llama-8B,color,1 handoff,prior search (fixed),6,True
+Llama-8B,color,1 handoff,prior search (learned),4,True
+Llama-8B,color,1 handoff,prior search (learned) + logit lens,5,True
+Llama-8B,color,1 handoff,"optimal tree, prior (fixed)",6,True
+Llama-8B,color,1 handoff,"optimal tree, prior (learned)",4,True
+Llama-8B,color,1 handoff,"optimal tree, prior (learned) + logit lens",5,True
+Llama-8B,color,1 handoff,"optimal tree, logit lens only (learned)",8,True
+Llama-8B,color,1 handoff,floor: boundary known in advance,2,True
+Llama-8B,color,2 onset (α=1),walk from λ1,7,True
+Llama-8B,color,2 onset (α=1),walk from logit lens,3,True
+Llama-8B,color,2 onset (α=1),binary search,4,True
+Llama-8B,color,2 onset (α=1),peak pairs,6,True
+Llama-8B,color,2 onset (α=1),prior search (fixed),6,True
+Llama-8B,color,2 onset (α=1),prior search (learned),5,True
+Llama-8B,color,2 onset (α=1),prior search (learned) + logit lens,3,True
+Llama-8B,color,2 onset (α=1),"optimal tree, prior (fixed)",7,True
+Llama-8B,color,2 onset (α=1),"optimal tree, prior (learned)",5,True
+Llama-8B,color,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Llama-8B,color,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Llama-8B,color,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,color,3 transfer (T ≥ .5),walk from λ1,7,True
+Llama-8B,color,3 transfer (T ≥ .5),walk from logit lens,3,True
+Llama-8B,color,3 transfer (T ≥ .5),binary search,4,True
+Llama-8B,color,3 transfer (T ≥ .5),peak pairs,6,True
+Llama-8B,color,3 transfer (T ≥ .5),prior search (fixed),6,True
+Llama-8B,color,3 transfer (T ≥ .5),prior search (learned),4,True
+Llama-8B,color,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Llama-8B,color,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",7,True
+Llama-8B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned)",5,True
+Llama-8B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Llama-8B,color,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Llama-8B,color,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,continent,1 handoff,walk from λ1,4,True
+Llama-8B,continent,1 handoff,walk from logit lens,2,True
+Llama-8B,continent,1 handoff,binary search,4,True
+Llama-8B,continent,1 handoff,peak pairs,3,True
+Llama-8B,continent,1 handoff,prior search (fixed),3,True
+Llama-8B,continent,1 handoff,prior search (learned),4,True
+Llama-8B,continent,1 handoff,prior search (learned) + logit lens,3,True
+Llama-8B,continent,1 handoff,"optimal tree, prior (fixed)",3,True
+Llama-8B,continent,1 handoff,"optimal tree, prior (learned)",4,True
+Llama-8B,continent,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Llama-8B,continent,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Llama-8B,continent,1 handoff,floor: boundary known in advance,2,True
+Llama-8B,continent,2 onset (α=1),walk from λ1,4,True
+Llama-8B,continent,2 onset (α=1),walk from logit lens,2,True
+Llama-8B,continent,2 onset (α=1),binary search,4,True
+Llama-8B,continent,2 onset (α=1),peak pairs,3,True
+Llama-8B,continent,2 onset (α=1),prior search (fixed),3,True
+Llama-8B,continent,2 onset (α=1),prior search (learned),4,True
+Llama-8B,continent,2 onset (α=1),prior search (learned) + logit lens,3,True
+Llama-8B,continent,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Llama-8B,continent,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Llama-8B,continent,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Llama-8B,continent,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Llama-8B,continent,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,continent,3 transfer (T ≥ .5),walk from λ1,4,True
+Llama-8B,continent,3 transfer (T ≥ .5),walk from logit lens,2,True
+Llama-8B,continent,3 transfer (T ≥ .5),binary search,4,True
+Llama-8B,continent,3 transfer (T ≥ .5),peak pairs,3,True
+Llama-8B,continent,3 transfer (T ≥ .5),prior search (fixed),3,True
+Llama-8B,continent,3 transfer (T ≥ .5),prior search (learned),3,True
+Llama-8B,continent,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Llama-8B,continent,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Llama-8B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Llama-8B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Llama-8B,continent,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Llama-8B,continent,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,ctxcolor,1 handoff,walk from λ1,5,True
+Llama-8B,ctxcolor,1 handoff,walk from logit lens,5,True
+Llama-8B,ctxcolor,1 handoff,binary search,5,True
+Llama-8B,ctxcolor,1 handoff,peak pairs,3,True
+Llama-8B,ctxcolor,1 handoff,prior search (fixed),3,True
+Llama-8B,ctxcolor,1 handoff,prior search (learned),4,True
+Llama-8B,ctxcolor,1 handoff,prior search (learned) + logit lens,4,True
+Llama-8B,ctxcolor,1 handoff,"optimal tree, prior (fixed)",3,True
+Llama-8B,ctxcolor,1 handoff,"optimal tree, prior (learned)",4,True
+Llama-8B,ctxcolor,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Llama-8B,ctxcolor,1 handoff,"optimal tree, logit lens only (learned)",4,True
+Llama-8B,ctxcolor,1 handoff,floor: boundary known in advance,2,True
+Llama-8B,ctxcolor,2 onset (α=1),walk from λ1,6,True
+Llama-8B,ctxcolor,2 onset (α=1),walk from logit lens,4,True
+Llama-8B,ctxcolor,2 onset (α=1),binary search,4,True
+Llama-8B,ctxcolor,2 onset (α=1),peak pairs,6,True
+Llama-8B,ctxcolor,2 onset (α=1),prior search (fixed),4,True
+Llama-8B,ctxcolor,2 onset (α=1),prior search (learned),4,True
+Llama-8B,ctxcolor,2 onset (α=1),prior search (learned) + logit lens,5,True
+Llama-8B,ctxcolor,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Llama-8B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned)",5,True
+Llama-8B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned) + logit lens",5,True
+Llama-8B,ctxcolor,2 onset (α=1),"optimal tree, logit lens only (learned)",4,True
+Llama-8B,ctxcolor,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),walk from λ1,6,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),walk from logit lens,4,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),binary search,4,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),peak pairs,6,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),prior search (fixed),4,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),prior search (learned),4,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",4,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",4,True
+Llama-8B,ctxcolor,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,emotion,2 onset (α=1),walk from λ1,4,True
+Llama-8B,emotion,2 onset (α=1),walk from logit lens,6,True
+Llama-8B,emotion,2 onset (α=1),binary search,5,True
+Llama-8B,emotion,2 onset (α=1),peak pairs,5,True
+Llama-8B,emotion,2 onset (α=1),prior search (fixed),5,True
+Llama-8B,emotion,2 onset (α=1),prior search (learned),3,True
+Llama-8B,emotion,2 onset (α=1),prior search (learned) + logit lens,4,True
+Llama-8B,emotion,2 onset (α=1),"optimal tree, prior (fixed)",5,True
+Llama-8B,emotion,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Llama-8B,emotion,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Llama-8B,emotion,2 onset (α=1),"optimal tree, logit lens only (learned)",8,True
+Llama-8B,emotion,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,emotion,3 transfer (T ≥ .5),walk from λ1,8,True
+Llama-8B,emotion,3 transfer (T ≥ .5),walk from logit lens,2,True
+Llama-8B,emotion,3 transfer (T ≥ .5),binary search,4,True
+Llama-8B,emotion,3 transfer (T ≥ .5),peak pairs,4,True
+Llama-8B,emotion,3 transfer (T ≥ .5),prior search (fixed),4,True
+Llama-8B,emotion,3 transfer (T ≥ .5),prior search (learned),3,True
+Llama-8B,emotion,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Llama-8B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Llama-8B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Llama-8B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Llama-8B,emotion,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Llama-8B,emotion,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,hour,1 handoff,walk from λ1,2,True
+Llama-8B,hour,1 handoff,walk from logit lens,8,True
+Llama-8B,hour,1 handoff,binary search,5,True
+Llama-8B,hour,1 handoff,peak pairs,2,True
+Llama-8B,hour,1 handoff,prior search (fixed),2,True
+Llama-8B,hour,1 handoff,prior search (learned),2,True
+Llama-8B,hour,1 handoff,prior search (learned) + logit lens,3,True
+Llama-8B,hour,1 handoff,"optimal tree, prior (fixed)",2,True
+Llama-8B,hour,1 handoff,"optimal tree, prior (learned)",2,True
+Llama-8B,hour,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Llama-8B,hour,1 handoff,"optimal tree, logit lens only (learned)",8,True
+Llama-8B,hour,1 handoff,floor: boundary known in advance,2,True
+Llama-8B,hour,2 onset (α=1),walk from λ1,3,True
+Llama-8B,hour,2 onset (α=1),walk from logit lens,6,True
+Llama-8B,hour,2 onset (α=1),binary search,5,True
+Llama-8B,hour,2 onset (α=1),peak pairs,6,True
+Llama-8B,hour,2 onset (α=1),prior search (fixed),7,True
+Llama-8B,hour,2 onset (α=1),prior search (learned),4,True
+Llama-8B,hour,2 onset (α=1),prior search (learned) + logit lens,4,True
+Llama-8B,hour,2 onset (α=1),"optimal tree, prior (fixed)",7,True
+Llama-8B,hour,2 onset (α=1),"optimal tree, prior (learned)",5,True
+Llama-8B,hour,2 onset (α=1),"optimal tree, prior (learned) + logit lens",6,True
+Llama-8B,hour,2 onset (α=1),"optimal tree, logit lens only (learned)",8,True
+Llama-8B,hour,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,hour,3 transfer (T ≥ .5),walk from λ1,6,True
+Llama-8B,hour,3 transfer (T ≥ .5),walk from logit lens,3,True
+Llama-8B,hour,3 transfer (T ≥ .5),binary search,5,True
+Llama-8B,hour,3 transfer (T ≥ .5),peak pairs,6,True
+Llama-8B,hour,3 transfer (T ≥ .5),prior search (fixed),8,True
+Llama-8B,hour,3 transfer (T ≥ .5),prior search (learned),5,True
+Llama-8B,hour,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Llama-8B,hour,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",8,True
+Llama-8B,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned)",6,True
+Llama-8B,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Llama-8B,hour,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Llama-8B,hour,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,letter,1 handoff,walk from λ1,2,True
+Llama-8B,letter,1 handoff,walk from logit lens,8,True
+Llama-8B,letter,1 handoff,binary search,5,True
+Llama-8B,letter,1 handoff,peak pairs,2,True
+Llama-8B,letter,1 handoff,prior search (fixed),2,True
+Llama-8B,letter,1 handoff,prior search (learned),2,True
+Llama-8B,letter,1 handoff,prior search (learned) + logit lens,3,True
+Llama-8B,letter,1 handoff,"optimal tree, prior (fixed)",2,True
+Llama-8B,letter,1 handoff,"optimal tree, prior (learned)",2,True
+Llama-8B,letter,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Llama-8B,letter,1 handoff,"optimal tree, logit lens only (learned)",8,True
+Llama-8B,letter,1 handoff,floor: boundary known in advance,2,True
+Llama-8B,letter,2 onset (α=1),walk from λ1,2,True
+Llama-8B,letter,2 onset (α=1),walk from logit lens,8,True
+Llama-8B,letter,2 onset (α=1),binary search,5,True
+Llama-8B,letter,2 onset (α=1),peak pairs,2,True
+Llama-8B,letter,2 onset (α=1),prior search (fixed),2,True
+Llama-8B,letter,2 onset (α=1),prior search (learned),2,True
+Llama-8B,letter,2 onset (α=1),prior search (learned) + logit lens,3,True
+Llama-8B,letter,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Llama-8B,letter,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Llama-8B,letter,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Llama-8B,letter,2 onset (α=1),"optimal tree, logit lens only (learned)",8,True
+Llama-8B,letter,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,letter,3 transfer (T ≥ .5),walk from λ1,9,True
+Llama-8B,letter,3 transfer (T ≥ .5),walk from logit lens,3,True
+Llama-8B,letter,3 transfer (T ≥ .5),binary search,4,True
+Llama-8B,letter,3 transfer (T ≥ .5),peak pairs,6,True
+Llama-8B,letter,3 transfer (T ≥ .5),prior search (fixed),8,True
+Llama-8B,letter,3 transfer (T ≥ .5),prior search (learned),8,True
+Llama-8B,letter,3 transfer (T ≥ .5),prior search (learned) + logit lens,5,True
+Llama-8B,letter,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",8,True
+Llama-8B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned)",8,True
+Llama-8B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",5,True
+Llama-8B,letter,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Llama-8B,letter,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,month,1 handoff,walk from λ1,2,True
+Llama-8B,month,1 handoff,walk from logit lens,3,True
+Llama-8B,month,1 handoff,binary search,5,True
+Llama-8B,month,1 handoff,peak pairs,2,True
+Llama-8B,month,1 handoff,prior search (fixed),2,True
+Llama-8B,month,1 handoff,prior search (learned),2,True
+Llama-8B,month,1 handoff,prior search (learned) + logit lens,2,True
+Llama-8B,month,1 handoff,"optimal tree, prior (fixed)",2,True
+Llama-8B,month,1 handoff,"optimal tree, prior (learned)",2,True
+Llama-8B,month,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Llama-8B,month,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Llama-8B,month,1 handoff,floor: boundary known in advance,2,True
+Llama-8B,month,2 onset (α=1),walk from λ1,3,True
+Llama-8B,month,2 onset (α=1),walk from logit lens,2,True
+Llama-8B,month,2 onset (α=1),binary search,4,True
+Llama-8B,month,2 onset (α=1),peak pairs,4,True
+Llama-8B,month,2 onset (α=1),prior search (fixed),3,True
+Llama-8B,month,2 onset (α=1),prior search (learned),3,True
+Llama-8B,month,2 onset (α=1),prior search (learned) + logit lens,3,True
+Llama-8B,month,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Llama-8B,month,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Llama-8B,month,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Llama-8B,month,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Llama-8B,month,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,month,3 transfer (T ≥ .5),walk from λ1,4,True
+Llama-8B,month,3 transfer (T ≥ .5),walk from logit lens,3,True
+Llama-8B,month,3 transfer (T ≥ .5),binary search,5,True
+Llama-8B,month,3 transfer (T ≥ .5),peak pairs,3,True
+Llama-8B,month,3 transfer (T ≥ .5),prior search (fixed),3,True
+Llama-8B,month,3 transfer (T ≥ .5),prior search (learned),3,True
+Llama-8B,month,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Llama-8B,month,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Llama-8B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Llama-8B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Llama-8B,month,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Llama-8B,month,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Llama-8B,weekday,1 handoff,walk from λ1,2,True
+Llama-8B,weekday,1 handoff,walk from logit lens,2,True
+Llama-8B,weekday,1 handoff,binary search,5,True
+Llama-8B,weekday,1 handoff,peak pairs,5,True
+Llama-8B,weekday,1 handoff,prior search (fixed),3,True
+Llama-8B,weekday,1 handoff,prior search (learned),4,True
+Llama-8B,weekday,1 handoff,prior search (learned) + logit lens,3,True
+Llama-8B,weekday,1 handoff,"optimal tree, prior (fixed)",3,True
+Llama-8B,weekday,1 handoff,"optimal tree, prior (learned)",4,True
+Llama-8B,weekday,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Llama-8B,weekday,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Llama-8B,weekday,1 handoff,floor: boundary known in advance,2,True
+Llama-8B,weekday,2 onset (α=1),walk from λ1,5,True
+Llama-8B,weekday,2 onset (α=1),walk from logit lens,4,True
+Llama-8B,weekday,2 onset (α=1),binary search,5,True
+Llama-8B,weekday,2 onset (α=1),peak pairs,5,True
+Llama-8B,weekday,2 onset (α=1),prior search (fixed),4,True
+Llama-8B,weekday,2 onset (α=1),prior search (learned),5,True
+Llama-8B,weekday,2 onset (α=1),prior search (learned) + logit lens,4,True
+Llama-8B,weekday,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Llama-8B,weekday,2 onset (α=1),"optimal tree, prior (learned)",5,True
+Llama-8B,weekday,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Llama-8B,weekday,2 onset (α=1),"optimal tree, logit lens only (learned)",4,True
+Llama-8B,weekday,2 onset (α=1),floor: boundary known in advance,2,True
+Llama-8B,weekday,3 transfer (T ≥ .5),walk from λ1,6,True
+Llama-8B,weekday,3 transfer (T ≥ .5),walk from logit lens,5,True
+Llama-8B,weekday,3 transfer (T ≥ .5),binary search,5,True
+Llama-8B,weekday,3 transfer (T ≥ .5),peak pairs,3,True
+Llama-8B,weekday,3 transfer (T ≥ .5),prior search (fixed),3,True
+Llama-8B,weekday,3 transfer (T ≥ .5),prior search (learned),4,True
+Llama-8B,weekday,3 transfer (T ≥ .5),prior search (learned) + logit lens,5,True
+Llama-8B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Llama-8B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned)",5,True
+Llama-8B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",6,True
+Llama-8B,weekday,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",6,True
+Llama-8B,weekday,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Mistral-7B,capital2hop,1 handoff,walk from λ1,2,True
+Mistral-7B,capital2hop,1 handoff,walk from logit lens,2,True
+Mistral-7B,capital2hop,1 handoff,binary search,5,True
+Mistral-7B,capital2hop,1 handoff,peak pairs,2,True
+Mistral-7B,capital2hop,1 handoff,prior search (fixed),2,True
+Mistral-7B,capital2hop,1 handoff,prior search (learned),3,True
+Mistral-7B,capital2hop,1 handoff,prior search (learned) + logit lens,2,True
+Mistral-7B,capital2hop,1 handoff,"optimal tree, prior (fixed)",2,True
+Mistral-7B,capital2hop,1 handoff,"optimal tree, prior (learned)",2,True
+Mistral-7B,capital2hop,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Mistral-7B,capital2hop,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,capital2hop,1 handoff,floor: boundary known in advance,2,True
+Mistral-7B,capital2hop,2 onset (α=1),walk from λ1,2,True
+Mistral-7B,capital2hop,2 onset (α=1),walk from logit lens,2,True
+Mistral-7B,capital2hop,2 onset (α=1),binary search,5,True
+Mistral-7B,capital2hop,2 onset (α=1),peak pairs,2,True
+Mistral-7B,capital2hop,2 onset (α=1),prior search (fixed),2,True
+Mistral-7B,capital2hop,2 onset (α=1),prior search (learned),3,True
+Mistral-7B,capital2hop,2 onset (α=1),prior search (learned) + logit lens,2,True
+Mistral-7B,capital2hop,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Mistral-7B,capital2hop,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Mistral-7B,capital2hop,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Mistral-7B,capital2hop,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,capital2hop,2 onset (α=1),floor: boundary known in advance,2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),walk from λ1,2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),walk from logit lens,2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),binary search,5,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),peak pairs,2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),prior search (fixed),2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),prior search (learned),3,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned)",2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,capital2hop,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Mistral-7B,city,1 handoff,walk from λ1,4,True
+Mistral-7B,city,1 handoff,walk from logit lens,2,True
+Mistral-7B,city,1 handoff,binary search,5,True
+Mistral-7B,city,1 handoff,peak pairs,3,True
+Mistral-7B,city,1 handoff,prior search (fixed),3,True
+Mistral-7B,city,1 handoff,prior search (learned),4,True
+Mistral-7B,city,1 handoff,prior search (learned) + logit lens,3,True
+Mistral-7B,city,1 handoff,"optimal tree, prior (fixed)",3,True
+Mistral-7B,city,1 handoff,"optimal tree, prior (learned)",4,True
+Mistral-7B,city,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Mistral-7B,city,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,city,1 handoff,floor: boundary known in advance,2,True
+Mistral-7B,city,2 onset (α=1),walk from λ1,4,True
+Mistral-7B,city,2 onset (α=1),walk from logit lens,2,True
+Mistral-7B,city,2 onset (α=1),binary search,5,True
+Mistral-7B,city,2 onset (α=1),peak pairs,3,True
+Mistral-7B,city,2 onset (α=1),prior search (fixed),3,True
+Mistral-7B,city,2 onset (α=1),prior search (learned),4,True
+Mistral-7B,city,2 onset (α=1),prior search (learned) + logit lens,3,True
+Mistral-7B,city,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Mistral-7B,city,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Mistral-7B,city,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Mistral-7B,city,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,city,2 onset (α=1),floor: boundary known in advance,2,True
+Mistral-7B,city,3 transfer (T ≥ .5),walk from λ1,4,True
+Mistral-7B,city,3 transfer (T ≥ .5),walk from logit lens,2,True
+Mistral-7B,city,3 transfer (T ≥ .5),binary search,5,True
+Mistral-7B,city,3 transfer (T ≥ .5),peak pairs,3,True
+Mistral-7B,city,3 transfer (T ≥ .5),prior search (fixed),3,True
+Mistral-7B,city,3 transfer (T ≥ .5),prior search (learned),3,True
+Mistral-7B,city,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Mistral-7B,city,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Mistral-7B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Mistral-7B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Mistral-7B,city,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,city,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Mistral-7B,color,1 handoff,walk from λ1,3,True
+Mistral-7B,color,1 handoff,walk from logit lens,3,True
+Mistral-7B,color,1 handoff,binary search,4,True
+Mistral-7B,color,1 handoff,peak pairs,5,True
+Mistral-7B,color,1 handoff,prior search (fixed),4,True
+Mistral-7B,color,1 handoff,prior search (learned),3,True
+Mistral-7B,color,1 handoff,prior search (learned) + logit lens,3,True
+Mistral-7B,color,1 handoff,"optimal tree, prior (fixed)",5,True
+Mistral-7B,color,1 handoff,"optimal tree, prior (learned)",4,True
+Mistral-7B,color,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Mistral-7B,color,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,color,1 handoff,floor: boundary known in advance,2,True
+Mistral-7B,color,2 onset (α=1),walk from λ1,5,True
+Mistral-7B,color,2 onset (α=1),walk from logit lens,2,True
+Mistral-7B,color,2 onset (α=1),binary search,5,True
+Mistral-7B,color,2 onset (α=1),peak pairs,3,True
+Mistral-7B,color,2 onset (α=1),prior search (fixed),3,True
+Mistral-7B,color,2 onset (α=1),prior search (learned),4,True
+Mistral-7B,color,2 onset (α=1),prior search (learned) + logit lens,3,True
+Mistral-7B,color,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Mistral-7B,color,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Mistral-7B,color,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Mistral-7B,color,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,color,2 onset (α=1),floor: boundary known in advance,2,True
+Mistral-7B,color,3 transfer (T ≥ .5),walk from λ1,7,True
+Mistral-7B,color,3 transfer (T ≥ .5),walk from logit lens,4,True
+Mistral-7B,color,3 transfer (T ≥ .5),binary search,5,True
+Mistral-7B,color,3 transfer (T ≥ .5),peak pairs,6,True
+Mistral-7B,color,3 transfer (T ≥ .5),prior search (fixed),5,True
+Mistral-7B,color,3 transfer (T ≥ .5),prior search (learned),4,True
+Mistral-7B,color,3 transfer (T ≥ .5),prior search (learned) + logit lens,5,True
+Mistral-7B,color,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",5,True
+Mistral-7B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Mistral-7B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Mistral-7B,color,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",4,True
+Mistral-7B,color,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Mistral-7B,continent,1 handoff,walk from λ1,2,True
+Mistral-7B,continent,1 handoff,walk from logit lens,2,True
+Mistral-7B,continent,1 handoff,binary search,5,True
+Mistral-7B,continent,1 handoff,peak pairs,2,True
+Mistral-7B,continent,1 handoff,prior search (fixed),2,True
+Mistral-7B,continent,1 handoff,prior search (learned),3,True
+Mistral-7B,continent,1 handoff,prior search (learned) + logit lens,3,True
+Mistral-7B,continent,1 handoff,"optimal tree, prior (fixed)",2,True
+Mistral-7B,continent,1 handoff,"optimal tree, prior (learned)",2,True
+Mistral-7B,continent,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Mistral-7B,continent,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,continent,1 handoff,floor: boundary known in advance,2,True
+Mistral-7B,continent,2 onset (α=1),walk from λ1,2,True
+Mistral-7B,continent,2 onset (α=1),walk from logit lens,2,True
+Mistral-7B,continent,2 onset (α=1),binary search,5,True
+Mistral-7B,continent,2 onset (α=1),peak pairs,6,True
+Mistral-7B,continent,2 onset (α=1),prior search (fixed),4,True
+Mistral-7B,continent,2 onset (α=1),prior search (learned),3,True
+Mistral-7B,continent,2 onset (α=1),prior search (learned) + logit lens,3,True
+Mistral-7B,continent,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Mistral-7B,continent,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Mistral-7B,continent,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Mistral-7B,continent,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,continent,2 onset (α=1),floor: boundary known in advance,2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),walk from λ1,2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),walk from logit lens,2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),binary search,5,True
+Mistral-7B,continent,3 transfer (T ≥ .5),peak pairs,2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),prior search (fixed),2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),prior search (learned),3,True
+Mistral-7B,continent,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned)",2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,continent,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Mistral-7B,ctxcolor,1 handoff,walk from λ1,6,True
+Mistral-7B,ctxcolor,1 handoff,walk from logit lens,7,True
+Mistral-7B,ctxcolor,1 handoff,binary search,5,True
+Mistral-7B,ctxcolor,1 handoff,peak pairs,4,True
+Mistral-7B,ctxcolor,1 handoff,prior search (fixed),3,True
+Mistral-7B,ctxcolor,1 handoff,prior search (learned),3,True
+Mistral-7B,ctxcolor,1 handoff,prior search (learned) + logit lens,4,True
+Mistral-7B,ctxcolor,1 handoff,"optimal tree, prior (fixed)",3,True
+Mistral-7B,ctxcolor,1 handoff,"optimal tree, prior (learned)",3,True
+Mistral-7B,ctxcolor,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Mistral-7B,ctxcolor,1 handoff,"optimal tree, logit lens only (learned)",7,True
+Mistral-7B,ctxcolor,1 handoff,floor: boundary known in advance,2,True
+Mistral-7B,ctxcolor,2 onset (α=1),walk from λ1,2,True
+Mistral-7B,ctxcolor,2 onset (α=1),walk from logit lens,3,True
+Mistral-7B,ctxcolor,2 onset (α=1),binary search,5,True
+Mistral-7B,ctxcolor,2 onset (α=1),peak pairs,2,True
+Mistral-7B,ctxcolor,2 onset (α=1),prior search (fixed),3,True
+Mistral-7B,ctxcolor,2 onset (α=1),prior search (learned),3,True
+Mistral-7B,ctxcolor,2 onset (α=1),prior search (learned) + logit lens,3,True
+Mistral-7B,ctxcolor,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Mistral-7B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Mistral-7B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Mistral-7B,ctxcolor,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Mistral-7B,ctxcolor,2 onset (α=1),floor: boundary known in advance,2,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),walk from λ1,2,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),walk from logit lens,3,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),binary search,5,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),peak pairs,2,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),prior search (fixed),3,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),prior search (learned),3,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned)",2,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Mistral-7B,ctxcolor,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Mistral-7B,emotion,2 onset (α=1),walk from λ1,7,True
+Mistral-7B,emotion,2 onset (α=1),walk from logit lens,2,True
+Mistral-7B,emotion,2 onset (α=1),binary search,5,True
+Mistral-7B,emotion,2 onset (α=1),peak pairs,6,True
+Mistral-7B,emotion,2 onset (α=1),prior search (fixed),4,True
+Mistral-7B,emotion,2 onset (α=1),prior search (learned),5,True
+Mistral-7B,emotion,2 onset (α=1),prior search (learned) + logit lens,4,True
+Mistral-7B,emotion,2 onset (α=1),"optimal tree, prior (fixed)",5,True
+Mistral-7B,emotion,2 onset (α=1),"optimal tree, prior (learned)",5,True
+Mistral-7B,emotion,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Mistral-7B,emotion,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,emotion,2 onset (α=1),floor: boundary known in advance,2,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),walk from λ1,8,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),walk from logit lens,3,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),binary search,4,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),peak pairs,3,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),prior search (fixed),3,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),prior search (learned),4,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Mistral-7B,emotion,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Mistral-7B,letter,1 handoff,walk from λ1,2,True
+Mistral-7B,letter,1 handoff,walk from logit lens,9,True
+Mistral-7B,letter,1 handoff,binary search,4,True
+Mistral-7B,letter,1 handoff,peak pairs,8,True
+Mistral-7B,letter,1 handoff,prior search (fixed),3,True
+Mistral-7B,letter,1 handoff,prior search (learned),4,True
+Mistral-7B,letter,1 handoff,prior search (learned) + logit lens,4,True
+Mistral-7B,letter,1 handoff,"optimal tree, prior (fixed)",3,True
+Mistral-7B,letter,1 handoff,"optimal tree, prior (learned)",4,True
+Mistral-7B,letter,1 handoff,"optimal tree, prior (learned) + logit lens",5,True
+Mistral-7B,letter,1 handoff,"optimal tree, logit lens only (learned)",8,True
+Mistral-7B,letter,1 handoff,floor: boundary known in advance,2,True
+Mistral-7B,letter,2 onset (α=1),walk from λ1,2,True
+Mistral-7B,letter,2 onset (α=1),walk from logit lens,9,True
+Mistral-7B,letter,2 onset (α=1),binary search,4,True
+Mistral-7B,letter,2 onset (α=1),peak pairs,8,True
+Mistral-7B,letter,2 onset (α=1),prior search (fixed),3,True
+Mistral-7B,letter,2 onset (α=1),prior search (learned),3,True
+Mistral-7B,letter,2 onset (α=1),prior search (learned) + logit lens,4,True
+Mistral-7B,letter,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Mistral-7B,letter,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Mistral-7B,letter,2 onset (α=1),"optimal tree, prior (learned) + logit lens",5,True
+Mistral-7B,letter,2 onset (α=1),"optimal tree, logit lens only (learned)",9,True
+Mistral-7B,letter,2 onset (α=1),floor: boundary known in advance,2,True
+Mistral-7B,letter,3 transfer (T ≥ .5),walk from λ1,9,True
+Mistral-7B,letter,3 transfer (T ≥ .5),walk from logit lens,2,True
+Mistral-7B,letter,3 transfer (T ≥ .5),binary search,5,True
+Mistral-7B,letter,3 transfer (T ≥ .5),peak pairs,8,True
+Mistral-7B,letter,3 transfer (T ≥ .5),prior search (fixed),4,True
+Mistral-7B,letter,3 transfer (T ≥ .5),prior search (learned),5,True
+Mistral-7B,letter,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Mistral-7B,letter,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",5,True
+Mistral-7B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned)",5,True
+Mistral-7B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Mistral-7B,letter,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Mistral-7B,letter,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Mistral-7B,month,1 handoff,walk from λ1,3,True
+Mistral-7B,month,1 handoff,walk from logit lens,2,True
+Mistral-7B,month,1 handoff,binary search,5,True
+Mistral-7B,month,1 handoff,peak pairs,4,True
+Mistral-7B,month,1 handoff,prior search (fixed),3,True
+Mistral-7B,month,1 handoff,prior search (learned),3,True
+Mistral-7B,month,1 handoff,prior search (learned) + logit lens,3,True
+Mistral-7B,month,1 handoff,"optimal tree, prior (fixed)",3,True
+Mistral-7B,month,1 handoff,"optimal tree, prior (learned)",3,True
+Mistral-7B,month,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Mistral-7B,month,1 handoff,"optimal tree, logit lens only (learned)",4,True
+Mistral-7B,month,1 handoff,floor: boundary known in advance,2,True
+Mistral-7B,month,2 onset (α=1),walk from λ1,2,True
+Mistral-7B,month,2 onset (α=1),walk from logit lens,4,True
+Mistral-7B,month,2 onset (α=1),binary search,5,True
+Mistral-7B,month,2 onset (α=1),peak pairs,5,True
+Mistral-7B,month,2 onset (α=1),prior search (fixed),4,True
+Mistral-7B,month,2 onset (α=1),prior search (learned),3,True
+Mistral-7B,month,2 onset (α=1),prior search (learned) + logit lens,3,True
+Mistral-7B,month,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Mistral-7B,month,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Mistral-7B,month,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Mistral-7B,month,2 onset (α=1),"optimal tree, logit lens only (learned)",4,True
+Mistral-7B,month,2 onset (α=1),floor: boundary known in advance,2,True
+Mistral-7B,month,3 transfer (T ≥ .5),walk from λ1,4,True
+Mistral-7B,month,3 transfer (T ≥ .5),walk from logit lens,6,True
+Mistral-7B,month,3 transfer (T ≥ .5),binary search,4,True
+Mistral-7B,month,3 transfer (T ≥ .5),peak pairs,5,True
+Mistral-7B,month,3 transfer (T ≥ .5),prior search (fixed),6,True
+Mistral-7B,month,3 transfer (T ≥ .5),prior search (learned),3,True
+Mistral-7B,month,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Mistral-7B,month,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",6,True
+Mistral-7B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Mistral-7B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Mistral-7B,month,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",7,True
+Mistral-7B,month,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Mistral-7B,weekday,1 handoff,walk from λ1,2,True
+Mistral-7B,weekday,1 handoff,walk from logit lens,2,True
+Mistral-7B,weekday,1 handoff,binary search,4,True
+Mistral-7B,weekday,1 handoff,peak pairs,2,True
+Mistral-7B,weekday,1 handoff,prior search (fixed),2,True
+Mistral-7B,weekday,1 handoff,prior search (learned),3,True
+Mistral-7B,weekday,1 handoff,prior search (learned) + logit lens,3,True
+Mistral-7B,weekday,1 handoff,"optimal tree, prior (fixed)",2,True
+Mistral-7B,weekday,1 handoff,"optimal tree, prior (learned)",3,True
+Mistral-7B,weekday,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Mistral-7B,weekday,1 handoff,"optimal tree, logit lens only (learned)",4,True
+Mistral-7B,weekday,1 handoff,floor: boundary known in advance,2,True
+Mistral-7B,weekday,2 onset (α=1),walk from λ1,2,True
+Mistral-7B,weekday,2 onset (α=1),walk from logit lens,3,True
+Mistral-7B,weekday,2 onset (α=1),binary search,5,True
+Mistral-7B,weekday,2 onset (α=1),peak pairs,5,True
+Mistral-7B,weekday,2 onset (α=1),prior search (fixed),4,True
+Mistral-7B,weekday,2 onset (α=1),prior search (learned),3,True
+Mistral-7B,weekday,2 onset (α=1),prior search (learned) + logit lens,3,True
+Mistral-7B,weekday,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Mistral-7B,weekday,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Mistral-7B,weekday,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Mistral-7B,weekday,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Mistral-7B,weekday,2 onset (α=1),floor: boundary known in advance,2,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),walk from λ1,6,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),walk from logit lens,7,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),binary search,5,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),peak pairs,3,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),prior search (fixed),4,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),prior search (learned),5,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),prior search (learned) + logit lens,6,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",4,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",6,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",7,True
+Mistral-7B,weekday,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Gemma-9B,capital2hop,1 handoff,walk from λ1,2,True
+Gemma-9B,capital2hop,1 handoff,walk from logit lens,7,True
+Gemma-9B,capital2hop,1 handoff,binary search,5,True
+Gemma-9B,capital2hop,1 handoff,peak pairs,2,True
+Gemma-9B,capital2hop,1 handoff,prior search (fixed),2,True
+Gemma-9B,capital2hop,1 handoff,prior search (learned),3,True
+Gemma-9B,capital2hop,1 handoff,prior search (learned) + logit lens,3,True
+Gemma-9B,capital2hop,1 handoff,"optimal tree, prior (fixed)",2,True
+Gemma-9B,capital2hop,1 handoff,"optimal tree, prior (learned)",2,True
+Gemma-9B,capital2hop,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,capital2hop,1 handoff,"optimal tree, logit lens only (learned)",9,True
+Gemma-9B,capital2hop,1 handoff,floor: boundary known in advance,2,True
+Gemma-9B,capital2hop,2 onset (α=1),walk from λ1,2,True
+Gemma-9B,capital2hop,2 onset (α=1),walk from logit lens,7,True
+Gemma-9B,capital2hop,2 onset (α=1),binary search,5,True
+Gemma-9B,capital2hop,2 onset (α=1),peak pairs,2,True
+Gemma-9B,capital2hop,2 onset (α=1),prior search (fixed),2,True
+Gemma-9B,capital2hop,2 onset (α=1),prior search (learned),3,True
+Gemma-9B,capital2hop,2 onset (α=1),prior search (learned) + logit lens,4,True
+Gemma-9B,capital2hop,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Gemma-9B,capital2hop,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Gemma-9B,capital2hop,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,capital2hop,2 onset (α=1),"optimal tree, logit lens only (learned)",9,True
+Gemma-9B,capital2hop,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),walk from λ1,2,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),walk from logit lens,7,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),binary search,5,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),peak pairs,2,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),prior search (fixed),2,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),prior search (learned),4,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",8,True
+Gemma-9B,capital2hop,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Gemma-9B,city,1 handoff,walk from λ1,2,True
+Gemma-9B,city,1 handoff,walk from logit lens,7,True
+Gemma-9B,city,1 handoff,binary search,5,True
+Gemma-9B,city,1 handoff,peak pairs,2,True
+Gemma-9B,city,1 handoff,prior search (fixed),2,True
+Gemma-9B,city,1 handoff,prior search (learned),3,True
+Gemma-9B,city,1 handoff,prior search (learned) + logit lens,3,True
+Gemma-9B,city,1 handoff,"optimal tree, prior (fixed)",2,True
+Gemma-9B,city,1 handoff,"optimal tree, prior (learned)",2,True
+Gemma-9B,city,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,city,1 handoff,"optimal tree, logit lens only (learned)",9,True
+Gemma-9B,city,1 handoff,floor: boundary known in advance,2,True
+Gemma-9B,city,2 onset (α=1),walk from λ1,4,True
+Gemma-9B,city,2 onset (α=1),walk from logit lens,4,True
+Gemma-9B,city,2 onset (α=1),binary search,5,True
+Gemma-9B,city,2 onset (α=1),peak pairs,5,True
+Gemma-9B,city,2 onset (α=1),prior search (fixed),4,True
+Gemma-9B,city,2 onset (α=1),prior search (learned),3,True
+Gemma-9B,city,2 onset (α=1),prior search (learned) + logit lens,4,True
+Gemma-9B,city,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Gemma-9B,city,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Gemma-9B,city,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Gemma-9B,city,2 onset (α=1),"optimal tree, logit lens only (learned)",4,True
+Gemma-9B,city,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,city,3 transfer (T ≥ .5),walk from λ1,2,True
+Gemma-9B,city,3 transfer (T ≥ .5),walk from logit lens,7,True
+Gemma-9B,city,3 transfer (T ≥ .5),binary search,5,True
+Gemma-9B,city,3 transfer (T ≥ .5),peak pairs,2,True
+Gemma-9B,city,3 transfer (T ≥ .5),prior search (fixed),2,True
+Gemma-9B,city,3 transfer (T ≥ .5),prior search (learned),3,True
+Gemma-9B,city,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Gemma-9B,city,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Gemma-9B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Gemma-9B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,city,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",8,True
+Gemma-9B,city,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Gemma-9B,color,1 handoff,walk from λ1,5,True
+Gemma-9B,color,1 handoff,walk from logit lens,3,True
+Gemma-9B,color,1 handoff,binary search,5,True
+Gemma-9B,color,1 handoff,peak pairs,6,True
+Gemma-9B,color,1 handoff,prior search (fixed),8,True
+Gemma-9B,color,1 handoff,prior search (learned),6,True
+Gemma-9B,color,1 handoff,prior search (learned) + logit lens,4,True
+Gemma-9B,color,1 handoff,"optimal tree, prior (fixed)",7,True
+Gemma-9B,color,1 handoff,"optimal tree, prior (learned)",5,True
+Gemma-9B,color,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,color,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Gemma-9B,color,1 handoff,floor: boundary known in advance,2,True
+Gemma-9B,color,2 onset (α=1),walk from λ1,2,True
+Gemma-9B,color,2 onset (α=1),walk from logit lens,3,True
+Gemma-9B,color,2 onset (α=1),binary search,5,True
+Gemma-9B,color,2 onset (α=1),peak pairs,2,True
+Gemma-9B,color,2 onset (α=1),prior search (fixed),3,True
+Gemma-9B,color,2 onset (α=1),prior search (learned),3,True
+Gemma-9B,color,2 onset (α=1),prior search (learned) + logit lens,3,True
+Gemma-9B,color,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Gemma-9B,color,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Gemma-9B,color,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,color,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Gemma-9B,color,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,color,3 transfer (T ≥ .5),walk from λ1,2,True
+Gemma-9B,color,3 transfer (T ≥ .5),walk from logit lens,3,True
+Gemma-9B,color,3 transfer (T ≥ .5),binary search,5,True
+Gemma-9B,color,3 transfer (T ≥ .5),peak pairs,2,True
+Gemma-9B,color,3 transfer (T ≥ .5),prior search (fixed),3,True
+Gemma-9B,color,3 transfer (T ≥ .5),prior search (learned),3,True
+Gemma-9B,color,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Gemma-9B,color,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Gemma-9B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Gemma-9B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,color,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Gemma-9B,color,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Gemma-9B,continent,1 handoff,walk from λ1,2,True
+Gemma-9B,continent,1 handoff,walk from logit lens,7,True
+Gemma-9B,continent,1 handoff,binary search,5,True
+Gemma-9B,continent,1 handoff,peak pairs,2,True
+Gemma-9B,continent,1 handoff,prior search (fixed),2,True
+Gemma-9B,continent,1 handoff,prior search (learned),3,True
+Gemma-9B,continent,1 handoff,prior search (learned) + logit lens,3,True
+Gemma-9B,continent,1 handoff,"optimal tree, prior (fixed)",2,True
+Gemma-9B,continent,1 handoff,"optimal tree, prior (learned)",2,True
+Gemma-9B,continent,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,continent,1 handoff,"optimal tree, logit lens only (learned)",9,True
+Gemma-9B,continent,1 handoff,floor: boundary known in advance,2,True
+Gemma-9B,continent,2 onset (α=1),walk from λ1,2,True
+Gemma-9B,continent,2 onset (α=1),walk from logit lens,7,True
+Gemma-9B,continent,2 onset (α=1),binary search,5,True
+Gemma-9B,continent,2 onset (α=1),peak pairs,2,True
+Gemma-9B,continent,2 onset (α=1),prior search (fixed),2,True
+Gemma-9B,continent,2 onset (α=1),prior search (learned),3,True
+Gemma-9B,continent,2 onset (α=1),prior search (learned) + logit lens,4,True
+Gemma-9B,continent,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Gemma-9B,continent,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Gemma-9B,continent,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,continent,2 onset (α=1),"optimal tree, logit lens only (learned)",9,True
+Gemma-9B,continent,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,continent,3 transfer (T ≥ .5),walk from λ1,2,True
+Gemma-9B,continent,3 transfer (T ≥ .5),walk from logit lens,7,True
+Gemma-9B,continent,3 transfer (T ≥ .5),binary search,5,True
+Gemma-9B,continent,3 transfer (T ≥ .5),peak pairs,2,True
+Gemma-9B,continent,3 transfer (T ≥ .5),prior search (fixed),2,True
+Gemma-9B,continent,3 transfer (T ≥ .5),prior search (learned),4,True
+Gemma-9B,continent,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Gemma-9B,continent,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Gemma-9B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Gemma-9B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Gemma-9B,continent,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",8,True
+Gemma-9B,continent,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Gemma-9B,ctxcolor,1 handoff,walk from λ1,15,True
+Gemma-9B,ctxcolor,1 handoff,walk from logit lens,3,True
+Gemma-9B,ctxcolor,1 handoff,binary search,5,True
+Gemma-9B,ctxcolor,1 handoff,peak pairs,8,True
+Gemma-9B,ctxcolor,1 handoff,prior search (fixed),5,True
+Gemma-9B,ctxcolor,1 handoff,prior search (learned),5,True
+Gemma-9B,ctxcolor,1 handoff,prior search (learned) + logit lens,4,True
+Gemma-9B,ctxcolor,1 handoff,"optimal tree, prior (fixed)",5,True
+Gemma-9B,ctxcolor,1 handoff,"optimal tree, prior (learned)",5,True
+Gemma-9B,ctxcolor,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Gemma-9B,ctxcolor,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Gemma-9B,ctxcolor,1 handoff,floor: boundary known in advance,2,True
+Gemma-9B,ctxcolor,2 onset (α=1),walk from λ1,16,True
+Gemma-9B,ctxcolor,2 onset (α=1),walk from logit lens,2,True
+Gemma-9B,ctxcolor,2 onset (α=1),binary search,5,True
+Gemma-9B,ctxcolor,2 onset (α=1),peak pairs,4,True
+Gemma-9B,ctxcolor,2 onset (α=1),prior search (fixed),4,True
+Gemma-9B,ctxcolor,2 onset (α=1),prior search (learned),5,True
+Gemma-9B,ctxcolor,2 onset (α=1),prior search (learned) + logit lens,4,True
+Gemma-9B,ctxcolor,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Gemma-9B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned)",6,True
+Gemma-9B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,ctxcolor,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Gemma-9B,ctxcolor,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),walk from λ1,16,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),walk from logit lens,2,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),binary search,5,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),peak pairs,4,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),prior search (fixed),4,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),prior search (learned),5,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",4,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned)",5,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Gemma-9B,ctxcolor,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Gemma-9B,emotion,2 onset (α=1),walk from λ1,6,True
+Gemma-9B,emotion,2 onset (α=1),walk from logit lens,6,True
+Gemma-9B,emotion,2 onset (α=1),binary search,5,True
+Gemma-9B,emotion,2 onset (α=1),peak pairs,9,True
+Gemma-9B,emotion,2 onset (α=1),prior search (fixed),6,True
+Gemma-9B,emotion,2 onset (α=1),prior search (learned),7,True
+Gemma-9B,emotion,2 onset (α=1),prior search (learned) + logit lens,8,True
+Gemma-9B,emotion,2 onset (α=1),"optimal tree, prior (fixed)",8,True
+Gemma-9B,emotion,2 onset (α=1),"optimal tree, prior (learned)",7,True
+Gemma-9B,emotion,2 onset (α=1),"optimal tree, prior (learned) + logit lens",7,True
+Gemma-9B,emotion,2 onset (α=1),"optimal tree, logit lens only (learned)",9,True
+Gemma-9B,emotion,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,hour,1 handoff,walk from λ1,6,True
+Gemma-9B,hour,1 handoff,walk from logit lens,7,True
+Gemma-9B,hour,1 handoff,binary search,5,True
+Gemma-9B,hour,1 handoff,peak pairs,6,True
+Gemma-9B,hour,1 handoff,prior search (fixed),4,True
+Gemma-9B,hour,1 handoff,prior search (learned),4,True
+Gemma-9B,hour,1 handoff,prior search (learned) + logit lens,5,True
+Gemma-9B,hour,1 handoff,"optimal tree, prior (fixed)",4,True
+Gemma-9B,hour,1 handoff,"optimal tree, prior (learned)",4,True
+Gemma-9B,hour,1 handoff,"optimal tree, prior (learned) + logit lens",5,True
+Gemma-9B,hour,1 handoff,"optimal tree, logit lens only (learned)",9,True
+Gemma-9B,hour,1 handoff,floor: boundary known in advance,2,True
+Gemma-9B,hour,2 onset (α=1),walk from λ1,2,True
+Gemma-9B,hour,2 onset (α=1),walk from logit lens,3,True
+Gemma-9B,hour,2 onset (α=1),binary search,5,True
+Gemma-9B,hour,2 onset (α=1),peak pairs,2,True
+Gemma-9B,hour,2 onset (α=1),prior search (fixed),3,True
+Gemma-9B,hour,2 onset (α=1),prior search (learned),2,True
+Gemma-9B,hour,2 onset (α=1),prior search (learned) + logit lens,3,True
+Gemma-9B,hour,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Gemma-9B,hour,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Gemma-9B,hour,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,hour,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Gemma-9B,hour,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,hour,3 transfer (T ≥ .5),walk from λ1,2,True
+Gemma-9B,hour,3 transfer (T ≥ .5),walk from logit lens,3,True
+Gemma-9B,hour,3 transfer (T ≥ .5),binary search,5,True
+Gemma-9B,hour,3 transfer (T ≥ .5),peak pairs,2,True
+Gemma-9B,hour,3 transfer (T ≥ .5),prior search (fixed),3,True
+Gemma-9B,hour,3 transfer (T ≥ .5),prior search (learned),3,True
+Gemma-9B,hour,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Gemma-9B,hour,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Gemma-9B,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned)",2,True
+Gemma-9B,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,hour,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Gemma-9B,hour,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Gemma-9B,letter,1 handoff,walk from λ1,3,True
+Gemma-9B,letter,1 handoff,walk from logit lens,7,True
+Gemma-9B,letter,1 handoff,binary search,5,True
+Gemma-9B,letter,1 handoff,peak pairs,5,True
+Gemma-9B,letter,1 handoff,prior search (fixed),7,True
+Gemma-9B,letter,1 handoff,prior search (learned),4,True
+Gemma-9B,letter,1 handoff,prior search (learned) + logit lens,5,True
+Gemma-9B,letter,1 handoff,"optimal tree, prior (fixed)",6,True
+Gemma-9B,letter,1 handoff,"optimal tree, prior (learned)",4,True
+Gemma-9B,letter,1 handoff,"optimal tree, prior (learned) + logit lens",5,True
+Gemma-9B,letter,1 handoff,"optimal tree, logit lens only (learned)",9,True
+Gemma-9B,letter,1 handoff,floor: boundary known in advance,2,True
+Gemma-9B,letter,2 onset (α=1),walk from λ1,4,True
+Gemma-9B,letter,2 onset (α=1),walk from logit lens,6,True
+Gemma-9B,letter,2 onset (α=1),binary search,5,True
+Gemma-9B,letter,2 onset (α=1),peak pairs,5,True
+Gemma-9B,letter,2 onset (α=1),prior search (fixed),7,True
+Gemma-9B,letter,2 onset (α=1),prior search (learned),3,True
+Gemma-9B,letter,2 onset (α=1),prior search (learned) + logit lens,4,True
+Gemma-9B,letter,2 onset (α=1),"optimal tree, prior (fixed)",7,True
+Gemma-9B,letter,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Gemma-9B,letter,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Gemma-9B,letter,2 onset (α=1),"optimal tree, logit lens only (learned)",9,True
+Gemma-9B,letter,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,letter,3 transfer (T ≥ .5),walk from λ1,9,True
+Gemma-9B,letter,3 transfer (T ≥ .5),walk from logit lens,2,True
+Gemma-9B,letter,3 transfer (T ≥ .5),binary search,5,True
+Gemma-9B,letter,3 transfer (T ≥ .5),peak pairs,5,True
+Gemma-9B,letter,3 transfer (T ≥ .5),prior search (fixed),8,True
+Gemma-9B,letter,3 transfer (T ≥ .5),prior search (learned),6,True
+Gemma-9B,letter,3 transfer (T ≥ .5),prior search (learned) + logit lens,5,True
+Gemma-9B,letter,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",7,True
+Gemma-9B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned)",6,True
+Gemma-9B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",5,True
+Gemma-9B,letter,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Gemma-9B,letter,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Gemma-9B,month,1 handoff,walk from λ1,6,True
+Gemma-9B,month,1 handoff,walk from logit lens,3,True
+Gemma-9B,month,1 handoff,binary search,5,True
+Gemma-9B,month,1 handoff,peak pairs,9,True
+Gemma-9B,month,1 handoff,prior search (fixed),8,True
+Gemma-9B,month,1 handoff,prior search (learned),5,True
+Gemma-9B,month,1 handoff,prior search (learned) + logit lens,3,True
+Gemma-9B,month,1 handoff,"optimal tree, prior (fixed)",10,True
+Gemma-9B,month,1 handoff,"optimal tree, prior (learned)",5,True
+Gemma-9B,month,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Gemma-9B,month,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Gemma-9B,month,1 handoff,floor: boundary known in advance,2,True
+Gemma-9B,month,2 onset (α=1),walk from λ1,3,True
+Gemma-9B,month,2 onset (α=1),walk from logit lens,3,True
+Gemma-9B,month,2 onset (α=1),binary search,5,True
+Gemma-9B,month,2 onset (α=1),peak pairs,3,True
+Gemma-9B,month,2 onset (α=1),prior search (fixed),3,True
+Gemma-9B,month,2 onset (α=1),prior search (learned),5,True
+Gemma-9B,month,2 onset (α=1),prior search (learned) + logit lens,4,True
+Gemma-9B,month,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Gemma-9B,month,2 onset (α=1),"optimal tree, prior (learned)",5,True
+Gemma-9B,month,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Gemma-9B,month,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Gemma-9B,month,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,month,3 transfer (T ≥ .5),walk from λ1,3,True
+Gemma-9B,month,3 transfer (T ≥ .5),walk from logit lens,3,True
+Gemma-9B,month,3 transfer (T ≥ .5),binary search,5,True
+Gemma-9B,month,3 transfer (T ≥ .5),peak pairs,3,True
+Gemma-9B,month,3 transfer (T ≥ .5),prior search (fixed),3,True
+Gemma-9B,month,3 transfer (T ≥ .5),prior search (learned),3,True
+Gemma-9B,month,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Gemma-9B,month,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Gemma-9B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned)",5,True
+Gemma-9B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Gemma-9B,month,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",4,True
+Gemma-9B,month,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Gemma-9B,weekday,1 handoff,walk from λ1,7,True
+Gemma-9B,weekday,1 handoff,walk from logit lens,2,True
+Gemma-9B,weekday,1 handoff,binary search,5,True
+Gemma-9B,weekday,1 handoff,peak pairs,6,True
+Gemma-9B,weekday,1 handoff,prior search (fixed),4,True
+Gemma-9B,weekday,1 handoff,prior search (learned),6,True
+Gemma-9B,weekday,1 handoff,prior search (learned) + logit lens,5,True
+Gemma-9B,weekday,1 handoff,"optimal tree, prior (fixed)",5,True
+Gemma-9B,weekday,1 handoff,"optimal tree, prior (learned)",6,True
+Gemma-9B,weekday,1 handoff,"optimal tree, prior (learned) + logit lens",5,True
+Gemma-9B,weekday,1 handoff,"optimal tree, logit lens only (learned)",3,True
+Gemma-9B,weekday,1 handoff,floor: boundary known in advance,2,True
+Gemma-9B,weekday,2 onset (α=1),walk from λ1,3,True
+Gemma-9B,weekday,2 onset (α=1),walk from logit lens,6,True
+Gemma-9B,weekday,2 onset (α=1),binary search,5,True
+Gemma-9B,weekday,2 onset (α=1),peak pairs,7,True
+Gemma-9B,weekday,2 onset (α=1),prior search (fixed),4,True
+Gemma-9B,weekday,2 onset (α=1),prior search (learned),6,True
+Gemma-9B,weekday,2 onset (α=1),prior search (learned) + logit lens,6,True
+Gemma-9B,weekday,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Gemma-9B,weekday,2 onset (α=1),"optimal tree, prior (learned)",6,True
+Gemma-9B,weekday,2 onset (α=1),"optimal tree, prior (learned) + logit lens",6,True
+Gemma-9B,weekday,2 onset (α=1),"optimal tree, logit lens only (learned)",7,True
+Gemma-9B,weekday,2 onset (α=1),floor: boundary known in advance,2,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),walk from λ1,4,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),walk from logit lens,5,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),binary search,5,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),peak pairs,7,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),prior search (fixed),5,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),prior search (learned),6,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),prior search (learned) + logit lens,6,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",7,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned)",5,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",6,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",6,True
+Gemma-9B,weekday,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,capital2hop,1 handoff,walk from λ1,2,True
+Qwen-14B,capital2hop,1 handoff,walk from logit lens,3,True
+Qwen-14B,capital2hop,1 handoff,binary search,5,True
+Qwen-14B,capital2hop,1 handoff,peak pairs,2,True
+Qwen-14B,capital2hop,1 handoff,prior search (fixed),2,True
+Qwen-14B,capital2hop,1 handoff,prior search (learned),2,True
+Qwen-14B,capital2hop,1 handoff,prior search (learned) + logit lens,2,True
+Qwen-14B,capital2hop,1 handoff,"optimal tree, prior (fixed)",2,True
+Qwen-14B,capital2hop,1 handoff,"optimal tree, prior (learned)",2,True
+Qwen-14B,capital2hop,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Qwen-14B,capital2hop,1 handoff,"optimal tree, logit lens only (learned)",4,True
+Qwen-14B,capital2hop,1 handoff,floor: boundary known in advance,2,True
+Qwen-14B,capital2hop,2 onset (α=1),walk from λ1,2,True
+Qwen-14B,capital2hop,2 onset (α=1),walk from logit lens,3,True
+Qwen-14B,capital2hop,2 onset (α=1),binary search,5,True
+Qwen-14B,capital2hop,2 onset (α=1),peak pairs,2,True
+Qwen-14B,capital2hop,2 onset (α=1),prior search (fixed),2,True
+Qwen-14B,capital2hop,2 onset (α=1),prior search (learned),2,True
+Qwen-14B,capital2hop,2 onset (α=1),prior search (learned) + logit lens,2,True
+Qwen-14B,capital2hop,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Qwen-14B,capital2hop,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Qwen-14B,capital2hop,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-14B,capital2hop,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Qwen-14B,capital2hop,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),walk from λ1,4,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),binary search,5,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),peak pairs,4,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),prior search (learned),5,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-14B,capital2hop,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,city,1 handoff,walk from λ1,4,True
+Qwen-14B,city,1 handoff,walk from logit lens,4,True
+Qwen-14B,city,1 handoff,binary search,5,True
+Qwen-14B,city,1 handoff,peak pairs,4,True
+Qwen-14B,city,1 handoff,prior search (fixed),3,True
+Qwen-14B,city,1 handoff,prior search (learned),4,True
+Qwen-14B,city,1 handoff,prior search (learned) + logit lens,4,True
+Qwen-14B,city,1 handoff,"optimal tree, prior (fixed)",4,True
+Qwen-14B,city,1 handoff,"optimal tree, prior (learned)",5,True
+Qwen-14B,city,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Qwen-14B,city,1 handoff,"optimal tree, logit lens only (learned)",3,True
+Qwen-14B,city,1 handoff,floor: boundary known in advance,2,True
+Qwen-14B,city,2 onset (α=1),walk from λ1,2,True
+Qwen-14B,city,2 onset (α=1),walk from logit lens,2,True
+Qwen-14B,city,2 onset (α=1),binary search,5,True
+Qwen-14B,city,2 onset (α=1),peak pairs,4,True
+Qwen-14B,city,2 onset (α=1),prior search (fixed),3,True
+Qwen-14B,city,2 onset (α=1),prior search (learned),4,True
+Qwen-14B,city,2 onset (α=1),prior search (learned) + logit lens,4,True
+Qwen-14B,city,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Qwen-14B,city,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Qwen-14B,city,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Qwen-14B,city,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-14B,city,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,city,3 transfer (T ≥ .5),walk from λ1,2,True
+Qwen-14B,city,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-14B,city,3 transfer (T ≥ .5),binary search,5,True
+Qwen-14B,city,3 transfer (T ≥ .5),peak pairs,2,True
+Qwen-14B,city,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-14B,city,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-14B,city,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Qwen-14B,city,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Qwen-14B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned)",2,True
+Qwen-14B,city,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-14B,city,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-14B,city,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,color,1 handoff,walk from λ1,9,True
+Qwen-14B,color,1 handoff,walk from logit lens,6,True
+Qwen-14B,color,1 handoff,binary search,5,True
+Qwen-14B,color,1 handoff,peak pairs,7,True
+Qwen-14B,color,1 handoff,prior search (fixed),8,True
+Qwen-14B,color,1 handoff,prior search (learned),8,True
+Qwen-14B,color,1 handoff,prior search (learned) + logit lens,7,True
+Qwen-14B,color,1 handoff,"optimal tree, prior (fixed)",9,True
+Qwen-14B,color,1 handoff,"optimal tree, prior (learned)",8,True
+Qwen-14B,color,1 handoff,"optimal tree, prior (learned) + logit lens",9,True
+Qwen-14B,color,1 handoff,"optimal tree, logit lens only (learned)",8,True
+Qwen-14B,color,1 handoff,floor: boundary known in advance,2,True
+Qwen-14B,color,2 onset (α=1),walk from λ1,8,True
+Qwen-14B,color,2 onset (α=1),walk from logit lens,5,True
+Qwen-14B,color,2 onset (α=1),binary search,5,True
+Qwen-14B,color,2 onset (α=1),peak pairs,7,True
+Qwen-14B,color,2 onset (α=1),prior search (fixed),8,True
+Qwen-14B,color,2 onset (α=1),prior search (learned),9,True
+Qwen-14B,color,2 onset (α=1),prior search (learned) + logit lens,8,True
+Qwen-14B,color,2 onset (α=1),"optimal tree, prior (fixed)",9,True
+Qwen-14B,color,2 onset (α=1),"optimal tree, prior (learned)",9,True
+Qwen-14B,color,2 onset (α=1),"optimal tree, prior (learned) + logit lens",9,True
+Qwen-14B,color,2 onset (α=1),"optimal tree, logit lens only (learned)",9,True
+Qwen-14B,color,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,color,3 transfer (T ≥ .5),walk from λ1,9,True
+Qwen-14B,color,3 transfer (T ≥ .5),walk from logit lens,6,True
+Qwen-14B,color,3 transfer (T ≥ .5),binary search,5,True
+Qwen-14B,color,3 transfer (T ≥ .5),peak pairs,7,True
+Qwen-14B,color,3 transfer (T ≥ .5),prior search (fixed),8,True
+Qwen-14B,color,3 transfer (T ≥ .5),prior search (learned),8,True
+Qwen-14B,color,3 transfer (T ≥ .5),prior search (learned) + logit lens,8,True
+Qwen-14B,color,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",9,True
+Qwen-14B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned)",9,True
+Qwen-14B,color,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",9,True
+Qwen-14B,color,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",8,True
+Qwen-14B,color,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,continent,1 handoff,walk from λ1,2,True
+Qwen-14B,continent,1 handoff,walk from logit lens,3,True
+Qwen-14B,continent,1 handoff,binary search,5,True
+Qwen-14B,continent,1 handoff,peak pairs,2,True
+Qwen-14B,continent,1 handoff,prior search (fixed),3,True
+Qwen-14B,continent,1 handoff,prior search (learned),3,True
+Qwen-14B,continent,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-14B,continent,1 handoff,"optimal tree, prior (fixed)",2,True
+Qwen-14B,continent,1 handoff,"optimal tree, prior (learned)",2,True
+Qwen-14B,continent,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,continent,1 handoff,"optimal tree, logit lens only (learned)",4,True
+Qwen-14B,continent,1 handoff,floor: boundary known in advance,2,True
+Qwen-14B,continent,2 onset (α=1),walk from λ1,2,True
+Qwen-14B,continent,2 onset (α=1),walk from logit lens,4,True
+Qwen-14B,continent,2 onset (α=1),binary search,5,True
+Qwen-14B,continent,2 onset (α=1),peak pairs,4,True
+Qwen-14B,continent,2 onset (α=1),prior search (fixed),4,True
+Qwen-14B,continent,2 onset (α=1),prior search (learned),3,True
+Qwen-14B,continent,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-14B,continent,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Qwen-14B,continent,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Qwen-14B,continent,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,continent,2 onset (α=1),"optimal tree, logit lens only (learned)",4,True
+Qwen-14B,continent,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,continent,3 transfer (T ≥ .5),walk from λ1,4,True
+Qwen-14B,continent,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-14B,continent,3 transfer (T ≥ .5),binary search,5,True
+Qwen-14B,continent,3 transfer (T ≥ .5),peak pairs,4,True
+Qwen-14B,continent,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-14B,continent,3 transfer (T ≥ .5),prior search (learned),4,True
+Qwen-14B,continent,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-14B,continent,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Qwen-14B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Qwen-14B,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Qwen-14B,continent,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-14B,continent,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,ctxcolor,1 handoff,walk from λ1,7,True
+Qwen-14B,ctxcolor,1 handoff,walk from logit lens,3,True
+Qwen-14B,ctxcolor,1 handoff,binary search,5,True
+Qwen-14B,ctxcolor,1 handoff,peak pairs,5,True
+Qwen-14B,ctxcolor,1 handoff,prior search (fixed),8,True
+Qwen-14B,ctxcolor,1 handoff,prior search (learned),8,True
+Qwen-14B,ctxcolor,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-14B,ctxcolor,1 handoff,"optimal tree, prior (fixed)",7,True
+Qwen-14B,ctxcolor,1 handoff,"optimal tree, prior (learned)",9,True
+Qwen-14B,ctxcolor,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Qwen-14B,ctxcolor,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Qwen-14B,ctxcolor,1 handoff,floor: boundary known in advance,2,True
+Qwen-14B,ctxcolor,2 onset (α=1),walk from λ1,9,True
+Qwen-14B,ctxcolor,2 onset (α=1),walk from logit lens,2,True
+Qwen-14B,ctxcolor,2 onset (α=1),binary search,5,True
+Qwen-14B,ctxcolor,2 onset (α=1),peak pairs,5,True
+Qwen-14B,ctxcolor,2 onset (α=1),prior search (fixed),9,True
+Qwen-14B,ctxcolor,2 onset (α=1),prior search (learned),8,True
+Qwen-14B,ctxcolor,2 onset (α=1),prior search (learned) + logit lens,5,True
+Qwen-14B,ctxcolor,2 onset (α=1),"optimal tree, prior (fixed)",7,True
+Qwen-14B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned)",8,True
+Qwen-14B,ctxcolor,2 onset (α=1),"optimal tree, prior (learned) + logit lens",5,True
+Qwen-14B,ctxcolor,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-14B,ctxcolor,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),walk from λ1,8,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),binary search,5,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),peak pairs,5,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),prior search (fixed),9,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),prior search (learned),8,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",7,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned)",8,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Qwen-14B,ctxcolor,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,emotion,2 onset (α=1),walk from λ1,4,True
+Qwen-14B,emotion,2 onset (α=1),walk from logit lens,12,True
+Qwen-14B,emotion,2 onset (α=1),binary search,5,True
+Qwen-14B,emotion,2 onset (α=1),peak pairs,6,True
+Qwen-14B,emotion,2 onset (α=1),prior search (fixed),7,True
+Qwen-14B,emotion,2 onset (α=1),prior search (learned),4,True
+Qwen-14B,emotion,2 onset (α=1),prior search (learned) + logit lens,5,True
+Qwen-14B,emotion,2 onset (α=1),"optimal tree, prior (fixed)",8,True
+Qwen-14B,emotion,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Qwen-14B,emotion,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Qwen-14B,emotion,2 onset (α=1),"optimal tree, logit lens only (learned)",9,True
+Qwen-14B,emotion,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),walk from λ1,6,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),walk from logit lens,10,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),binary search,5,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),peak pairs,7,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),prior search (fixed),7,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),prior search (learned),7,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),prior search (learned) + logit lens,8,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",8,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned)",6,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",7,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",9,True
+Qwen-14B,emotion,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,hour,1 handoff,walk from λ1,3,True
+Qwen-14B,hour,1 handoff,walk from logit lens,5,True
+Qwen-14B,hour,1 handoff,binary search,5,True
+Qwen-14B,hour,1 handoff,peak pairs,5,True
+Qwen-14B,hour,1 handoff,prior search (fixed),4,True
+Qwen-14B,hour,1 handoff,prior search (learned),4,True
+Qwen-14B,hour,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-14B,hour,1 handoff,"optimal tree, prior (fixed)",4,True
+Qwen-14B,hour,1 handoff,"optimal tree, prior (learned)",5,True
+Qwen-14B,hour,1 handoff,"optimal tree, prior (learned) + logit lens",5,True
+Qwen-14B,hour,1 handoff,"optimal tree, logit lens only (learned)",5,True
+Qwen-14B,hour,1 handoff,floor: boundary known in advance,2,True
+Qwen-14B,hour,2 onset (α=1),walk from λ1,2,True
+Qwen-14B,hour,2 onset (α=1),walk from logit lens,3,True
+Qwen-14B,hour,2 onset (α=1),binary search,6,True
+Qwen-14B,hour,2 onset (α=1),peak pairs,4,True
+Qwen-14B,hour,2 onset (α=1),prior search (fixed),3,True
+Qwen-14B,hour,2 onset (α=1),prior search (learned),3,True
+Qwen-14B,hour,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-14B,hour,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Qwen-14B,hour,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Qwen-14B,hour,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,hour,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Qwen-14B,hour,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,hour,3 transfer (T ≥ .5),walk from λ1,2,True
+Qwen-14B,hour,3 transfer (T ≥ .5),walk from logit lens,4,True
+Qwen-14B,hour,3 transfer (T ≥ .5),binary search,6,True
+Qwen-14B,hour,3 transfer (T ≥ .5),peak pairs,2,True
+Qwen-14B,hour,3 transfer (T ≥ .5),prior search (fixed),2,True
+Qwen-14B,hour,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-14B,hour,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Qwen-14B,hour,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Qwen-14B,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Qwen-14B,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,hour,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Qwen-14B,hour,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,letter,1 handoff,walk from λ1,3,True
+Qwen-14B,letter,1 handoff,walk from logit lens,5,True
+Qwen-14B,letter,1 handoff,binary search,5,True
+Qwen-14B,letter,1 handoff,peak pairs,5,True
+Qwen-14B,letter,1 handoff,prior search (fixed),4,True
+Qwen-14B,letter,1 handoff,prior search (learned),4,True
+Qwen-14B,letter,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-14B,letter,1 handoff,"optimal tree, prior (fixed)",4,True
+Qwen-14B,letter,1 handoff,"optimal tree, prior (learned)",5,True
+Qwen-14B,letter,1 handoff,"optimal tree, prior (learned) + logit lens",5,True
+Qwen-14B,letter,1 handoff,"optimal tree, logit lens only (learned)",5,True
+Qwen-14B,letter,1 handoff,floor: boundary known in advance,2,True
+Qwen-14B,letter,2 onset (α=1),walk from λ1,2,True
+Qwen-14B,letter,2 onset (α=1),walk from logit lens,4,True
+Qwen-14B,letter,2 onset (α=1),binary search,6,True
+Qwen-14B,letter,2 onset (α=1),peak pairs,2,True
+Qwen-14B,letter,2 onset (α=1),prior search (fixed),2,True
+Qwen-14B,letter,2 onset (α=1),prior search (learned),3,True
+Qwen-14B,letter,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-14B,letter,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Qwen-14B,letter,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Qwen-14B,letter,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,letter,2 onset (α=1),"optimal tree, logit lens only (learned)",4,True
+Qwen-14B,letter,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,letter,3 transfer (T ≥ .5),walk from λ1,4,True
+Qwen-14B,letter,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-14B,letter,3 transfer (T ≥ .5),binary search,5,True
+Qwen-14B,letter,3 transfer (T ≥ .5),peak pairs,3,True
+Qwen-14B,letter,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-14B,letter,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-14B,letter,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-14B,letter,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Qwen-14B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Qwen-14B,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,letter,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Qwen-14B,letter,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,month,1 handoff,walk from λ1,3,True
+Qwen-14B,month,1 handoff,walk from logit lens,3,True
+Qwen-14B,month,1 handoff,binary search,5,True
+Qwen-14B,month,1 handoff,peak pairs,7,True
+Qwen-14B,month,1 handoff,prior search (fixed),3,True
+Qwen-14B,month,1 handoff,prior search (learned),4,True
+Qwen-14B,month,1 handoff,prior search (learned) + logit lens,4,True
+Qwen-14B,month,1 handoff,"optimal tree, prior (fixed)",3,True
+Qwen-14B,month,1 handoff,"optimal tree, prior (learned)",5,True
+Qwen-14B,month,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Qwen-14B,month,1 handoff,"optimal tree, logit lens only (learned)",4,True
+Qwen-14B,month,1 handoff,floor: boundary known in advance,2,True
+Qwen-14B,month,2 onset (α=1),walk from λ1,2,True
+Qwen-14B,month,2 onset (α=1),walk from logit lens,5,True
+Qwen-14B,month,2 onset (α=1),binary search,6,True
+Qwen-14B,month,2 onset (α=1),peak pairs,4,True
+Qwen-14B,month,2 onset (α=1),prior search (fixed),3,True
+Qwen-14B,month,2 onset (α=1),prior search (learned),2,True
+Qwen-14B,month,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-14B,month,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Qwen-14B,month,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Qwen-14B,month,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,month,2 onset (α=1),"optimal tree, logit lens only (learned)",7,True
+Qwen-14B,month,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,month,3 transfer (T ≥ .5),walk from λ1,2,True
+Qwen-14B,month,3 transfer (T ≥ .5),walk from logit lens,4,True
+Qwen-14B,month,3 transfer (T ≥ .5),binary search,6,True
+Qwen-14B,month,3 transfer (T ≥ .5),peak pairs,2,True
+Qwen-14B,month,3 transfer (T ≥ .5),prior search (fixed),3,True
+Qwen-14B,month,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-14B,month,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-14B,month,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Qwen-14B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Qwen-14B,month,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,month,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",4,True
+Qwen-14B,month,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Qwen-14B,weekday,1 handoff,walk from λ1,3,True
+Qwen-14B,weekday,1 handoff,walk from logit lens,2,True
+Qwen-14B,weekday,1 handoff,binary search,5,True
+Qwen-14B,weekday,1 handoff,peak pairs,5,True
+Qwen-14B,weekday,1 handoff,prior search (fixed),4,True
+Qwen-14B,weekday,1 handoff,prior search (learned),4,True
+Qwen-14B,weekday,1 handoff,prior search (learned) + logit lens,3,True
+Qwen-14B,weekday,1 handoff,"optimal tree, prior (fixed)",4,True
+Qwen-14B,weekday,1 handoff,"optimal tree, prior (learned)",5,True
+Qwen-14B,weekday,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,weekday,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Qwen-14B,weekday,1 handoff,floor: boundary known in advance,2,True
+Qwen-14B,weekday,2 onset (α=1),walk from λ1,2,True
+Qwen-14B,weekday,2 onset (α=1),walk from logit lens,2,True
+Qwen-14B,weekday,2 onset (α=1),binary search,6,True
+Qwen-14B,weekday,2 onset (α=1),peak pairs,2,True
+Qwen-14B,weekday,2 onset (α=1),prior search (fixed),2,True
+Qwen-14B,weekday,2 onset (α=1),prior search (learned),3,True
+Qwen-14B,weekday,2 onset (α=1),prior search (learned) + logit lens,3,True
+Qwen-14B,weekday,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Qwen-14B,weekday,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Qwen-14B,weekday,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,weekday,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Qwen-14B,weekday,2 onset (α=1),floor: boundary known in advance,2,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),walk from λ1,2,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),walk from logit lens,2,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),binary search,6,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),peak pairs,2,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),prior search (fixed),2,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),prior search (learned),3,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Qwen-14B,weekday,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,capital2hop,1 handoff,walk from λ1,2,True
+Phi-4,capital2hop,1 handoff,walk from logit lens,2,True
+Phi-4,capital2hop,1 handoff,binary search,5,True
+Phi-4,capital2hop,1 handoff,peak pairs,2,True
+Phi-4,capital2hop,1 handoff,prior search (fixed),2,True
+Phi-4,capital2hop,1 handoff,prior search (learned),3,True
+Phi-4,capital2hop,1 handoff,prior search (learned) + logit lens,2,True
+Phi-4,capital2hop,1 handoff,"optimal tree, prior (fixed)",2,True
+Phi-4,capital2hop,1 handoff,"optimal tree, prior (learned)",2,True
+Phi-4,capital2hop,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Phi-4,capital2hop,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Phi-4,capital2hop,1 handoff,floor: boundary known in advance,2,True
+Phi-4,capital2hop,2 onset (α=1),walk from λ1,2,True
+Phi-4,capital2hop,2 onset (α=1),walk from logit lens,2,True
+Phi-4,capital2hop,2 onset (α=1),binary search,5,True
+Phi-4,capital2hop,2 onset (α=1),peak pairs,2,True
+Phi-4,capital2hop,2 onset (α=1),prior search (fixed),2,True
+Phi-4,capital2hop,2 onset (α=1),prior search (learned),3,True
+Phi-4,capital2hop,2 onset (α=1),prior search (learned) + logit lens,3,True
+Phi-4,capital2hop,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Phi-4,capital2hop,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Phi-4,capital2hop,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Phi-4,capital2hop,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Phi-4,capital2hop,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),walk from λ1,2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),walk from logit lens,2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),peak pairs,2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),prior search (fixed),2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),prior search (learned),3,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned)",2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Phi-4,capital2hop,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,city,1 handoff,walk from λ1,2,True
+Phi-4,city,1 handoff,walk from logit lens,2,True
+Phi-4,city,1 handoff,binary search,5,True
+Phi-4,city,1 handoff,peak pairs,2,True
+Phi-4,city,1 handoff,prior search (fixed),3,True
+Phi-4,city,1 handoff,prior search (learned),3,True
+Phi-4,city,1 handoff,prior search (learned) + logit lens,2,True
+Phi-4,city,1 handoff,"optimal tree, prior (fixed)",2,True
+Phi-4,city,1 handoff,"optimal tree, prior (learned)",2,True
+Phi-4,city,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Phi-4,city,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Phi-4,city,1 handoff,floor: boundary known in advance,2,True
+Phi-4,city,2 onset (α=1),walk from λ1,2,True
+Phi-4,city,2 onset (α=1),walk from logit lens,2,True
+Phi-4,city,2 onset (α=1),binary search,5,True
+Phi-4,city,2 onset (α=1),peak pairs,2,True
+Phi-4,city,2 onset (α=1),prior search (fixed),3,True
+Phi-4,city,2 onset (α=1),prior search (learned),2,True
+Phi-4,city,2 onset (α=1),prior search (learned) + logit lens,2,True
+Phi-4,city,2 onset (α=1),"optimal tree, prior (fixed)",2,True
+Phi-4,city,2 onset (α=1),"optimal tree, prior (learned)",2,True
+Phi-4,city,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Phi-4,city,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Phi-4,city,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,city,3 transfer (T ≥ .5),walk from λ1,2,True
+Phi-4,city,3 transfer (T ≥ .5),walk from logit lens,2,True
+Phi-4,city,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,city,3 transfer (T ≥ .5),peak pairs,2,True
+Phi-4,city,3 transfer (T ≥ .5),prior search (fixed),3,True
+Phi-4,city,3 transfer (T ≥ .5),prior search (learned),3,True
+Phi-4,city,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Phi-4,city,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",2,True
+Phi-4,city,3 transfer (T ≥ .5),"optimal tree, prior (learned)",2,True
+Phi-4,city,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Phi-4,city,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Phi-4,city,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,color,1 handoff,walk from λ1,8,True
+Phi-4,color,1 handoff,walk from logit lens,3,True
+Phi-4,color,1 handoff,binary search,5,True
+Phi-4,color,1 handoff,peak pairs,3,True
+Phi-4,color,1 handoff,prior search (fixed),4,True
+Phi-4,color,1 handoff,prior search (learned),6,True
+Phi-4,color,1 handoff,prior search (learned) + logit lens,5,True
+Phi-4,color,1 handoff,"optimal tree, prior (fixed)",4,True
+Phi-4,color,1 handoff,"optimal tree, prior (learned)",6,True
+Phi-4,color,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,color,1 handoff,"optimal tree, logit lens only (learned)",4,True
+Phi-4,color,1 handoff,floor: boundary known in advance,2,True
+Phi-4,color,2 onset (α=1),walk from λ1,9,True
+Phi-4,color,2 onset (α=1),walk from logit lens,4,True
+Phi-4,color,2 onset (α=1),binary search,5,True
+Phi-4,color,2 onset (α=1),peak pairs,6,True
+Phi-4,color,2 onset (α=1),prior search (fixed),6,True
+Phi-4,color,2 onset (α=1),prior search (learned),6,True
+Phi-4,color,2 onset (α=1),prior search (learned) + logit lens,5,True
+Phi-4,color,2 onset (α=1),"optimal tree, prior (fixed)",5,True
+Phi-4,color,2 onset (α=1),"optimal tree, prior (learned)",5,True
+Phi-4,color,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,color,2 onset (α=1),"optimal tree, logit lens only (learned)",4,True
+Phi-4,color,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,color,3 transfer (T ≥ .5),walk from λ1,8,True
+Phi-4,color,3 transfer (T ≥ .5),walk from logit lens,3,True
+Phi-4,color,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,color,3 transfer (T ≥ .5),peak pairs,3,True
+Phi-4,color,3 transfer (T ≥ .5),prior search (fixed),4,True
+Phi-4,color,3 transfer (T ≥ .5),prior search (learned),5,True
+Phi-4,color,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Phi-4,color,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",4,True
+Phi-4,color,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Phi-4,color,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,color,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Phi-4,color,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,continent,1 handoff,walk from λ1,2,True
+Phi-4,continent,1 handoff,walk from logit lens,2,True
+Phi-4,continent,1 handoff,binary search,5,True
+Phi-4,continent,1 handoff,peak pairs,2,True
+Phi-4,continent,1 handoff,prior search (fixed),3,True
+Phi-4,continent,1 handoff,prior search (learned),3,True
+Phi-4,continent,1 handoff,prior search (learned) + logit lens,3,True
+Phi-4,continent,1 handoff,"optimal tree, prior (fixed)",3,True
+Phi-4,continent,1 handoff,"optimal tree, prior (learned)",3,True
+Phi-4,continent,1 handoff,"optimal tree, prior (learned) + logit lens",2,True
+Phi-4,continent,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Phi-4,continent,1 handoff,floor: boundary known in advance,2,True
+Phi-4,continent,2 onset (α=1),walk from λ1,2,True
+Phi-4,continent,2 onset (α=1),walk from logit lens,2,True
+Phi-4,continent,2 onset (α=1),binary search,5,True
+Phi-4,continent,2 onset (α=1),peak pairs,2,True
+Phi-4,continent,2 onset (α=1),prior search (fixed),3,True
+Phi-4,continent,2 onset (α=1),prior search (learned),3,True
+Phi-4,continent,2 onset (α=1),prior search (learned) + logit lens,2,True
+Phi-4,continent,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Phi-4,continent,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Phi-4,continent,2 onset (α=1),"optimal tree, prior (learned) + logit lens",2,True
+Phi-4,continent,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Phi-4,continent,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,continent,3 transfer (T ≥ .5),walk from λ1,2,True
+Phi-4,continent,3 transfer (T ≥ .5),walk from logit lens,2,True
+Phi-4,continent,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,continent,3 transfer (T ≥ .5),peak pairs,2,True
+Phi-4,continent,3 transfer (T ≥ .5),prior search (fixed),3,True
+Phi-4,continent,3 transfer (T ≥ .5),prior search (learned),3,True
+Phi-4,continent,3 transfer (T ≥ .5),prior search (learned) + logit lens,2,True
+Phi-4,continent,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Phi-4,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Phi-4,continent,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",2,True
+Phi-4,continent,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Phi-4,continent,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,ctxcolor,1 handoff,walk from λ1,5,True
+Phi-4,ctxcolor,1 handoff,walk from logit lens,3,True
+Phi-4,ctxcolor,1 handoff,binary search,5,True
+Phi-4,ctxcolor,1 handoff,peak pairs,6,True
+Phi-4,ctxcolor,1 handoff,prior search (fixed),7,True
+Phi-4,ctxcolor,1 handoff,prior search (learned),5,True
+Phi-4,ctxcolor,1 handoff,prior search (learned) + logit lens,3,True
+Phi-4,ctxcolor,1 handoff,"optimal tree, prior (fixed)",7,True
+Phi-4,ctxcolor,1 handoff,"optimal tree, prior (learned)",4,True
+Phi-4,ctxcolor,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Phi-4,ctxcolor,1 handoff,"optimal tree, logit lens only (learned)",2,True
+Phi-4,ctxcolor,1 handoff,floor: boundary known in advance,2,True
+Phi-4,ctxcolor,2 onset (α=1),walk from λ1,6,True
+Phi-4,ctxcolor,2 onset (α=1),walk from logit lens,2,True
+Phi-4,ctxcolor,2 onset (α=1),binary search,5,True
+Phi-4,ctxcolor,2 onset (α=1),peak pairs,6,True
+Phi-4,ctxcolor,2 onset (α=1),prior search (fixed),5,True
+Phi-4,ctxcolor,2 onset (α=1),prior search (learned),5,True
+Phi-4,ctxcolor,2 onset (α=1),prior search (learned) + logit lens,4,True
+Phi-4,ctxcolor,2 onset (α=1),"optimal tree, prior (fixed)",5,True
+Phi-4,ctxcolor,2 onset (α=1),"optimal tree, prior (learned)",6,True
+Phi-4,ctxcolor,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,ctxcolor,2 onset (α=1),"optimal tree, logit lens only (learned)",2,True
+Phi-4,ctxcolor,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),walk from λ1,4,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),walk from logit lens,4,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),peak pairs,5,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),prior search (fixed),7,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),prior search (learned),4,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",7,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned)",3,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",4,True
+Phi-4,ctxcolor,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,emotion,2 onset (α=1),walk from λ1,2,True
+Phi-4,emotion,2 onset (α=1),walk from logit lens,12,True
+Phi-4,emotion,2 onset (α=1),binary search,5,True
+Phi-4,emotion,2 onset (α=1),peak pairs,6,True
+Phi-4,emotion,2 onset (α=1),prior search (fixed),4,True
+Phi-4,emotion,2 onset (α=1),prior search (learned),3,True
+Phi-4,emotion,2 onset (α=1),prior search (learned) + logit lens,3,True
+Phi-4,emotion,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Phi-4,emotion,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Phi-4,emotion,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Phi-4,emotion,2 onset (α=1),"optimal tree, logit lens only (learned)",5,True
+Phi-4,emotion,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,emotion,3 transfer (T ≥ .5),walk from λ1,4,True
+Phi-4,emotion,3 transfer (T ≥ .5),walk from logit lens,14,True
+Phi-4,emotion,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,emotion,3 transfer (T ≥ .5),peak pairs,6,True
+Phi-4,emotion,3 transfer (T ≥ .5),prior search (fixed),7,True
+Phi-4,emotion,3 transfer (T ≥ .5),prior search (learned),4,True
+Phi-4,emotion,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Phi-4,emotion,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",8,True
+Phi-4,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Phi-4,emotion,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,emotion,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",5,True
+Phi-4,emotion,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,hour,1 handoff,walk from λ1,2,True
+Phi-4,hour,1 handoff,walk from logit lens,9,True
+Phi-4,hour,1 handoff,binary search,5,True
+Phi-4,hour,1 handoff,peak pairs,2,True
+Phi-4,hour,1 handoff,prior search (fixed),3,True
+Phi-4,hour,1 handoff,prior search (learned),3,True
+Phi-4,hour,1 handoff,prior search (learned) + logit lens,3,True
+Phi-4,hour,1 handoff,"optimal tree, prior (fixed)",3,True
+Phi-4,hour,1 handoff,"optimal tree, prior (learned)",2,True
+Phi-4,hour,1 handoff,"optimal tree, prior (learned) + logit lens",3,True
+Phi-4,hour,1 handoff,"optimal tree, logit lens only (learned)",8,True
+Phi-4,hour,1 handoff,floor: boundary known in advance,2,True
+Phi-4,hour,2 onset (α=1),walk from λ1,6,True
+Phi-4,hour,2 onset (α=1),walk from logit lens,4,True
+Phi-4,hour,2 onset (α=1),binary search,5,True
+Phi-4,hour,2 onset (α=1),peak pairs,6,True
+Phi-4,hour,2 onset (α=1),prior search (fixed),5,True
+Phi-4,hour,2 onset (α=1),prior search (learned),4,True
+Phi-4,hour,2 onset (α=1),prior search (learned) + logit lens,5,True
+Phi-4,hour,2 onset (α=1),"optimal tree, prior (fixed)",5,True
+Phi-4,hour,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Phi-4,hour,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,hour,2 onset (α=1),"optimal tree, logit lens only (learned)",4,True
+Phi-4,hour,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,hour,3 transfer (T ≥ .5),walk from λ1,5,True
+Phi-4,hour,3 transfer (T ≥ .5),walk from logit lens,5,True
+Phi-4,hour,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,hour,3 transfer (T ≥ .5),peak pairs,5,True
+Phi-4,hour,3 transfer (T ≥ .5),prior search (fixed),5,True
+Phi-4,hour,3 transfer (T ≥ .5),prior search (learned),4,True
+Phi-4,hour,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Phi-4,hour,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",5,True
+Phi-4,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Phi-4,hour,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",5,True
+Phi-4,hour,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",8,True
+Phi-4,hour,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,letter,1 handoff,walk from λ1,3,True
+Phi-4,letter,1 handoff,walk from logit lens,12,True
+Phi-4,letter,1 handoff,binary search,5,True
+Phi-4,letter,1 handoff,peak pairs,5,True
+Phi-4,letter,1 handoff,prior search (fixed),5,True
+Phi-4,letter,1 handoff,prior search (learned),4,True
+Phi-4,letter,1 handoff,prior search (learned) + logit lens,5,True
+Phi-4,letter,1 handoff,"optimal tree, prior (fixed)",5,True
+Phi-4,letter,1 handoff,"optimal tree, prior (learned)",4,True
+Phi-4,letter,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,letter,1 handoff,"optimal tree, logit lens only (learned)",8,True
+Phi-4,letter,1 handoff,floor: boundary known in advance,2,True
+Phi-4,letter,2 onset (α=1),walk from λ1,7,True
+Phi-4,letter,2 onset (α=1),walk from logit lens,8,True
+Phi-4,letter,2 onset (α=1),binary search,5,True
+Phi-4,letter,2 onset (α=1),peak pairs,6,True
+Phi-4,letter,2 onset (α=1),prior search (fixed),4,True
+Phi-4,letter,2 onset (α=1),prior search (learned),5,True
+Phi-4,letter,2 onset (α=1),prior search (learned) + logit lens,5,True
+Phi-4,letter,2 onset (α=1),"optimal tree, prior (fixed)",4,True
+Phi-4,letter,2 onset (α=1),"optimal tree, prior (learned)",5,True
+Phi-4,letter,2 onset (α=1),"optimal tree, prior (learned) + logit lens",5,True
+Phi-4,letter,2 onset (α=1),"optimal tree, logit lens only (learned)",8,True
+Phi-4,letter,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,letter,3 transfer (T ≥ .5),walk from λ1,13,True
+Phi-4,letter,3 transfer (T ≥ .5),walk from logit lens,2,True
+Phi-4,letter,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,letter,3 transfer (T ≥ .5),peak pairs,6,True
+Phi-4,letter,3 transfer (T ≥ .5),prior search (fixed),8,True
+Phi-4,letter,3 transfer (T ≥ .5),prior search (learned),7,True
+Phi-4,letter,3 transfer (T ≥ .5),prior search (learned) + logit lens,3,True
+Phi-4,letter,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",8,True
+Phi-4,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned)",7,True
+Phi-4,letter,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Phi-4,letter,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",2,True
+Phi-4,letter,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,month,1 handoff,walk from λ1,5,True
+Phi-4,month,1 handoff,walk from logit lens,4,True
+Phi-4,month,1 handoff,binary search,5,True
+Phi-4,month,1 handoff,peak pairs,6,True
+Phi-4,month,1 handoff,prior search (fixed),3,True
+Phi-4,month,1 handoff,prior search (learned),4,True
+Phi-4,month,1 handoff,prior search (learned) + logit lens,3,True
+Phi-4,month,1 handoff,"optimal tree, prior (fixed)",4,True
+Phi-4,month,1 handoff,"optimal tree, prior (learned)",4,True
+Phi-4,month,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,month,1 handoff,"optimal tree, logit lens only (learned)",3,True
+Phi-4,month,1 handoff,floor: boundary known in advance,2,True
+Phi-4,month,2 onset (α=1),walk from λ1,2,True
+Phi-4,month,2 onset (α=1),walk from logit lens,3,True
+Phi-4,month,2 onset (α=1),binary search,5,True
+Phi-4,month,2 onset (α=1),peak pairs,5,True
+Phi-4,month,2 onset (α=1),prior search (fixed),4,True
+Phi-4,month,2 onset (α=1),prior search (learned),3,True
+Phi-4,month,2 onset (α=1),prior search (learned) + logit lens,3,True
+Phi-4,month,2 onset (α=1),"optimal tree, prior (fixed)",3,True
+Phi-4,month,2 onset (α=1),"optimal tree, prior (learned)",3,True
+Phi-4,month,2 onset (α=1),"optimal tree, prior (learned) + logit lens",3,True
+Phi-4,month,2 onset (α=1),"optimal tree, logit lens only (learned)",3,True
+Phi-4,month,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,month,3 transfer (T ≥ .5),walk from λ1,2,True
+Phi-4,month,3 transfer (T ≥ .5),walk from logit lens,3,True
+Phi-4,month,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,month,3 transfer (T ≥ .5),peak pairs,5,True
+Phi-4,month,3 transfer (T ≥ .5),prior search (fixed),4,True
+Phi-4,month,3 transfer (T ≥ .5),prior search (learned),4,True
+Phi-4,month,3 transfer (T ≥ .5),prior search (learned) + logit lens,4,True
+Phi-4,month,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",3,True
+Phi-4,month,3 transfer (T ≥ .5),"optimal tree, prior (learned)",4,True
+Phi-4,month,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",3,True
+Phi-4,month,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",3,True
+Phi-4,month,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
+Phi-4,weekday,1 handoff,walk from λ1,3,True
+Phi-4,weekday,1 handoff,walk from logit lens,4,True
+Phi-4,weekday,1 handoff,binary search,5,True
+Phi-4,weekday,1 handoff,peak pairs,5,True
+Phi-4,weekday,1 handoff,prior search (fixed),4,True
+Phi-4,weekday,1 handoff,prior search (learned),3,True
+Phi-4,weekday,1 handoff,prior search (learned) + logit lens,3,True
+Phi-4,weekday,1 handoff,"optimal tree, prior (fixed)",4,True
+Phi-4,weekday,1 handoff,"optimal tree, prior (learned)",4,True
+Phi-4,weekday,1 handoff,"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,weekday,1 handoff,"optimal tree, logit lens only (learned)",3,True
+Phi-4,weekday,1 handoff,floor: boundary known in advance,2,True
+Phi-4,weekday,2 onset (α=1),walk from λ1,9,True
+Phi-4,weekday,2 onset (α=1),walk from logit lens,5,True
+Phi-4,weekday,2 onset (α=1),binary search,5,True
+Phi-4,weekday,2 onset (α=1),peak pairs,6,True
+Phi-4,weekday,2 onset (α=1),prior search (fixed),8,True
+Phi-4,weekday,2 onset (α=1),prior search (learned),5,True
+Phi-4,weekday,2 onset (α=1),prior search (learned) + logit lens,5,True
+Phi-4,weekday,2 onset (α=1),"optimal tree, prior (fixed)",7,True
+Phi-4,weekday,2 onset (α=1),"optimal tree, prior (learned)",4,True
+Phi-4,weekday,2 onset (α=1),"optimal tree, prior (learned) + logit lens",4,True
+Phi-4,weekday,2 onset (α=1),"optimal tree, logit lens only (learned)",7,True
+Phi-4,weekday,2 onset (α=1),floor: boundary known in advance,2,True
+Phi-4,weekday,3 transfer (T ≥ .5),walk from λ1,9,True
+Phi-4,weekday,3 transfer (T ≥ .5),walk from logit lens,5,True
+Phi-4,weekday,3 transfer (T ≥ .5),binary search,5,True
+Phi-4,weekday,3 transfer (T ≥ .5),peak pairs,6,True
+Phi-4,weekday,3 transfer (T ≥ .5),prior search (fixed),8,True
+Phi-4,weekday,3 transfer (T ≥ .5),prior search (learned),4,True
+Phi-4,weekday,3 transfer (T ≥ .5),prior search (learned) + logit lens,6,True
+Phi-4,weekday,3 transfer (T ≥ .5),"optimal tree, prior (fixed)",7,True
+Phi-4,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned)",5,True
+Phi-4,weekday,3 transfer (T ≥ .5),"optimal tree, prior (learned) + logit lens",5,True
+Phi-4,weekday,3 transfer (T ≥ .5),"optimal tree, logit lens only (learned)",7,True
+Phi-4,weekday,3 transfer (T ≥ .5),floor: boundary known in advance,2,True
