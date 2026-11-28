@@ -1,13 +1,13 @@
 #!/bin/bash
 # Rebuttal (rTuT C1): steering with the answer part vs the blurred-input part of the centroid difference (steer_decomp.py).
-# Small run: Qwen2.5-7B (one-step) and Llama-3.1-8B (multi-step), weekday, month and letter. Outputs under data/decomp/.
+# Small run: Qwen2.5-7B (one-step) and Llama-3.1-8B (multi-step), weekday and month. Outputs under data/decomp/.
 # Run from anywhere on a GPU machine:  bash experiments/rebuttal/run_decomp.sh
 set -euo pipefail
 cd "$(dirname "$0")/../.."
 ROOT=$(pwd); O=$ROOT/data/decomp; mkdir -p $O/logs
 export HF_HOME=${HF_HOME:-/workspace/hf}
 MODELS=${MODELS:-"qwen:Qwen2.5-7B-Instruct:Qwen/Qwen2.5-7B-Instruct llama:Llama-3.1-8B-Instruct:unsloth/Llama-3.1-8B-Instruct"}
-TASKS=${TASKS:-"weekday month letter"}
+TASKS=${TASKS:-"weekday month"}
 pip install -q "transformers>=4.56,<5" accelerate huggingface_hub protobuf sentencepiece scikit-learn pandas scipy matplotlib 2>&1 | grep -v -i warning || true
 pip uninstall -y -q torchvision torchaudio 2>/dev/null || true
 python -c "import torch, transformers; print('torch', torch.__version__, 'transformers', transformers.__version__, 'cuda', torch.cuda.is_available())"
