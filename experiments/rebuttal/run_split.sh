@@ -14,7 +14,7 @@ MODELS=${MODELS:-"qwen:Qwen2.5-7B-Instruct:Qwen/Qwen2.5-7B-Instruct llama:Llama-
 TASKS=${TASKS:-"weekday month city continent"}
 ARITH=" weekday month hour letter "
 
-pip install -q "transformers>=4.56,<5" accelerate huggingface_hub scikit-learn pandas scipy matplotlib 2>&1 | grep -v -i warning || true
+pip install -q "transformers>=4.56,<5" accelerate huggingface_hub protobuf sentencepiece scikit-learn pandas scipy matplotlib 2>&1 | grep -v -i warning || true
 pip uninstall -y -q torchvision torchaudio 2>/dev/null || true
 python -c "import torch, transformers; print('torch', torch.__version__, 'transformers', transformers.__version__, 'cuda', torch.cuda.is_available())"
 
